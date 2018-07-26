@@ -1,0 +1,13 @@
+{{ define "main" }}
+  {{ partial "header.html" . }}
+  <main class="list">
+    {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") 5 }}
+      {{ range $paginator.Pages }}
+        {{ .Render "li"}}
+    {{ end }}
+  </main>
+  {{ if or .Paginator.HasPrev .Paginator.HasNext }}
+    {{ partial "paginator.html" . }}
+  {{ end }}
+  {{ partial "footer.html" . }}
+{{ end }}

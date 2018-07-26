@@ -1,0 +1,40 @@
+baseURL = ""
+copyright = " 2018 Deluxely"
+enableEmoji = "true"
+enableRobotsTXT = "true"
+languageCode = "en-us"
+title = "Deluxely"
+
+FootnoteReturnLinkContents = "↩"
+SectionPagesMenu = "main"
+
+[author]
+  name = ""
+  email = ""
+
+[blackfriday]
+  hrefTargetBlank = true
+  plainIDAnchors = true
+
+[params]
+  OpenLinksInNewWindow = true
+
+[params.social]
+  twitter = ""
+  facebook = ""
+  instagram = ""
+  snapchat = ""
+  
+
+[params.google.analytics]
+  trackerID = ""
+
+[params.meta]
+  description = ""
+  keywords = ""
+
+[permalinks]
+  blog = "/:title/"
+  
+[outputs]
+  home = ["html", "rss"]

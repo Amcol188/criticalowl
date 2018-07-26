@@ -1,0 +1,26 @@
+// Link Underline
+%underline {
+  border-bottom: 2px solid $link;
+}
+// Layouts
+%flex {
+  display: flex;
+}
+%grid {
+  display: grid;
+}
+%margin-center {
+  margin: 0 auto
+}
+%horizontal-center {
+  justify-content: center;
+}
+%vertical-center {
+  align-items: center;
+}
+%decoration-none {
+  text-decoration: none;
+}
+%space-between {
+  justify-content: space-between;
+}
