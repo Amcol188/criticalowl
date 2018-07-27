@@ -4,9 +4,6 @@
   "description": "Repo for static content for Deluxely.co",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "scripts": {
     "build": "gulp build; hugo",
     "start": "concurrently \"gulp\" \"hugo server --disableFastRender\"",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,8 +20,8 @@
   },
   "homepage": "https://github.com/sethde/deluxely#readme",
   "devDependencies": {
-    "concurrently": "^3.6.0",
     "autoprefixer": "^9.0.1",
+    "concurrently": "^3.6.0",
     "cssnano": "^4.0.4",
     "gulp": "^3.9.1",
     "gulp-concat-util": "^0.5.5",

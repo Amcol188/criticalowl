@@ -32,3 +32,12 @@
 	font-style: italic;
 	font-display: swap;
 }
+body {
+  font-family: sans-serif;
+}
+.fonts-loaded-1 body {
+  font-family: 'LatoSubset';
+}
+.fonts-loaded-2 body {
+  font-family: 'Lato';
+}

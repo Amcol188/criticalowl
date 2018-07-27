@@ -1,0 +1,99 @@
+/*
++------------+-----+-------------+
+|#hamburger  |#logo|      #social|
++------------+-----+-------------+
+|#menu       |     |             |
++------------+-----+-------------+
+*/
+
+// Header
+header {
+  @extend %grid;
+  @extend %vertical-center;
+  @extend %horizontal-center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  padding: 20px;
+  @media print {
+    display: none;
+  }
+  // Hamburger Styling
+  label#hamburger {
+    @extend %grid;
+    @extend %margin-center;
+    @extend %vertical-center;
+    flex-direction: column;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 9px);
+    height: auto;
+    justify-content: center;
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    width: 30px;
+    z-index: 5;
+    div {
+      background-color: rgb(61, 61, 61);
+      height: 3px;
+      margin: 3px 0;
+      position: relative;
+      transition: all 0.15s ease-in-out;
+      width: 30px;
+    }
+  }
+  // Hamburger Animation
+  input#toggle {
+    display: none;
+    &:checked + label#hamburger div.top {
+      transform: rotate(-45deg);
+      margin: 20px 0 0 13px;
+    }
+    &:checked + label#hamburger div.meat {
+      transform: rotate(45deg);
+      margin: 2px 13px 0 0;
+    }
+    &:checked + label#hamburger div.bottom {
+      transform: scale(0);
+    }
+    &:checked + label#hamburger div {
+      width: 20px;
+    }
+    &:checked ~ nav#menu {
+      height: 186px;
+    }
+  }
+  // Menu
+  nav#menu {
+    @extend %grid;
+    clear: both;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    grid-row-gap: 25px;
+    grid-template-rows: 1fr repeat(4, 0.5fr);
+    height: 0px;
+    justify-self: start;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: height .15s ease;
+    width: auto;
+    z-index: 120;
+  }
+  a#logo {
+    grid-column: 2/3;
+    justify-self: center;
+    svg.logo {
+      height: 100px;
+      width: auto;  
+    }
+  }
+  a#logo,
+  nav.social {
+    grid-row: 1/2;
+  }
+  nav.social {
+    grid-column: 3/4;
+    justify-self: end;
+    margin-left: auto;
+  }
+}

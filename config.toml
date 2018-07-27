@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://www.deluxely.co/"
 copyright = " 2018 Deluxely"
 enableEmoji = "true"
 enableRobotsTXT = "true"
@@ -8,30 +8,21 @@ title = "Deluxely"
 FootnoteReturnLinkContents = "↩"
 SectionPagesMenu = "main"
 
-[author]
-  name = ""
-  email = ""
-
 [blackfriday]
   hrefTargetBlank = true
   plainIDAnchors = true
 
 [params]
   OpenLinksInNewWindow = true
-
-[params.social]
-  twitter = ""
-  facebook = ""
-  instagram = ""
-  snapchat = ""
+  social = "deluxely"
   
 
 [params.google.analytics]
   trackerID = ""
 
 [params.meta]
-  description = ""
-  keywords = ""
+  description = "Deluxely is a social community dedicated to connecting audiences with the content they love to consume. Deluxely produces engaging stories and videos on a range of topics designed to inspire, entertain and inform our readers."
+  keywords = "dream homes for sale, dream homes plans, dream homes realty, dream homes international, dream homes 2018, dream homes inside, dream homes and estates, mansions, estates, feel good news, good news, inspiring news, inspiring stories, happy news, luxury cars, luxury homes, luxury watches, luxury brands, luxury retreats, luxury resorts, luxury travel, travel, first class travel"
 
 [permalinks]
   blog = "/:title/"

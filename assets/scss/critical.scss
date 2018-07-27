@@ -1,25 +1,5 @@
 @import 'fonts';
-body {
-  font-family: sans-serif;
-}
-.fonts-loaded-1 body {
-  font-family: 'LatoSubset';
-}
-.fonts-loaded-2 body {
-  font-family: 'Lato';
-}
-header {
-  align-items: center;
-  justify-content: space-between;
-  a.home,
-  a.home svg.logo {
-    height: 50px;
-    width: auto;
-  }
-}
-@media print {
-  header {display: none;}
-}
 @import 'variables';
 @import 'extends';
 @import 'reset';
+@import 'header';
