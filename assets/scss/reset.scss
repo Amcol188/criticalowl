@@ -9,12 +9,13 @@ html {
   -webkit-overflow-scrolling: touch;
 }
 body {
+  @extend %grid;
+  @extend %margin-center;
   background-color: $background;
   color: $text;
   font-size: 18px;
   font-weight: 400;
   height: 100%;
-  @extend %margin-center;
   overflow-y: auto;
   overflow-x: hidden;
   padding: 0;
@@ -78,6 +79,14 @@ nav.paginate {
   max-width: 700px;
   width: 100%;
 }
+article,
+footer,
+header,
+main,
+nav {
+  @extend %flex;
+  @extend %grid;
+}
 blockquote {
   border-left: 1px solid $link;
   margin: 0 0 15px 0;
@@ -99,12 +108,6 @@ p {
 figcaption p {
   padding: 5px;
 }
-footer,
-header,
-nav {
-  @extend %flex;
-  @extend %grid;
-}
 header {
 	text-transform: uppercase;
 }
@@ -112,6 +115,7 @@ header,
 h1, h2, h3, h4 {
 	font-weight: 600;
 }
+
 h1 {
 	font-size: 36px;
 }
@@ -124,8 +128,11 @@ h3 {
 h4 {
 	font-size: 24px;
 }
+h1, h2, h3, h4 {
+	margin-bottom: 10px;
+}
 h2, h3, h4 {
-	margin-top: 10px;
+	margin-top: 20px;
 }
 img, 
 svg {
@@ -145,4 +152,7 @@ ul {
 }
 ol ul {
 	padding-left: 20px;
+}
+p {
+  margin: 10px 0;
 }

@@ -7,6 +7,9 @@
     <div class="bottom"></div>
   </label>  
   {{ partial "nav-menu.html" . }}
-  <a id="logo" href="{{ .Site.BaseURL }}">Deluxely</a>
+  {{ $brand := resources.Get "img/brand.png" | fingerprint }}
+  <a id="logo" href="{{ .Site.BaseURL }}">
+    <img src="{{ $brand.Permalink }}">
+  </a>
   {{ partial "social.html" . }}
 </header>

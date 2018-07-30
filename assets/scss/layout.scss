@@ -1,5 +1,26 @@
-main {
-  margin-top: 67px;
+body {
+  grid-template-rows: 107px repeat(2, auto);
+  grid-template-columns:
+    [full-start] minmax(15px, 1fr) 
+    [main-start] minmax(0, 700px) [main-end]
+    minmax(15px, 1fr) [full-end];
+  @media screen and (max-width: $desktop) {
+    grid-template-rows: 87px repeat(2, auto);
+  }
+}
+body > * {
+  grid-column: main;
+  grid-row: 2/3;
+}
+header {
+  grid-row: 1/2;
+}
+footer {
+  grid-row: 3/4;
+}
+header,
+footer {
+  grid-column: full;
 }
 nav.social {
   grid-gap: 20px;
