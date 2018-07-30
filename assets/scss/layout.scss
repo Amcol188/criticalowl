@@ -1,0 +1,13 @@
+main {
+  margin-top: 67px;
+}
+nav.social {
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  justify-self: end;
+  width: auto;
+  a svg {
+    fill: $background;
+  }
+}

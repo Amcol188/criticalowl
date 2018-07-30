@@ -35,7 +35,6 @@ article h2 a {
 a.back-home,
 article,
 footer,
-header,
 main,
 nav.paginate {
   padding: 15px;
@@ -139,15 +138,6 @@ li {
 nav {
   @extend %vertical-center;
   justify-content: space-between;
-  &.social {
-    grid-gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    width: 180px;
-  }
-  a svg {
-    width: 30px;
-  }
 }
 ol,
 ul {
