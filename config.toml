@@ -1,4 +1,4 @@
-baseURL = "https://www.deluxely.co/"
+baseURL = "/"
 copyright = " 2018 Deluxely"
 enableEmoji = "true"
 enableRobotsTXT = "true"

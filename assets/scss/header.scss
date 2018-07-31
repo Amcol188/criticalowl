@@ -177,7 +177,6 @@ header {
   }
   nav.social {
     grid-column: 3/4;
-    margin-left: auto;
     margin-right: 20px;
     @media screen and (max-width: $tablet) {
       display: none;
