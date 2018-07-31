@@ -34,9 +34,7 @@ article h2 a {
   color: $text;
 }
 a.back-home,
-article,
 footer,
-main,
 nav.paginate {
   padding: 15px;
 }
@@ -80,10 +78,12 @@ nav.paginate {
   width: 100%;
 }
 article,
+div.publish,
 footer,
 header,
 main,
-nav {
+nav,
+section {
   @extend %flex;
   @extend %grid;
 }

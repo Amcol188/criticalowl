@@ -1,8 +1,12 @@
 {{ if .Params.showthedate }}
 <section class="info meta">
-  <time class="date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+  <div class="publish">
+    <p class="meta">by {{ .Params.author }}</p>
+    <p>&vert;</p>
+    <time class="date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2" }}</time>
+  </div>
   {{ range .Params.tags }}
-    <p><span>#</span><a class="tags meta" href="/tags/{{ . | urlize }}">{{.}}</a></p>
+    <p class="tags"><a class="meta" href="/tags/{{ . | urlize }}">{{.}}</a></p>
   {{ end }}
 </section>
 {{ end }}

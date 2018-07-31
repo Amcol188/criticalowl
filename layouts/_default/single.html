@@ -1,9 +1,14 @@
 {{ define "main" }}
   {{ partial "header.html" . }}
-  <article class="post">
-    <h1 class="title">{{ .Title }}</h1>
-    <section class="content">{{ .Content }}</section>
-    {{ partial "article-meta.html" . }}
-  </article>
+  <main class="list">
+    <article class="post">
+      {{ $imgPath := .Params.image }}
+      {{ $imgThumb := resources.Get $imgPath | fingerprint }}
+      <img src="{{ $imgThumb.Permalink }}" class="image">
+      <h1 class="title">{{ .Title }}</h1>
+      {{ partial "article-meta.html" . }}
+      <section class="content">{{ .Content }}</section>
+    </article>
+  </main>
   {{ partial "footer.html" . }}
 {{ end }}
