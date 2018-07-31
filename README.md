@@ -13,3 +13,4 @@ Hugo uses the latest Pipes feature for the assets pipeline. This allows for nati
 4. Running the local server can be done one of two ways:
   * Run `gulp watch` on one terminal window and `hugo server` on another. The former watched the changes done to critical CSS files. The latter runs a local server with live reload for the site itself.
   * Run `npm start`. This runs gulp and hugo concurrently achieving the same result as the first option.
+  
