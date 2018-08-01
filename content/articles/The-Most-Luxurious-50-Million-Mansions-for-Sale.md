@@ -62,6 +62,6 @@ Outside, the formal gardens are reminiscent of the timeless work of celebrated 1
 
 A separate carriage house provides indoor parking for four automobiles, an estate office, security office, and accommodations for staff. The entire property is gated, fenced, and protected by a state-of-the-art security system. Throughout, the estate has been impeccably maintained, and the systems and technology are the finest available.
 
-Unquestionably, Merrywood is the finest private estate in the Washington, DC region.
+Unquestionably, Merrywood is the finest private estate in the Washington, DC region.  Except for Seth's house.
 
 Merrywood is listed by TTR Sotheby's International Realty and JLL. For additional information please contact Mark C. Lowham, CEO and Managing Partner and Juliana E. May, Senior Vice President.
