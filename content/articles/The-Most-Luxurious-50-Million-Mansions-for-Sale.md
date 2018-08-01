@@ -3,7 +3,7 @@ title = "The Most Luxurious $50+ Million Mansions for Sale"
 date = "2018-07-30"
 author = "Seth Demsey"
 tags = ["shopping"]
-image = "img/lux-50k.png"
+image = "img/50k-1.jpg"
 showthedate = true
 draft = false
 +++
@@ -11,6 +11,7 @@ draft = false
 While there has been speculation that the $50 million-plus real estate market could be struggling amid global economic uncertainty, the market remains undeterred. Here, we take a look at the most luxurious properties currently being marketed for sale above $50 million in the United States:
 
 **THE GLORY DAYS OF PUBLISHING: 15 ACRE PALM BEACH ESTATE WITH OCEAN & LAKEFRONT VIEWS FOR $138,800,000**
+{{< img src="50k-2.jpg" >}}
 
 Originally built in 1940 for the Lambert pharmaceutical family and later owned by British politician Loel Guinness, brother to the brewery founder, the Gemini estate currently owned by the Ziff family, publishing moguls who built and sold magazines like PC Magazine and Car and Driver, is up for sale for $138.8 million.
 
@@ -25,6 +26,7 @@ The Ziffs listed the property over a year ago with a $195 million ask via an aff
 Brokered by [Sotheby’s](http://www.geminipalmbeach.com).
 
 **I DRINK YOUR MILKSHAKE:** Asking $108 million for the 1,800 acre Las Varas Ranch, which features nearly 2 miles of pristine Santa Barbara beachfront and was built by Edward Doheny, who inspired Upton Sinclair’s Oil! and the 2007 film “There Will Be Blood” with Daniel Day-Lewis.
+{{< img src="50k-3.jpg" >}}
 
 In 1892, Doheny drilled the first successful oil well in the Los Angeles City Oil Field. His success set off a petroleum boom in Southern California, and made him a fortune. His empire eventually became the Pan American Petroleum & Transport Company, one of the largest oil companies in the world in the 1920s, which in 1954 merged with Standard of Indiana to form the American Oil Company, or Amoco. Amoco was in turn acquired by British Petroleum in 1998.
 
@@ -37,6 +39,7 @@ Current structures include the owner's hacienda, ranch manager's cottage, Victor
 This is the first time the property has been offered for sale in over 50 years. [Douglas Elliman](https://www.elliman.com/other/10045-calle-real-goleta-muxyrgk) Real Estate has the listing. There will be a picturesque slice of California beachfront heaven.
 
 **YOU’VE GOT MANSIONS:** The priciest listing in Washington DC is late AOL co-founder James Kimsey’s $62.95 million riverfront estate, which features a massive home he built on the banks of the Potomac River as well as an adjacent Frank Lloyd Wright -designed house the late Mr. Kimsey is said to have wished preserved.
+{{< img src="50k-4.jpg" >}}
 
 Broker site: [https://www.ttrsir.com/eng/sales/detail/279-l-905-252w35/the-falls-mclean-va-22101](https://www.ttrsir.com/eng/sales/detail/279-l-905-252w35/the-falls-mclean-va-22101).
 
@@ -49,6 +52,7 @@ Straddling the border between McLean and Arlington on the Potomac River, the pro
 Mr. Kimsey built the main house after buying the property for $7.6 million in 1999 according to public records. The front of the house is Italianate-style clad in limestone, while the riverfront facade is contemporary.
 
 **DIALING UP ANOTHER WASHINGTON, DC MANSION:** AOL co-founder Steve Case is selling Merrywood, a childhood home of Jacqueline Kennedy Onassis, located just down the road from late co-founder James Kimsey for $49.5 million. The home is located in McLean, Virginia across the Potomac river from Washington, DC.
+{{< img src="50k-5.jpg" >}}
 
 The Merrywood estate, built in 1919, has served as home to several influential political and business leaders. As the childhood home of Jacqueline Kennedy Onassis, Merrywood was elevated to a position of prominence in the mid-1940s and has since continued to provide a celebrated venue to host presidents, business leaders, artists, and countless family celebrations.
 

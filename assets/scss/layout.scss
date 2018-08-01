@@ -1,7 +1,7 @@
 body {
   // Responsive Grid layout
   grid-gap: 15px 0;
-  grid-template-rows: 107px repeat(2, auto);
+  grid-template-rows: 133px repeat(2, auto);
   grid-template-columns:
     [full-start] minmax(15px, 1fr) 
     [main-start] minmax(0, 700px) [main-end]

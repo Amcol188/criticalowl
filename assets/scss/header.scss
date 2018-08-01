@@ -19,7 +19,7 @@ header {
   @extend %grid;
   @extend %horizontal-center;
   @extend %vertical-center;
-  grid-row-gap: 20px;
+  grid-gap: 20px 0;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 27px auto;
   padding: 20px 0;
@@ -31,10 +31,9 @@ header {
     display: none;
   }
   @media screen and (min-width: $desktop) {
-    grid-template-rows: auto;
+    grid-template-rows: repeat(2, auto);
   }
   div.header-bg {
-    background-color: $link;
     box-shadow: $box-shadow;
     height: 67px;
     position: absolute;
@@ -44,7 +43,6 @@ header {
     z-index: 4;
     @media screen and (min-width: $desktop) {
       display: none;
-      height: 34px;
     }
   }
   // Hamburger Styling
@@ -65,7 +63,7 @@ header {
       display: none;
     }
     div {
-      background-color: $white;
+      background-color: $link;
       border-radius: 5px;
       height: 3px;
       margin: 3px 0;
@@ -76,7 +74,7 @@ header {
   }
   // Hamburger Animation
   input#toggle {
-    display: none;
+    @extend %none;
     &:checked + label#hamburger div.top {
       transform: rotate(-45deg);
       margin: 20px 0 0 13px;
@@ -92,11 +90,11 @@ header {
       width: 20px;
     }
     &:checked ~ nav#menu {
-      height: 146px;
+      height: 173px;
       padding-bottom: 20px;
       padding-top: 20px;
       @media screen and (max-width: $tablet) {
-        height: 177px;
+        height: 211px;
       }
     }
   }
@@ -109,9 +107,9 @@ header {
     clear: both;
     grid-column: 1/2;
     grid-row: 2/3;
-    grid-row-gap: 10px;
+    grid-gap: 20px 0;
     grid-template-columns: auto;
-    grid-template-rows: repeat(4, 19px);
+    grid-template-rows: repeat(2, min-content);
     height: 0px;
     justify-self: start;
     margin: 0;
@@ -120,18 +118,26 @@ header {
     transition: all .15s ease;
     width: auto;
     z-index: 3;
-    @media screen and (min-width: $desktop) {
-      display: none;
+    @media screen and (min-width: $tablet) {
+      grid-template-rows: auto;
     }
-    @media screen and (max-width: $tablet) {
-      grid-template-rows: 21px repeat(4, 19px);
+    @media screen and (min-width: $desktop) {
+      background-color: unset;
+      box-shadow: unset;
+      border-radius: 0;
+      grid-column: 1/4;
+      grid-gap: 0 20px;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      height: auto;
+      margin: 0 auto;
     }
     a {
       @extend %no-decoration;
       font-size: 15px;
     }
     nav.social {
-      display: none;
+      @extend %none;
       grid-column: 1/2;
       grid-row: 1/2;
       justify-self: start;
@@ -143,10 +149,25 @@ header {
         width: 15px;
       }
     }
+    div.categories {
+      grid-gap: 10px 0;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(4, 19px);
+      @media screen and (min-width: $desktop) {
+        grid-gap: 0 10px;
+        grid-template-columns: repeat(5, min-content);
+        grid-template-rows: auto !important;
+        a {
+          color: $link;
+        }
+      }
+    }
+    div.info {
+      @extend %none;
+    }
   }
   a#logo {
     @extend %no-decoration;
-    color: $white;
     font-size: 30px;
     grid-column: 2/3;
     justify-self: center;
@@ -154,13 +175,12 @@ header {
       color: $link;
       margin: auto 0;
     }
-    svg.logo {
-      fill: $white;
-      height: 100px;
+    svg#logo {
+      height: 50px;
       width: auto;
-      @media screen and (min-width: $desktop) {
-        fill: $link;
-      }  
+      @media screen and (max-width: $phone) {
+        height: 35px;
+      }
     }
     img {
       width: 200px;
@@ -182,10 +202,8 @@ header {
       display: none;
     }
     a svg {
-      width: 20px;
-      @media screen and (min-width: $desktop) {
-        fill: $link;
-      }
+      fill: $link;
+      width: 15px;
     }
   }
 }

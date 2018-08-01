@@ -3,6 +3,9 @@
   border-bottom: 2px solid $link;
 }
 // Layouts
+%none {
+  display: none;
+}
 %flex {
   display: flex;
 }

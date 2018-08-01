@@ -29,6 +29,10 @@ gulp.task('critical', function() {
 
 // Watch asset folder for changes
 gulp.task('watch', ['critical'], function () {
+  gulp.watch('assets/scss/fonts.scss', ['critical'])
+  gulp.watch('assets/scss/variables.scss', ['critical'])
+  gulp.watch('assets/scss/extends.scss', ['critical'])
+  gulp.watch('assets/scss/reset.scss', ['critical'])
   gulp.watch('assets/scss/critical.scss', ['critical'])
 });
 
