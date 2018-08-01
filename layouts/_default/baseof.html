@@ -49,19 +49,6 @@
   	})();
 	</script>
   
-  <!-- Stylesheets -->
-  {{ $styles := resources.Get "scss/main.scss" | toCSS | postCSS | minify | fingerprint }}
-  <link rel="preload" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
-  </noscript>
-  {{ partial "loadCSS.html" . }}
-  
-  <!-- RSS -->
-  {{ with .OutputFormats.Get "rss" -}}
-      {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
-  {{ end -}}
-  
   <!-- Open Graph -->
   <link rel="canonical" href="{{ .Permalink }}">
   <base href="{{ .Site.BaseURL }}"/>
@@ -111,17 +98,5 @@
     <!-- Main content -->
   {{ block "main" . }}
   {{ end }}
-  
-  <!-- Scripts -->
-  {{ $lazyScript := resources.Get "js/lazy-loading.js" | minify | fingerprint }}
-  <script async src="{{ $lazyScript.Permalink }}" integrity="{{ $lazyScript.Data.Integrity }}"></script>
-  <script>
-    window.lazyLoadOptions = {
-			threshold: 50
-		};
-		window.addEventListener('LazyLoad::Initialized', function (e) {
-			console.log(e.detail.instance);
-		}, false);
-  </script>
 </body>
 </html>
