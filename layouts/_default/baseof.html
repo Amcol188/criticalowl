@@ -107,5 +107,17 @@
     <!-- Main content -->
   {{ block "main" . }}
   {{ end }}
+  
+  <!-- Scripts -->
+  {{ $lazyScript := resources.Get "js/lazy-loading.js" | minify | fingerprint }}
+  <script async src="{{ $lazyScript.Permalink }}" integrity="{{ $lazyScript.Data.Integrity }}"></script>
+  <script>
+    window.lazyLoadOptions = {
+			threshold: 50
+		};
+		window.addEventListener('LazyLoad::Initialized', function (e) {
+			console.log(e.detail.instance);
+		}, false);
+  </script>
 </body>
 </html>
