@@ -113,6 +113,9 @@
   {{ end }}
   
   <!-- Scripts -->
+  {{ $infiniteScroll := resources.Get "js/infinite-scroll.js" | minify | fingerprint }}
+  <script src="{{ $infiniteScroll.Permalink }}" integrity="{{ $infiniteScroll.Data.Integrity }}"></script>
+  
   {{ $lazyScript := resources.Get "js/lazy-loading.js" | minify | fingerprint }}
   <script async src="{{ $lazyScript.Permalink }}" integrity="{{ $lazyScript.Data.Integrity }}"></script>
   <script>

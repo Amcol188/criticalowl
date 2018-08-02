@@ -1,12 +1,11 @@
 {{ define "main" }}
 {{ partial "header.html" . }}
-  <main class="list">
-    {{ range where .Data.Pages "Type" "articles" }}
+  <main class="list" data-infinite-scroll='{ "path": ".pagination__next", "append": ".post", "history": false }'>
+    {{ $paginator := .Paginate (where .Pages "Type" "articles") 10 }}
+    {{ range $paginator.Pages }}
       {{ .Render "summary" }}
     {{ end }}
   </main>
-  {{ if or .Paginator.HasPrev .Paginator.HasNext }}
-    {{ partial "paginator.html" . }}
-  {{ end }}
+  {{ partial "paginator.html" . }}
 {{ partial "footer.html" . }}
 {{ end }}
