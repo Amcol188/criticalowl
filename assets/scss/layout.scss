@@ -1,13 +1,15 @@
 body {
   // Responsive Grid layout
   grid-gap: 15px 0;
-  grid-template-rows: 133px repeat(2, auto);
+  grid-template-rows: 87px repeat(2, auto);
   grid-template-columns:
     [full-start] minmax(15px, 1fr) 
     [main-start] minmax(0, 700px) [main-end]
     minmax(15px, 1fr) [full-end];
-  @media screen and (max-width: $desktop) {
-    grid-template-rows: 87px repeat(2, auto);
+  &#home {
+    @media screen and (min-width: $desktop) {
+      grid-template-rows: 133px repeat(2, auto);
+    }
   }
   > * {
     grid-column: main;
@@ -104,6 +106,11 @@ body {
         }
         p {
           margin: 0;
+        }
+      }
+      section.content {
+        figure {
+          background: linear-gradient(to top, $white, lighten($link, 10%));
         }
       }
     }

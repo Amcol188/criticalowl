@@ -3,6 +3,7 @@ title = "The Most Luxurious $50+ Million Mansions for Sale"
 date = "2018-07-30"
 author = "Seth Demsey"
 tags = ["shopping"]
+categories = ["article"]
 image = "img/50k-1.jpg"
 showthedate = true
 draft = false

@@ -107,7 +107,7 @@
     gtag('config', '{{ .Site.Params.google.analytics.trackerID }}');
   </script>
 </head>
-<body>
+<body {{ if .IsHome }}id="home"{{ end }}>
     <!-- Main content -->
   {{ block "main" . }}
   {{ end }}
