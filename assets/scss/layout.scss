@@ -38,6 +38,7 @@ body {
   }
   // Main takes up remaining viewport
   main.list {
+    grid-gap: 20px 0;
     grid-template-columns: auto;
     grid-auto-rows: auto;
     min-height: calc(100vh - 173px);
@@ -70,22 +71,16 @@ body {
           grid-column: half;
         }
       }
-      img.image {
-        grid-row: 1/2;
-        @media screen and (max-width: $phone) {
-          grid-column: fill;
-        }
-      }
       .title {
         font-size: 32px;
-        grid-row: 2/3;
+        grid-row: 1/2;
         margin: 0;
         a {
           @extend %no-decoration;
         }
       }
       section.info {
-        grid-row: 3/4;
+        grid-row: 2/3;
         align-items: center;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: 30px;
@@ -108,9 +103,31 @@ body {
           margin: 0;
         }
       }
+      img.image,
       section.content {
+        @media screen and (max-width: $phone) {
+          grid-column: fill;
+        }
+      }
+      img.image {
+        grid-row: 3/4;
+      }
+      section.content {
+        grid-row: 4/5;
+        grid-template-columns:
+          [bleed-start] minmax(1em, 1fr)
+          [cent-start] minmax(0, 700px) [cent-end]
+          minmax(1em, 1fr) [bleed-end];
+        grid-auto-rows: auto;
+        > * {
+          grid-column: cent;
+/*           @media screen and (min-width: 416px) {
+            grid-column: bleed;
+          } */
+        }
         figure {
           background: linear-gradient(to top, $white, lighten($link, 10%));
+          grid-column: bleed;
         }
       }
     }

@@ -25,6 +25,7 @@
     "cssnano": "^4.0.4",
     "gulp": "^3.9.1",
     "gulp-concat-util": "^0.5.5",
+    "gulp-imagemin": "^4.1.0",
     "gulp-postcss": "^7.0.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.1",
