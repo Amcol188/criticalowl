@@ -57,6 +57,11 @@
   </noscript>
   {{ partial "loadCSS.html" . }}
   
+  {{ $glideCSS := resources.Get "scss/glide.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $glideCSS.Permalink }}" integrity="{{ $glideCSS.Data.Integrity }}">
+  {{ $glideThemeCSS := resources.Get "scss/glide.theme.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $glideThemeCSS.Permalink }}" integrity="{{ $glideThemeCSS.Data.Integrity }}">
+  
   <!-- RSS -->
   {{ with .OutputFormats.Get "rss" -}}
       {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
@@ -113,18 +118,6 @@
   {{ end }}
   
   <!-- Scripts -->
-  {{ $infiniteScroll := resources.Get "js/infinite-scroll.js" | minify | fingerprint }}
-  <script src="{{ $infiniteScroll.Permalink }}" integrity="{{ $infiniteScroll.Data.Integrity }}"></script>
-  
-  {{ $lazyScript := resources.Get "js/lazy-loading.js" | minify | fingerprint }}
-  <script async src="{{ $lazyScript.Permalink }}" integrity="{{ $lazyScript.Data.Integrity }}"></script>
-  <script>
-    window.lazyLoadOptions = {
-			threshold: 50
-		};
-		window.addEventListener('LazyLoad::Initialized', function (e) {
-			console.log(e.detail.instance);
-		}, false);
-  </script>
+  {{ partial "scripts.html" . }}
 </body>
 </html>

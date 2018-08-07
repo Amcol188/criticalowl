@@ -121,13 +121,13 @@ body {
         grid-auto-rows: auto;
         > * {
           grid-column: cent;
-/*           @media screen and (min-width: 416px) {
-            grid-column: bleed;
-          } */
+        }
+        figure,
+        div#slider {
+          grid-column: bleed;
         }
         figure {
           background: linear-gradient(to top, $white, lighten($link, 10%));
-          grid-column: bleed;
         }
       }
     }

@@ -1,0 +1,42 @@
+<!-- Infinite Scroll -->
+{{ $infiniteScroll := resources.Get "js/infinite-scroll.js" | minify | fingerprint }}
+<script src="{{ $infiniteScroll.Permalink }}" integrity="{{ $infiniteScroll.Data.Integrity }}"></script>
+
+<!-- Lazy Loading -->
+{{ $lazyScript := resources.Get "js/lazy-loading.js" | minify | fingerprint }}
+<script async src="{{ $lazyScript.Permalink }}" integrity="{{ $lazyScript.Data.Integrity }}"></script>
+<script>
+  window.lazyLoadOptions = {
+		threshold: 50
+	};
+	window.addEventListener('LazyLoad::Initialized', function (e) {
+		console.log(e.detail.instance);
+	}, false);
+</script>
+
+{{ if ne .IsHome true }}
+  <!-- Glide -->
+  {{ $glide := resources.Get "js/glide.js" | minify | fingerprint }}
+  <script src="{{ $glide.Permalink }}" integrity="{{ $glide.Data.Integrity }}"></script>
+  <script>
+    var input = document.querySelector('#slider')
+    
+    var glide = new Glide('#slider', {
+      type: 'carousel',
+      startAt: 0,
+      perView: 1,
+      focusAt: 'center',
+      autoplay: 3000,
+      hoverpause: true,
+      keyboard: true
+    })
+    
+    input.addEventListener('input', function (event) {
+      glide.update({
+        startAt: event.target.value
+      })
+    })
+    
+    glide.mount()
+  </script>
+{{ end }}
