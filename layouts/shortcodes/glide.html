@@ -1,12 +1,10 @@
-{{ $img1 := resources.Get (print "img/" (.Get "src1")) | fingerprint }}
-{{ $img2 := resources.Get (print "img/" (.Get "src2")) | fingerprint }}
-{{ $img3 := resources.Get (print "img/" (.Get "src3")) | fingerprint }}
 <div id="slider" class="glide">
   <div class="glide__track" data-glide-el="track">
     <ul class="glide__slides">
-      <li class="glide__slide"><img src="{{ $img1.Permalink }}"></li>
-      <li class="glide__slide"><img src="{{ $img2.Permalink }}"></li>
-      <li class="glide__slide"><img src="{{ $img3.Permalink }}"></li>
+      {{- range (seq 0 (sub (len .Params) 1) ) }}
+        {{ $slideItem := resources.Get (print "img/" ($.Get .)) | fingerprint }}
+        <li class="glide__slide"><img data-src="{{ printf `%s` $slideItem.Permalink }}" class="lazy"></li>
+      {{- end }}
     </ul>
   </div>
   <div class="glide__arrows" data-glide-el="controls">

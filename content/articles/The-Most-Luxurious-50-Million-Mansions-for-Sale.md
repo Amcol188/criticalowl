@@ -16,7 +16,7 @@ While there has been speculation that the $50 million-plus real estate market co
 
 Originally built in 1940 for the Lambert pharmaceutical family and later owned by British politician Loel Guinness, brother to the brewery founder, the Gemini estate currently owned by the Ziff family, publishing moguls who built and sold magazines like PC Magazine and Car and Driver, is up for sale for $138.8 million.
 
-{{< glide src1="50k-2.jpg" src2="50k-3.jpg" src3="50k-4.jpg" >}}
+{{< glide "50k-2.jpg" "50k-3.jpg" "50k-4.jpg" >}}
 
 Gemini is a 15-acre ocean-to-lake estate located in Palm Beach, Florida, where it is the only home on the ocean beach for almost a mile. Designed as a family compound, the estate offers a 62,200-square-foot, 12-bedroom main residence, two four-bedroom beachside cottages, the seven-bedroom guest facility “Mango House,” and staff quarters comprised of four studios and apartments. 
 
