@@ -1,0 +1,24 @@
+div#ad {
+  @extend %flex;
+  @extend %flex-column;
+  @extend %content-center;
+  @extend %items-center;
+  background-color: rgba(0,0,0,.03);
+  height: auto;
+  margin: 5px 0;
+  padding: 10px;
+  width: 100%;
+  div.placeholder {
+    background-color: rgba(0,0,0,.2);
+    height: 200px;
+    width: 100%; 
+  }
+  span.ad-label {
+    background: transparent;
+    color: $meta;
+    font-size: 12px;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+  }
+}

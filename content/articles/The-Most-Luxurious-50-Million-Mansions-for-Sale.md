@@ -14,6 +14,8 @@ While there has been speculation that the $50 million-plus real estate market co
 **THE GLORY DAYS OF PUBLISHING: 15 ACRE PALM BEACH ESTATE WITH OCEAN & LAKEFRONT VIEWS FOR $138,800,000**
 {{< img src="50k-2.jpg" >}}
 
+{{< ads >}}
+
 Originally built in 1940 for the Lambert pharmaceutical family and later owned by British politician Loel Guinness, brother to the brewery founder, the Gemini estate currently owned by the Ziff family, publishing moguls who built and sold magazines like PC Magazine and Car and Driver, is up for sale for $138.8 million.
 
 {{< glide "50k-2.jpg" "50k-3.jpg" "50k-4.jpg" >}}
