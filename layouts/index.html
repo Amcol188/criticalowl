@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ partial "header.html" . }}
-  <main class="list" data-infinite-scroll='{ "path": ".pagination__next", "append": ".post", "history": false }'>
+  <main class="list" data-infinite-scroll='{ "path": ".pagination__next", "append": ".post", "history": "replace" }'>
     {{ $paginator := .Paginate (where .Pages "Type" "articles") 10 }}
     {{ range $paginator.Pages }}
       {{ .Render "summary" }}
