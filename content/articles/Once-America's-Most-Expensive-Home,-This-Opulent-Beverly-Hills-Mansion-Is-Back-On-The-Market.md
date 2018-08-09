@@ -1,6 +1,6 @@
 +++
 title = "Once America's Most Expensive Home, This Opulent Beverly Hills Mansion Is Back On The Market"
-date = "2018-7-24"
+date = "2018-07-24"
 author = "Seth Demsey"
 tags = ["housing"]
 showthedate = true

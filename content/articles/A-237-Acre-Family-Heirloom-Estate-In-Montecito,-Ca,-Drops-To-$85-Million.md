@@ -1,6 +1,6 @@
 +++
 title = "A 237-Acre Family Heirloom Estate In Montecito, Ca, Drops To $85 Million"
-date = "2018-7-22"
+date = "2018-07-22"
 author = "Seth Demsey"
 tags = ["shopping"]
 showthedate = true

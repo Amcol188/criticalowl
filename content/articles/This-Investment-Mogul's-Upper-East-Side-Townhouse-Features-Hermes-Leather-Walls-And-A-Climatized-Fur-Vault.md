@@ -1,6 +1,6 @@
 +++
 title = "This Investment Mogul's Upper East Side Townhouse Features Hermes Leather Walls And A Climatized Fur Vault"
-date = "2018-7-20"
+date = "2018-07-20"
 author = "Seth Demsey"
 tags = ["shopping"]
 showthedate = true

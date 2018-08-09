@@ -1,6 +1,6 @@
 +++
 title = "New York's Largest Original Apartment On Fifth Avenue Hits The Market"
-date = "2018-7-18"
+date = "2018-07-18"
 author = "Seth Demsey"
 tags = ["housing"]
 showthedate = true

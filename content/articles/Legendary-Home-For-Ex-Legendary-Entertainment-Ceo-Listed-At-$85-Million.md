@@ -1,6 +1,6 @@
 +++
 title = "Legendary Home For Ex Legendary Entertainment Ceo Listed At $85 Million"
-date = "2018-7-26"
+date = "2018-07-26"
 author = "Seth Demsey"
 tags = ["entertainment"]
 showthedate = true

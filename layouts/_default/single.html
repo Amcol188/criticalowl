@@ -1,6 +1,6 @@
 {{ define "main" }}
   {{ partial "header.html" . }}
-  <main class="list">
+  <main class="list" data-infinite-scroll='{ "path": ".pagination__next", "append": ".post", "hideNav": ".pagination", "history": "replace" }'>
     <article class="post">
       <h1 class="title">{{ .Title }}</h1>
       {{ partial "article-meta.html" . }}
@@ -10,5 +10,6 @@
       <section class="content">{{ .Content }}</section>
     </article>
   </main>
+  {{ partial "paginate-single.html" . }}
   {{ partial "footer.html" . }}
 {{ end }}
