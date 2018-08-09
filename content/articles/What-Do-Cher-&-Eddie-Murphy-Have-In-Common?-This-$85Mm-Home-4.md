@@ -1,6 +1,6 @@
 +++
-title = "What Do Cher & Eddie Murphy Have In Common? This $85Mm Home"
-date = "2017-06-28"
+title = "What Do Cher & Eddie Murphy Have In Common? This $85Mm Home 4"
+date = "2018-03-28"
 author = "Seth Demsey"
 tags = ["housing"]
 showthedate = true
