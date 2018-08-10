@@ -1,8 +1,10 @@
 <article class="post">
   <h2 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
   {{ partial "article-meta.html" . }}
-  {{ $path := .Params.image }}
-  {{ $thumb := resources.Get $path | fingerprint }}
-  <img src="{{ $thumb.Permalink }}" class="image">
-  <!-- <p class="content">{{ .Summary }}</p> -->
+  <figure class="hero-img">
+    {{ $path := .Params.image }}
+    {{ $thumb := resources.Get $path | fingerprint }}
+    <img src="{{ $thumb.Permalink }}" class="image">
+    <figcaption>Credit to Juan V</figcaption>
+  </figure>
 </article>

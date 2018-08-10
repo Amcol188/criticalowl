@@ -3,6 +3,7 @@ title = "Once America's Most Expensive Home, This Opulent Beverly Hills Mansion 
 date = "2018-07-24"
 author = "Seth Demsey"
 tags = ["housing"]
+image = "img/50k-1.jpg"
 showthedate = true
 draft = false
 +++
@@ -10,6 +11,8 @@ draft = false
 The 35,000 square foot mansion Palazzo di Amore features took over seven years to renovate 
 
 The lavish Palazzo di Amore is back on the market after a nearly 15% price cut. Once upon a time, this 35,000-square-foot estate in Beverly Hills was the most expensive home listed in the U.S., at $195 million. Now, after being removed from listing and repriced five different times, real estate billionaire Jeff Greene, who purchased the property for a reported $35 million in 2007 and spent the subsequent seven years renovating it, has again dropped the price on his prestigious estate. The Palazzo di Amore is now available to for just $129 million. 
+
+{{< img src="50k-2.jpg" >}}
 
 Located about seven minutes by car from Rodeo Drive, the Palazzo di Amore sits on a 25 acre lot with panoramic city-to-ocean views. The estate consists of a 35,000-square-foot main home, a 15,000-square-foot entertainment center and a separate guest home, making up a total of 12 bedrooms and 23 bathrooms in 53,000 livable square feet. 
 

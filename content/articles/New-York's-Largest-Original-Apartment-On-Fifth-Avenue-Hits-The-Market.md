@@ -3,11 +3,14 @@ title = "New York's Largest Original Apartment On Fifth Avenue Hits The Market"
 date = "2018-07-18"
 author = "Seth Demsey"
 tags = ["housing"]
+image = "img/50k-1.jpg"
 showthedate = true
 draft = false
 +++
 
 Once the most expensive apartment for sale in New York City, the residence of the late Solomon Brothers CEO John Gutfreund and his wife, Susan, has reduced in price yet again. When the 12,000-square-feet Fifth Avenue duplex first hit the market for $120 million in 2016, it was the most expensive listing in the city. It later dropped to $96 million, and finally to its current listing, $76 million.
+
+{{< img src="50k-2.jpg" >}}
 
 Spread across the 7th and 8th floors of this famous Fifth Avenue Co-op, the 20-room apartment features loads of natural light and sweeping of Central Park. The residence located directly across from the Central Park Zoo at one of New York City's most prestigious addresses - 834 Fifth Avenue.
 

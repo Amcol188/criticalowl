@@ -103,13 +103,13 @@ body {
           margin: 0;
         }
       }
-      img.image,
+      figure.hero-image,
       section.content {
         @media screen and (max-width: $phone) {
           grid-column: fill;
         }
       }
-      img.image {
+      figure.hero-image {
         grid-row: 3/4;
       }
       section.content {

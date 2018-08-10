@@ -3,6 +3,7 @@ title = "A 237-Acre Family Heirloom Estate In Montecito, Ca, Drops To $85 Millio
 date = "2018-07-22"
 author = "Seth Demsey"
 tags = ["shopping"]
+image = "img/50k-1.jpg"
 showthedate = true
 draft = false
 +++
@@ -10,6 +11,8 @@ draft = false
 *Rancho San Carlos has been owned by the same family for nearly 100 years*
 
 The magnificent Rancho San Carlos, an approx. 237-acre estate property that for nearly 100 years has been under the ownership of one family, has dropped from its original $125 million listing price to $85 million.
+
+{{< img src="50k-2.jpg" >}}
 
 The sprawling hilltop Monterey Colonial manor was designed by noted architect Reginald Johnson in 1931 for Ann Gavit Jackson and her husband Charles H. Jackson Jr., an American rancher, investor and polo player. The couple were the patriarchs of a prominent philanthropic family in Santa Barbara.
 

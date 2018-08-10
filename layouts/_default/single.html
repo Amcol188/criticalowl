@@ -1,15 +1,18 @@
 {{ define "main" }}
   {{ partial "header.html" . }}
-  <main class="list" data-infinite-scroll='{ "path": ".pagination__next", "append": ".post", "hideNav": ".pagination", "history": "replace" }'>
+  <main class="list" data-infinite-scroll='{ "path": ".pagination__next", "append": ".post", "history": "replace" }'>
     <article class="post">
       <h1 class="title">{{ .Title }}</h1>
       {{ partial "article-meta.html" . }}
-      {{ $imgPath := .Params.image }}
-      {{ $imgThumb := resources.Get $imgPath | fingerprint }}
-      <img src="{{ $imgThumb.Permalink }}" class="image">
+      <figure class="hero-image">
+        {{ $imgPath := .Params.image }}
+        {{ $imgThumb := resources.Get $imgPath | fingerprint }}
+        <img src="{{ $imgThumb.Permalink }}" class="image">
+	<figcaption>Credit to Juan V</figcaption>
+      </figure>
       <section class="content">{{ .Content }}</section>
+      {{ partial "paginate-single.html" . }}
     </article>
   </main>
-  {{ partial "paginate-single.html" . }}
   {{ partial "footer.html" . }}
 {{ end }}

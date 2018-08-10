@@ -3,7 +3,12 @@
     <ul class="glide__slides">
       {{- range (seq 0 (sub (len .Params) 1) ) }}
         {{ $slideItem := resources.Get (print "img/" ($.Get .)) | fingerprint }}
-        <li class="glide__slide"><img data-src="{{ printf `%s` $slideItem.Permalink }}" class="lazy"></li>
+        <li class="glide__slide">
+	  <figure>
+  	    <img data-src="{{ printf `%s` $slideItem.Permalink }}" class="lazy">
+	    <figcaption>Credit to Juan V</figcaption>
+	  </figure>
+        </li>
       {{- end }}
     </ul>
   </div>

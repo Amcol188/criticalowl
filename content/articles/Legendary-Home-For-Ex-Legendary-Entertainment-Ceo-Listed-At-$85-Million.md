@@ -3,6 +3,7 @@ title = "Legendary Home For Ex Legendary Entertainment Ceo Listed At $85 Million
 date = "2018-07-26"
 author = "Seth Demsey"
 tags = ["entertainment"]
+image = "img/50k-1.jpg"
 showthedate = true
 draft = false
 +++
@@ -10,6 +11,8 @@ draft = false
 **This Thousand Oaks compound features four homes, an organic farm and two swimming pools.**
 
 Hollywood film producer Thomas Tull, famous for his financial roles in films like the Dark Knight trilogy, Jurassic World and 300, listed his 50,000 square foot state home in Thousand Oaks, CA for $85 million.
+
+{{< img src="50k-2.jpg" >}}
 
 Tull's estate, which stands to set records in the Thousand Oaks market, includes a 32,000 square-foot main house with stunning 360 degree views, a 2,6000 square foot pool house with day spa, an 11,000-square-foot guest house and a 4,200-square-foot ranch house.
 

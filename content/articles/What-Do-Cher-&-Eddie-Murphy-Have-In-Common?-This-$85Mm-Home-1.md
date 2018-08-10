@@ -3,6 +3,7 @@ title = "What Do Cher & Eddie Murphy Have In Common? This $85Mm Home 1"
 date = "2018-06-28"
 author = "Seth Demsey"
 tags = ["housing"]
+image = "img/50k-1.jpg"
 showthedate = true
 draft = false
 +++

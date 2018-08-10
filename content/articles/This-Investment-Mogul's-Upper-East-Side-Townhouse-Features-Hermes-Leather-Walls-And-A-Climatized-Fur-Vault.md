@@ -3,6 +3,7 @@ title = "This Investment Mogul's Upper East Side Townhouse Features Hermes Leath
 date = "2018-07-20"
 author = "Seth Demsey"
 tags = ["shopping"]
+image = "img/50k-1.jpg"
 showthedate = true
 draft = false
 +++
@@ -10,6 +11,8 @@ draft = false
 This 1903 Beaux-Arts mansion might be one of the most opulent listings in New York City. Once the fourth most expensive listing in Manhattan, the 15,000-square-foot Upper East Side residence dropped from its original 2016 listing price of $84.5 million to $79.5 million in June of last year.
 
 The limestone townhouse is owned by Keith Rubenstein, one of the founders of the private investment firm Somerset Partners, and is kitted out with everything a New Yorker could possibly need. Spread out over six floors connected by a marble staircase and private elevator, you'll find a plunge pool, sauna, a basement spa and gym, his and her suites and a boudoir with steam-resistant mirrors, a gas fireplace, soaking tub and a cosmetics refrigerator. There's even a temperature-controlled vault for furs, and a media room on the fifth floor with walls lined in red Hermès leather.
+
+{{< img src="50k-2.jpg" >}}
 
 Originally designed and constructed by John H. Duncan in 1903, the legendary architect of Grant's Tomb, the townhouse was extensively remodeled and decorated by designer William T. Georgis after Rubenstein purchased it in 2007 for $35 million.
 

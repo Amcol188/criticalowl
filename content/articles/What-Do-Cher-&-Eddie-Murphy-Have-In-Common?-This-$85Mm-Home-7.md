@@ -3,6 +3,7 @@ title = "What Do Cher & Eddie Murphy Have In Common? This $85Mm Home 7"
 date = "2017-07-28"
 author = "Seth Demsey"
 tags = ["housing"]
+image = "img/50k-1.jpg"
 showthedate = true
 draft = false
 +++
@@ -10,6 +11,8 @@ draft = false
 A 16-acre equestrian estate in LA's Benedict Canyon bosting of previous owners from Cher to Eddie Murphy is up for sale for $85 million.
 
 The original estate was owned by Cher in the 1970's, when it held only four acres. She later sold it to Eddie Murphy. Murphy in turn sold it in the 1990's to the current owners, who acquired the surrounding land and redeveloped the site, adding in the equestrian amenities, two guest houses and a tennis court. It's now one of the few equestrian estates in the LA area.
+
+{{< img src="50k-2.jpg" >}}
 
 Located just minutes from Rodeo Drive, the compound includes a 20,000 square foot main house with 11 bedrooms and 17 baths, a pool, spa, and a barbecue area. The 32,000 square foot compound also counts a 7,000-square-foot guest house, two white-graveled horse rings, five stables and riding and hiking trails that meander for miles. There's also a main stable building complete with two bedrooms, two baths, a living room and a safe room to house visiting riders.
 
