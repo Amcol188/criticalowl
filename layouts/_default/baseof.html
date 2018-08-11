@@ -8,6 +8,9 @@
   <meta name="keywords" content="{{ .Site.Params.meta.keywords }}">
   <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1.0,maximum-scale=1.0,viewport-fit=cover">
   {{ .Hugo.Generator }}
+  
+  <!-- Prevent search index crawlers -->
+  <meta name="robots" content="noindex,nofollow">
 
   <!-- Fonts -->
   <link rel="preload" href={{ "font-lato/lato-optimized.woff2" | relURL }} as="font" type="font/woff2" crossorigin>

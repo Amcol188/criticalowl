@@ -28,6 +28,7 @@ gulp.task('critical', function() {
   .pipe(gulp.dest('layouts/partials'));
 });
 
+// Image Optimization
 gulp.task('imgOptim', function() {
 	return gulp.src(['src/img/*.png', 'src/img/*.jpg'])
 		.pipe(imagemin())
