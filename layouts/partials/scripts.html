@@ -6,12 +6,14 @@
   <script>
     var myLazyLoad = new LazyLoad({
       elements_selector: ".lazy",
-      threshold: 50
+      threshold: 200,
+			class_loading: "loading",
+			class_error: "error"
     });
   </script>
   <script>
     var input = document.querySelector('#slider')
-    
+
     var glide = new Glide('#slider', {
       type: 'carousel',
       startAt: 0,
@@ -21,13 +23,13 @@
       hoverpause: true,
       keyboard: true
     })
-    
+
     input.addEventListener('input', function (event) {
       glide.update({
         startAt: event.target.value
       })
     })
-    
+
     glide.mount()
   </script>
 {{ else }}
@@ -38,7 +40,9 @@
   <script>
     var myLazyLoad = new LazyLoad({
       elements_selector: ".lazy",
-      threshold: 50
+      threshold: 200,
+			class_loading: "loading",
+			class_error: "error"
     });
   </script>
 {{ end }}

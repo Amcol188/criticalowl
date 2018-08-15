@@ -28,6 +28,8 @@ The estate has an array of recreational amenities, including a swimming pool, PG
 
 The Ziffs listed the property over a year ago with a $195 million ask via an affiliate of Christie’s International Real Estate; however, the property came off of public listing sites in April 2017. The Ziffs bought the property through an investment consultant in 1985 for just $5 million, according to property records.
 
+{{< link href="juanvillela.me" content="Juan" >}}
+
 Brokered by [Sotheby’s](http://www.geminipalmbeach.com).
 
 **I DRINK YOUR MILKSHAKE:** Asking $108 million for the 1,800 acre Las Varas Ranch, which features nearly 2 miles of pristine Santa Barbara beachfront and was built by Edward Doheny, who inspired Upton Sinclair’s Oil! and the 2007 film “There Will Be Blood” with Daniel Day-Lewis.

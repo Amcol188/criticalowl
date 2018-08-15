@@ -1,13 +1,14 @@
 main.list {
   article.post {
     figure {
-      background-color: lighten($meta,40%); 
+      background-color: lighten($meta,40%);
       border-radius: 0 0 5px 5px;
       figcaption {
         color: lighten($text,30%);
-	font-size: 14px;
-	padding: 5px 0;
-	text-align: center;
+				font-size: 14px;
+				margin-top: auto;
+				padding: 5px 10px;
+				text-align: end;
       }
     }
   }
