@@ -26,10 +26,17 @@
     "cssnano": "^4.0.4",
     "gulp": "^3.9.1",
     "gulp-concat-util": "^0.5.5",
+    "gulp-gm": "0.0.9",
     "gulp-imagemin": "^4.1.0",
+    "gulp-images-convert": "^1.0.1",
     "gulp-postcss": "^7.0.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.1",
     "postcss-cli": "^6.0.0"
+  },
+  "dependencies": {
+    "gulp-cache": "^1.0.2",
+    "imagemin-mozjpeg": "^7.0.0",
+    "imagemin-pngquant": "^6.0.0"
   }
 }

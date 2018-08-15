@@ -35,7 +35,7 @@
   {{ $lazyScript := resources.Get "js/lazy-loading.js" }}
   {{ $js := slice $lazyScript $infiniteScroll | resources.Concat "js/bundle.js" | minify | fingerprint }}
   <script src="{{ $js.Permalink }}"></script>
-  <scripts>
+  <script>
     var myLazyLoad = new LazyLoad({
       elements_selector: ".lazy",
       threshold: 50
