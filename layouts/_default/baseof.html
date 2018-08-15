@@ -8,16 +8,16 @@
   <meta name="keywords" content="{{ .Site.Params.meta.keywords }}">
   <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1.0,maximum-scale=1.0,viewport-fit=cover">
   {{ .Hugo.Generator }}
-  
+
   <!-- Prevent search index crawlers -->
   <meta name="robots" content="noindex,nofollow">
 
   <!-- Fonts -->
   <link rel="preload" href={{ "font-lato/lato-optimized.woff2" | relURL }} as="font" type="font/woff2" crossorigin>
-  
+
   <!-- Critical -->
   {{ partial "critical.html" . }}
-  
+
   <!-- Critical Font Loading -->
   <script>
   	(function() {
@@ -51,7 +51,7 @@
   		}
   	})();
 	</script>
-  
+
   <!-- Stylesheets -->
   {{ $styles := resources.Get "scss/main.scss" | toCSS | postCSS | minify | fingerprint }}
   <link rel="preload" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -59,17 +59,12 @@
     <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
   </noscript>
   {{ partial "loadCSS.html" . }}
-  
-  {{ $glideCSS := resources.Get "scss/glide.css" | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $glideCSS.Permalink }}" integrity="{{ $glideCSS.Data.Integrity }}">
-  {{ $glideThemeCSS := resources.Get "scss/glide.theme.css" | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $glideThemeCSS.Permalink }}" integrity="{{ $glideThemeCSS.Data.Integrity }}">
-  
+
   <!-- RSS -->
   {{ with .OutputFormats.Get "rss" -}}
       {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
-  
+
   <!-- Open Graph -->
   <link rel="canonical" href="{{ .Permalink }}">
   <base href="{{ .Site.BaseURL }}"/>
@@ -79,7 +74,7 @@
   {{ template "_internal/opengraph.html" . }}
   <meta property="og:image" content="{{ .Site.BaseURL }}/icons/{{ $avatar.Permalink }}">
   {{ template "_internal/schema.html" . }}
-  
+
   <!-- Favicon -->
   {{ $favicon := resources.Get "icons/favicon.png" | fingerprint }}
   <link rel="shortcut icon" href="{{ $favicon.Permalink }}" integrity="{{ $favicon.Data.Integrity }}">
@@ -96,7 +91,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="{{ $ati180.Permalink }}" integrity="{{ $ati180.Data.Integrity }}">
   {{ $spt := resources.Get "icons/safari-pinned-tab.svg" | minify | fingerprint }}
   <link rel="mask-icon" color="#2E52A4" href="{{ $spt.Permalink }}" integrity="{{ $spt.Data.Integrity }}">
-  
+
   <!-- Android Chrome Icon -->
   {{ $ac128 := resources.Get "icons/android-chrome-128x128.png" | fingerprint }}
   <link rel="android-chrome" sizes="128x128" href="{{ $ac128.Permalink }}" integrity="{{ $ac128.Data.Integrity }}">
@@ -104,22 +99,12 @@
   <link rel="android-chrome" sizes="192x192" href="{{ $ac192.Permalink }}" integrity="{{ $ac192.Data.Integrity }}">
   {{ $ac512 := resources.Get "icons/android-chrome-512x512.png" | fingerprint }}
   <link rel="android-chrome" sizes="512x512" href="{{ $ac512.Permalink }}" integrity="{{ $ac512.Data.Integrity }}">
-  
-  <!-- Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.google.analytics.trackerID }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', '{{ .Site.Params.google.analytics.trackerID }}');
-  </script>
 </head>
 <body {{ if .IsHome }}id="home"{{ end }}>
-    <!-- Main content -->
+  <!-- Main content -->
   {{ block "main" . }}
   {{ end }}
-  
+
   <!-- Scripts -->
   {{ partial "scripts.html" . }}
 </body>

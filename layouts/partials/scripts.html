@@ -1,10 +1,8 @@
-<!-- Infinite Scroll -->
-{{ $infiniteScroll := resources.Get "js/infinite-scroll.js" | minify | fingerprint }}
-<script src="{{ $infiniteScroll.Permalink }}" integrity="{{ $infiniteScroll.Data.Integrity }}"></script>
+{{ $infiniteScroll := resources.Get "js/infinite-scroll.js" }}
+{{ $lazyScript := resources.Get "js/lazy-loading.js" }}
+{{ $js := slice $infiniteScroll $lazyScript | resources.Concat "js/bundle.js" | minify | fingerprint }}
+<script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
-<!-- Lazy Loading -->
-{{ $lazyScript := resources.Get "js/lazy-loading.js" | minify | fingerprint }}
-<script async src="{{ $lazyScript.Permalink }}" integrity="{{ $lazyScript.Data.Integrity }}"></script>
 <script>
   window.lazyLoadOptions = {
 		threshold: 50
@@ -20,7 +18,7 @@
   <script src="{{ $glide.Permalink }}" integrity="{{ $glide.Data.Integrity }}"></script>
   <script>
     var input = document.querySelector('#slider')
-    
+
     var glide = new Glide('#slider', {
       type: 'carousel',
       startAt: 0,
@@ -30,13 +28,13 @@
       hoverpause: true,
       keyboard: true
     })
-    
+
     input.addEventListener('input', function (event) {
       glide.update({
         startAt: event.target.value
       })
     })
-    
+
     glide.mount()
   </script>
 {{ end }}
