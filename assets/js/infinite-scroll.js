@@ -1,22 +1,3 @@
-/*!
- * Infinite Scroll PACKAGED v3.0.4
- * Automatically add next page
- *
- * Licensed GPLv3 for open source use
- * or Infinite Scroll Commercial License for commercial use
- *
- * https://infinite-scroll.com
- * Copyright 2018 Metafizzy
- */
-
-/**
- * Bridget makes jQuery widgets
- * v2.0.1
- * MIT license
- */
-
-/* jshint browser: true, strict: true, undef: true, unused: true */
-
 ( function( window, factory ) {
   // universal module definition
   /*jshint strict: false */ /* globals define, module, require */
@@ -152,12 +133,6 @@ updateJQuery( jQuery || window.jQuery );
 return jQueryBridget;
 
 }));
-
-/**
- * EvEmitter v1.1.0
- * Lil' event emitter
- * MIT License
- */
 
 /* jshint unused: true, undef: true, strict: true */
 
