@@ -49,13 +49,15 @@ gulp.task('imgOptim', function() {
         speed: 1,
         quality: 98 //lossy settings
       }),
+      imagemin.jpegtran({
+        progressive: true
+      }),
       imageminMozjpeg({
         quality: 90
       })
     ])))
     .pipe(gulp.dest('src/img'));
 });
-
 // Watch asset folder for changes
 gulp.task('watch', ['critical', 'imgOptim', 'convert'], function () {
   gulp.watch('assets/scss/fonts.scss', ['critical'])
