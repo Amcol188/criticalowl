@@ -28,9 +28,7 @@ The estate has an array of recreational amenities, including a swimming pool, PG
 
 The Ziffs listed the property over a year ago with a $195 million ask via an affiliate of Christie’s International Real Estate; however, the property came off of public listing sites in April 2017. The Ziffs bought the property through an investment consultant in 1985 for just $5 million, according to property records.
 
-{{< link href="juanvillela.me" content="Juan" >}}
-
-Brokered by [Sotheby’s](http://www.geminipalmbeach.com).
+ Brokered by {{< link href="http://www.geminipalmbeach.com" content="Sotheby's" >}}.
 
 **I DRINK YOUR MILKSHAKE:** Asking $108 million for the 1,800 acre Las Varas Ranch, which features nearly 2 miles of pristine Santa Barbara beachfront and was built by Edward Doheny, who inspired Upton Sinclair’s Oil! and the 2007 film “There Will Be Blood” with Daniel Day-Lewis.
 {{< img src="50k-3.jpg" >}}
@@ -43,12 +41,12 @@ A legacy of oil magnate Edward Doheny, the Las Varas Ranch is comprised of flat 
 
 Current structures include the owner's hacienda, ranch manager's cottage, Victorian era guest house, horse barn corral, mechanics cottages, and multiple outbuildings dating to 1920's. The property affords plenty of room for new construction given its ample 1,800 total acres, of which 520 are open to the Pacific Ocean.
 
-This is the first time the property has been offered for sale in over 50 years. [Douglas Elliman](https://www.elliman.com/other/10045-calle-real-goleta-muxyrgk) Real Estate has the listing. There will be a picturesque slice of California beachfront heaven.
+This is the first time the property has been offered for sale in over 50 years. {{< link href="https://www.elliman.com/other/10045-calle-real-goleta-muxyrgk" content="Douglas Elliman" >}} Real Estate has the listing. There will be a picturesque slice of California beachfront heaven.
 
 **YOU’VE GOT MANSIONS:** The priciest listing in Washington DC is late AOL co-founder James Kimsey’s $62.95 million riverfront estate, which features a massive home he built on the banks of the Potomac River as well as an adjacent Frank Lloyd Wright -designed house the late Mr. Kimsey is said to have wished preserved.
 {{< img src="50k-4.jpg" >}}
 
-Broker site: [https://www.ttrsir.com/eng/sales/detail/279-l-905-252w35/the-falls-mclean-va-22101](https://www.ttrsir.com/eng/sales/detail/279-l-905-252w35/the-falls-mclean-va-22101).
+Broker site: {{< link href="https://www.ttrsir.com/eng/sales/detail/279-l-905-252w35/the-falls-mclean-va-22101" content="https://www.ttrsir.com/eng/sales/detail/279-l-905-252w35/the-falls-mclean-va-22101" >}}
 
 Overlooking Washington, DC from the Arlington / McLean, Virginia side of the Potomac, the Falls House features 24,500-square feet spread over six bedrooms, living and entertaining spaces, and more. To aid in entertaining, the house has four kitchens, one of which has a loading dock for catering trucks. There are two garages: the owner’s garage, which connects directly to the house, and a guest garage for up to 30 cars. A wine and wet bar with humidor featuring a walk-in wine refrigerator, a gym just off the master suite, a massage room, and an indoor hot tub with river views.
 
