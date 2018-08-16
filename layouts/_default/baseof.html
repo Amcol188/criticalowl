@@ -99,6 +99,8 @@
   <link rel="android-chrome" sizes="192x192" href="{{ $ac192.Permalink }}" integrity="{{ $ac192.Data.Integrity }}">
   {{ $ac512 := resources.Get "icons/android-chrome-512x512.png" | fingerprint }}
   <link rel="android-chrome" sizes="512x512" href="{{ $ac512.Permalink }}" integrity="{{ $ac512.Data.Integrity }}">
+
+  {{ partial "analytics.html" . }}
 </head>
 <body {{ if .IsHome }}id="home"{{ end }}>
 <div id="fb-root"></div>

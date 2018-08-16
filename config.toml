@@ -17,7 +17,7 @@ SectionPagesMenu = "main"
   social = "deluxely"
 
 [params.google.analytics]
-  trackerID = ""
+  trackerID = "UA-123142454-1"
 
 [params.meta]
   description = "Deluxely is a social community dedicated to connecting audiences with the content they love to consume. Deluxely produces engaging stories and videos on a range of topics designed to inspire, entertain and inform our readers."
