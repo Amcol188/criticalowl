@@ -1,0 +1,22 @@
+{
+  "short_name": "Deluxely",
+  "name": "Deluxely",
+  "icons": [
+    {
+      "src": "/icons/icons-128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/icons/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "display": "standalone"
+}
