@@ -1152,16 +1152,6 @@
   function Gaps (Glide, Components, Events) {
     var Gaps = {
       /**
-       * Setups gap value based on settings.
-       *
-       * @return {Void}
-       */
-      mount: function mount() {
-        this.value = Glide.settings.gap;
-      },
-
-
-      /**
        * Applies gaps between slides. First and last
        * slides do not receive it's edge margins.
        *
@@ -1211,18 +1201,7 @@
        * @returns {Number}
        */
       get: function get() {
-        return Gaps._v;
-      },
-
-
-      /**
-       * Sets value of the gap.
-       *
-       * @param {String} value
-       * @return {Void}
-       */
-      set: function set(value) {
-        Gaps._v = toInt(value);
+        return toInt(Glide.settings.gap);
       }
     });
 
@@ -1250,14 +1229,6 @@
 
         return Gaps.value * (perView - 1) / perView;
       }
-    });
-
-    /**
-     * Remount component:
-     * - on updating via API, to update gap value
-     */
-    Events.on('update', function () {
-      Gaps.mount();
     });
 
     /**
@@ -2697,7 +2668,7 @@
         if (settings.swipeThreshold) {
           Binder.on(START_EVENTS[0], Components.Html.wrapper, function (event) {
             _this.start(event);
-          }, { passive: true });
+          });
         }
 
         if (settings.dragThreshold) {
@@ -2729,7 +2700,7 @@
 
         Binder.on(MOVE_EVENTS, Components.Html.wrapper, throttle(function (event) {
           _this2.move(event);
-        }, Glide.settings.throttle), { passive: true });
+        }, Glide.settings.throttle));
       },
 
 
