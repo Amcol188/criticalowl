@@ -3,7 +3,7 @@ title = "The Most Luxurious $50+ Million Mansions for Sale"
 date = "2018-07-30"
 author = "Seth Demsey"
 tags = ["shopping"]
-categories = ["article"]
+categories = ["article", "slideshow"]
 image = "img/50k-1.jpg"
 showthedate = true
 draft = false
@@ -12,6 +12,7 @@ draft = false
 While there has been speculation that the $50 million-plus real estate market could be struggling amid global economic uncertainty, the market remains undeterred. Here, we take a look at the most luxurious properties currently being marketed for sale above $50 million in the United States:
 
 **THE GLORY DAYS OF PUBLISHING: 15 ACRE PALM BEACH ESTATE WITH OCEAN & LAKEFRONT VIEWS FOR $138,800,000**
+
 {{< img src="50k-2.jpg" >}}
 
 {{< ads >}}
@@ -31,6 +32,7 @@ The Ziffs listed the property over a year ago with a $195 million ask via an aff
  Brokered by {{< link href="http://www.geminipalmbeach.com" content="Sotheby's" >}}.
 
 **I DRINK YOUR MILKSHAKE:** Asking $108 million for the 1,800 acre Las Varas Ranch, which features nearly 2 miles of pristine Santa Barbara beachfront and was built by Edward Doheny, who inspired Upton Sinclair’s Oil! and the 2007 film “There Will Be Blood” with Daniel Day-Lewis.
+
 {{< img src="50k-3.jpg" >}}
 
 In 1892, Doheny drilled the first successful oil well in the Los Angeles City Oil Field. His success set off a petroleum boom in Southern California, and made him a fortune. His empire eventually became the Pan American Petroleum & Transport Company, one of the largest oil companies in the world in the 1920s, which in 1954 merged with Standard of Indiana to form the American Oil Company, or Amoco. Amoco was in turn acquired by British Petroleum in 1998.
@@ -44,6 +46,7 @@ Current structures include the owner's hacienda, ranch manager's cottage, Victor
 This is the first time the property has been offered for sale in over 50 years. {{< link href="https://www.elliman.com/other/10045-calle-real-goleta-muxyrgk" content="Douglas Elliman" >}} Real Estate has the listing. There will be a picturesque slice of California beachfront heaven.
 
 **YOU’VE GOT MANSIONS:** The priciest listing in Washington DC is late AOL co-founder James Kimsey’s $62.95 million riverfront estate, which features a massive home he built on the banks of the Potomac River as well as an adjacent Frank Lloyd Wright -designed house the late Mr. Kimsey is said to have wished preserved.
+
 {{< img src="50k-4.jpg" >}}
 
 Broker site: {{< link href="https://www.ttrsir.com/eng/sales/detail/279-l-905-252w35/the-falls-mclean-va-22101" content="https://www.ttrsir.com/eng/sales/detail/279-l-905-252w35/the-falls-mclean-va-22101" >}}
@@ -51,12 +54,12 @@ Broker site: {{< link href="https://www.ttrsir.com/eng/sales/detail/279-l-905-25
 Overlooking Washington, DC from the Arlington / McLean, Virginia side of the Potomac, the Falls House features 24,500-square feet spread over six bedrooms, living and entertaining spaces, and more. To aid in entertaining, the house has four kitchens, one of which has a loading dock for catering trucks. There are two garages: the owner’s garage, which connects directly to the house, and a guest garage for up to 30 cars. A wine and wet bar with humidor featuring a walk-in wine refrigerator, a gym just off the master suite, a massage room, and an indoor hot tub with river views.
 
 Kimsey, who served three combat tours as an Airborne Ranger and won various awards for service including induction into the Ranger Hall of Fame, began his career operating bars in the Washington DC area after the military. In May 1983, Kimsey became a manufacturing consultant for Control Video Corporation, which was near bankruptcy. He was brought in by his West Point friend Frank Caufield, an investor in the company. Within 2 years he was CEO of the firm, which would morph from the GameLine online service for the Atari 2600 video game console into Internet access and online content and advertising juggernaut AOL. Kimsey served as CEO of AOL until 1995, when Steve Case, who joined Control Video Corporation as a marketing consultant and co-founded the successor entity with Kimsey, took the AOL CEO reins.
-
 Straddling the border between McLean and Arlington on the Potomac River, the property is down the road from the estate of Steve Case, another one of American Online’s co-founders. Merrywood, the home of Mr. Case and his wife Jean, is now in contract after going on the market last year for $49.5 million, according to sources with knowledge of the transaction. More on this house _next_.
 
 Mr. Kimsey built the main house after buying the property for $7.6 million in 1999 according to public records. The front of the house is Italianate-style clad in limestone, while the riverfront facade is contemporary.
 
 **DIALING UP ANOTHER WASHINGTON, DC MANSION:** AOL co-founder Steve Case is selling Merrywood, a childhood home of Jacqueline Kennedy Onassis, located just down the road from late co-founder James Kimsey for $49.5 million. The home is located in McLean, Virginia across the Potomac river from Washington, DC.
+
 {{< img src="50k-5.jpg" >}}
 
 The Merrywood estate, built in 1919, has served as home to several influential political and business leaders. As the childhood home of Jacqueline Kennedy Onassis, Merrywood was elevated to a position of prominence in the mid-1940s and has since continued to provide a celebrated venue to host presidents, business leaders, artists, and countless family celebrations.

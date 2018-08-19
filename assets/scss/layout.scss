@@ -3,7 +3,7 @@ body {
   grid-gap: 15px 0;
   grid-template-rows: 87px repeat(2, auto);
   grid-template-columns:
-    [full-start] minmax(15px, 1fr) 
+    [full-start] minmax(15px, 1fr)
     [main-start] minmax(0, 700px) [main-end]
     minmax(15px, 1fr) [full-end];
   &#home {
@@ -79,12 +79,12 @@ body {
         }
       }
       section.author {
-				p {
-					margin: 0;
-				}
-			}
+        p {
+          margin: 0;
+        }
+      }
       section.info {
-        align-items: center;
+        @extend %items-center;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: 30px;
         div.publish {
@@ -99,7 +99,8 @@ body {
           grid-column: 2/3;
           justify-self: end;
         }
-        time, p {
+        time,
+        p {
           grid-row: 1/2;
         }
         p {
@@ -126,11 +127,13 @@ body {
           grid-column: bleed;
         }
         figure {
-					background-color: lighten($meta,40%);
-					box-shadow: inset 0 0 15px rgba(63,85,136,0.2);
-					img.loading {
-						visibility: hidden;
-					}
+          @extend %flex;
+          @extend %flex-column;
+          @extend %content-flex-end;
+          margin: 10px 0;
+          img.loading {
+            visibility: hidden;
+          }
         }
       }
     }

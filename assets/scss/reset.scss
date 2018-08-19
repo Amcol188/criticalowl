@@ -42,11 +42,11 @@ a:active,
 a:hover,
 article h2 a:active,
 article h2 a:hover {
-	color: $link;
-	text-decoration: underline;
+  color: $link;
+  text-decoration: underline;
 }
 a svg {
-	fill: $text;
+  fill: $text;
 }
 a.meta,
 hr,
@@ -56,18 +56,18 @@ p.content a.more,
 }
 a.meta:active,
 a.meta:hover {
-	color: $accent;
+  color: $accent;
 }
 article {
   a {
-		color: darken($meta,10%);
-		&.external {
-	    color: $link;
-			&:active,
-			&:hover {
-				color: darken($link,7%);
-			}
-		}
+    color: darken($meta, 10%);
+    &.external {
+      color: $link;
+      &:active,
+      &:hover {
+        color: darken($link, 7%);
+      }
+    }
   }
   a:active,
   a:hover {
@@ -107,7 +107,10 @@ figure {
   margin-bottom: 21px;
 }
 figure,
-h1, h2, h3, h4,
+h1,
+h2,
+h3,
+h4,
 nav > *,
 p {
   margin: 0;
@@ -116,36 +119,44 @@ figcaption p {
   padding: 5px;
 }
 header {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 header,
-h1, h2, h3, h4 {
-	font-weight: 600;
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
 }
 
 h1 {
-	font-size: 36px;
+  font-size: 36px;
 }
 h2 {
-	font-size: 32px;
+  font-size: 32px;
 }
 h3 {
-	font-size: 28px;
+  font-size: 28px;
 }
 h4 {
-	font-size: 24px;
+  font-size: 24px;
 }
-h1, h2, h3, h4 {
-	margin-bottom: 10px;
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 10px;
 }
-h2, h3, h4 {
-	margin-top: 20px;
+h2,
+h3,
+h4 {
+  margin-top: 20px;
 }
 hr,
-img, 
+img,
 svg {
-	height: auto;
-	width: 100%;
+  height: auto;
+  width: 100%;
 }
 li {
   margin-bottom: 5px;
@@ -156,10 +167,10 @@ nav {
 }
 ol,
 ul {
-	padding-left: 30px;
+  padding-left: 30px;
 }
 ol ul {
-	padding-left: 20px;
+  padding-left: 20px;
 }
 p {
   margin: 10px 0;

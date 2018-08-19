@@ -1,35 +1,36 @@
 main.list {
   article.post {
     figure {
-      background-color: lighten($meta,40%);
+      background-color: lighten($meta, 40%);
       border-radius: 0 0 5px 5px;
+      /* box-shadow: inset 0 0 15px rgba(63,85,136,0.2); */
       figcaption {
-        color: lighten($text,30%);
-				font-size: 14px;
-				margin-top: auto;
-				padding: 5px 10px;
-				text-align: end;
+        color: lighten($text, 30%);
+        font-size: 14px;
+        margin-top: auto;
+        padding: 5px 10px;
+        text-align: end;
       }
     }
-		a.fb-button {
-			@extend %flex;
-			@extend %items-center;
-			@extend %content-space-between;
-			background-color: #4267b2;
-			border-radius: 4px;
-			font-size: 13px;
-			height: 28px;
-			padding: 6px;
-			text-decoration: none;
-			width: 66px;
-			svg {
-				height: 16px;
-				width: 16px;
-			}
-			p {
-				color: #fff;
-				margin: 0;
-			}
-		}
+    a.fb-button {
+      @extend %flex;
+      @extend %items-center;
+      @extend %content-space-between;
+      background-color: #4267b2;
+      border-radius: 4px;
+      font-size: 13px;
+      height: 28px;
+      padding: 6px;
+      text-decoration: none;
+      width: 66px;
+      svg {
+        height: 16px;
+        width: 16px;
+      }
+      p {
+        color: #fff;
+        margin: 0;
+      }
+    }
   }
 }

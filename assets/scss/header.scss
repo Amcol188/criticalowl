@@ -115,7 +115,7 @@ header {
     margin: 0;
     overflow: hidden;
     padding: 0 20px;
-    transition: all .15s ease;
+    transition: all 0.15s ease;
     width: auto;
     z-index: 3;
     @media screen and (min-width: $tablet) {
@@ -234,7 +234,7 @@ body#home header {
       }
       a#logo {
         color: $link;
-	margin: auto 0;
+        margin: auto 0;
       }
     }
   }

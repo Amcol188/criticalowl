@@ -1,9 +1,9 @@
 {{ define "main" }}
 {{ partial "header.html" . }}
   <main class="list" data-infinite-scroll='{ "path": ".pagination__next", "append": ".post", "hideNav": ".pagination", "history": "replace" }'>
-    {{ $paginator := .Paginate (where .Pages "Type" "articles") 5 }}
+    {{ $paginator  := .Paginate (where .Data.Pages "Type" "articles") 10 }}
     {{ range $paginator.Pages }}
-      {{ .Render "summary" }}
+			{{ .Render "summary" }}
     {{ end }}
   </main>
   {{ partial "paginator.html" . }}
