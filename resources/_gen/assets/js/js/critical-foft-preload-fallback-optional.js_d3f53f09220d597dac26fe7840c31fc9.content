@@ -1,4 +1,4 @@
-(function(){(function(){"use strict";var f,g=[];function l(a){g.push(a);1==g.length&&f();}
+'(function(){"use strict";var f,g=[];function l(a){g.push(a);1==g.length&&f();}
 function m(){for(;g.length;)g[0](),g.shift();}
 f=function(){setTimeout(m);};function n(a){this.a=p;this.b=void 0;this.f=[];var b=this;try{a(function(a){q(b,a);},function(a){r(b,a);});}catch(c){r(b,c);}}
 var p=2;function t(a){return new n(function(b,c){c(a);});}
