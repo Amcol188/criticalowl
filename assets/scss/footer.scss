@@ -70,12 +70,12 @@ footer {
     }
     div.info {
       grid-gap: 0 10px;
-      grid-template-columns: repeat(3, auto);
+      grid-template-columns: repeat(2, auto);
       grid-template-rows: auto;
       @media screen and (max-width: 346px) {
         grid-gap: 10px 0;
         grid-template-columns: auto;
-        grid-template-rows: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
         text-align: center;
       }
     }
