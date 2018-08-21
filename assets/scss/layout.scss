@@ -89,6 +89,9 @@ body {
           grid-column: fill;
         }
       }
+      figure {
+        min-height: 400px;
+      }
       section.content {
         grid-template-columns:
           [bleed-start] minmax(1em, 1fr)
