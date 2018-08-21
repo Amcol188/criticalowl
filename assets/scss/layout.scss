@@ -64,7 +64,7 @@ body {
         [fill-start] minmax(1em, 1fr)
         [half-start] minmax(0, $phone) [half-end]
         minmax(1em, 1fr) [fill-end];
-      grid-template-rows: repeat(5, min-content);
+      grid-template-rows: repeat(3, min-content);
       > * {
         grid-column: fill;
         @media screen and (max-width: $phone) {
@@ -79,30 +79,6 @@ body {
         }
       }
       section.author {
-        p {
-          margin: 0;
-        }
-      }
-      section.info {
-        @extend %items-center;
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: 30px;
-        div.publish {
-          align-items: center;
-          grid-column: 1/2;
-          grid-gap: 0 5px;
-          grid-template-columns: auto min-content auto;
-          grid-template-rows: auto;
-          justify-self: start;
-        }
-        p.tags {
-          grid-column: 2/3;
-          justify-self: end;
-        }
-        time,
-        p {
-          grid-row: 1/2;
-        }
         p {
           margin: 0;
         }
@@ -135,6 +111,9 @@ body {
             visibility: hidden;
           }
         }
+      }
+      &.meta-post section.content > * {
+        grid-column: bleed !important;
       }
     }
   }

@@ -10,11 +10,8 @@ Deluxely is a social community dedicated to connecting audiences with the conten
 Our privacy policy may be viewed [here](/privacypolicy). Our terms of use may be viewed [here](/terms).
 
 ## Contact Us:
-[info@contentreach.net](mailto:info@contentreach.net)
-ContentReach LLC
-1765 Greensboro Station Place
-Suite 900
-McLean, Virginia 22102
-
-Finally, How can I get in and easily tweak headlines, fix some minor typos I caught?  Is there a revised documentation link to use?
-Thank you!
+[info@contentreach.net](mailto:info@contentreach.net)<br>
+ContentReach LLC<br>
+1765 Greensboro Station Place<br>
+Suite 900<br>
+McLean, Virginia 22102<br>
