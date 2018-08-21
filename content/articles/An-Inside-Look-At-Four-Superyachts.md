@@ -3,9 +3,9 @@ title = "An Inside Look At Four Superyachts"
 date = "2018-08-20"
 author = "Marisa Megan"
 tags = ["boats"]
-categories = [""]
+categories = ["vehicles"]
 image = "img/boats-1.jpg"
-captions = "Via Burgess"
+caption = "Via Burgess"
 showthedate = true
 draft = false
 +++

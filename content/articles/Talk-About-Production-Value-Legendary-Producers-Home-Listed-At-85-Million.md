@@ -3,6 +3,7 @@ title = "Talk About Production Value: Legendary Producer's Home Listed At $85 Mi
 date = "2018-07-27"
 author = "Marisa Megan"
 tags = ["mansions"]
+categories = ["shelter"]
 image = "img/production-1.jpg"
 caption = "Via RE/MAX Olson & Associate"
 showthedate = true
