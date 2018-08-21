@@ -1,0 +1,17 @@
+<article class="post">
+  <h2 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+	{{ if .Params.showthedate }}
+	<section class="author meta">
+		<p class="meta">by {{ .Params.author }}</p>
+	</section>
+	{{ end }}
+  <figure class="hero-image">
+    {{ $path := .Params.image }}
+    {{ $thumb := resources.Get $path | fingerprint }}
+    <img src="{{ $thumb.Permalink }}" class="image">
+		{{ if .Params.caption }}
+		<figcaption>{{ .Params.caption }}</figcaption>
+		{{ end }}
+  </figure>
+  {{ partial "article-meta.html" . }}
+</article>
