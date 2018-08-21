@@ -10,7 +10,7 @@ Deluxely is a social community dedicated to connecting audiences with the conten
 Our privacy policy may be viewed [here](/privacypolicy). Our terms of use may be viewed [here](/terms).
 
 ## Contact Us:
-[info@contentreach.net](mailto:info@contentreach.net)<br>
+[info "@" contentreach.net]<br>
 ContentReach LLC<br>
 1765 Greensboro Station Place<br>
 Suite 900<br>

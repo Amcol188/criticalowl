@@ -15,7 +15,7 @@ This policy does not apply to information we collect through any other means, or
 By using or accessing our Websites, you agree to this privacy policy. Please check back periodically for updates, as the policy may change from time to time. Your continued use of our Websites is deemed to be acceptance of any changes.
 
 ## CHILDREN UNDER 13
-Our Websites are not intended for children under 13 years of age and we do not knowingly collect personal information from children under 13. If you are under 13, please do not register on our Websites or disclose any information about yourself to us, including your name, address, telephone number or e-mail address. If we learn that we have accidentally collected personal information from a child under age 13 without verification of parental consent, we will delete that information.  If you believe that we might have any information from or about a child under 13, please notify via [info@contentreach.net](mailto:info@contentreach.net).
+Our Websites are not intended for children under 13 years of age and we do not knowingly collect personal information from children under 13. If you are under 13, please do not register on our Websites or disclose any information about yourself to us, including your name, address, telephone number or e-mail address. If we learn that we have accidentally collected personal information from a child under age 13 without verification of parental consent, we will delete that information.  If you believe that we might have any information from or about a child under 13, please notify via [info "@" contentreach.net].
 
 ## INFORMATION YOU PROVIDE TO US
 We may collect and use the following information that you provide to us:
@@ -34,7 +34,7 @@ Beacons. Pages of our Websites may contain small image files, known as beacons, 
 ## THIRD-PARTY DATA
 The advertisements on our Websites are served by third-party advertising partners. You can find a list of the advertising partners we work with here.  Please note that our third-party advertising partners and the advertisers that run ads on our Websites may also use cookies, beacons or other tracking technologies to collect information about our users. These advertising partners may use this information about you combined with your browsing activity on other sites on the Internet to deliver advertisements and promotions that may be of more interest to you.
 
-We work with these advertising partners to ensure that any use of personal data is done in accordance with local jurisdiction laws, such as the EU General Data Protection Regulation 2016/679 (“GDPR”).  For more detailed information on how we comply with such regulations, please send us an email at [info@contentreach.net](mailto:info@contentreach.net).
+We work with these advertising partners to ensure that any use of personal data is done in accordance with local jurisdiction laws, such as the EU General Data Protection Regulation 2016/679 (“GDPR”).  For more detailed information on how we comply with such regulations, please send us an email at [info "@" contentreach.net].
 
 ## KEEPING YOUR DATA SAFE
 We treat all Company data, including the data described in this policy, confidentially.  We do not share, sell, or transfer data except in the following circumstances:
@@ -49,7 +49,7 @@ If you do not wish us to collect cookies, select the appropriate setting in your
 
 If you wish to opt out of personalized advertising, you may do so by visiting {{< link href="www.aboutads.info" content="www.aboutads.info" >}}.  To learn more about Interest-Based Advertising or to opt-out of this type of advertising by those third parties that are members of self-regulatory programs such as the Network Advertising Initiative, please visit the NAI’s website {{< link href="www.networkadvertising.org" content="www.networkadvertising.org" >}} which will allow you to opt out of Interest-Based Advertising by one, or all, NAI members.  To learn more about Cross-App Advertising, please visit {{< link href="www.networkadvertising.org" content="www.networkadvertising.org" >}}. You can find instructions on how to use consumer choice mechanisms provided by major mobile operating systems here: {{< link href="http://www.networkadvertising.org/mobile-choices" content="http://www.networkadvertising.org/mobile-choices" >}}.
 
-If you have questions or concerns about the Company’s privacy policy or practices, please contact us via email to [info@contentreach.net](mailto:info@contentreach.net) or by mail to ContentReach LLC, 1765 Greensboro Station Place, Suite 900, McLean, VA 22102, USA.
+If you have questions or concerns about the Company’s privacy policy or practices, please contact us via email to [info "@" contentreach.net] or by mail to ContentReach LLC, 1765 Greensboro Station Place, Suite 900, McLean, VA 22102, USA.
 
 ADDITIONAL POLICIES AND RIGHTS COVERING THE EUROPEAN UNION OR EUROPEAN ECONOMIC AREA (“EEA”)
  
@@ -63,4 +63,4 @@ Under the GDPR, in certain circumstances, you have the right to (a) request acce
 
 In addition, where you believe that we have not complied with our obligation under this privacy policy or European law, you have the right to file a complaint to an EU Data Protection Authority.
 
-If you would like to exercise any of these rights, or to send us a feedback or complaint regarding our GDPR related policies, please send us an email at [info@contentreach.net](mailto:info@contentreach.net).
+If you would like to exercise any of these rights, or to send us a feedback or complaint regarding our GDPR related policies, please send us an email at [info "@" contentreach.net].
