@@ -85,15 +85,15 @@ body {
       }
       div#slider {
         div.glide__arrows {
-          button.glide__arrow { 
+          button.glide__arrow {
             border: none;
-        	  box-shadow: none;
+            box-shadow: none;
             padding: 0;
-        	  text-shadow: none;
-  	        svg {
-  	          fill : lighten(#2d51a3, 5%);
-  	          width: auto;
-  	          &:hover {
+            text-shadow: none;
+            svg {
+              fill: lighten(#2d51a3, 5%);
+              width: auto;
+              &:hover {
                 fill: #2d51a3;
               }
             }
