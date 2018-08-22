@@ -4,7 +4,7 @@ date = "2018-08-17"
 author = "Jay Crystal"
 tags = ["planes"]
 categories = ["vehicles"]
-image = "img/aircraft-1.jpg"
+image = "img/Stateroom.jpg"
 caption = "Via AMAC Aerospace"
 showthedate = true
 draft = false
@@ -28,18 +28,17 @@ Brought to market by AMAC Aerospace, this 2012 Boeing 747-8I is configured for a
 {{< img src="aircraft-5.jpg" caption="Via AMAC Aerospace" >}}
 
 {{< img src="aircraft-6.jpg" caption="Via AMAC Aerospace" >}}
+{{< img src="aircraft-7.jpg" caption="Via AMAC Aerospace" >}}
 <p><strong>Majlis:</strong> This 14-passenger lounge (seen from forward and reverse angles) features an oval seating configuration with 52" TVs at either end of the room. This lounge offers full entertainment capabilities, an ultraleather ceiling headliner and electronic window shades throughout.</p>
 
-{{< img src="aircraft-7.jpg" caption="Via AMAC Aerospace" >}}
+{{< img src="aircraft-8.jpg" caption="Via AMAC Aerospace" >}}
 <p><strong>Dining & Conference Room:</strong> With seating for 14, this hand-crafted table doubles as a dining or conference table surrounded by blue stone-topped credenzas.</p>
 
-{{< img src="aircraft-8.jpg" caption="Via AMAC Aerospace" >}}
+{{< img src="aircraft-9.jpg" caption="Via Greenpoint Technologies" >}}
 <strong>Flight Deck</strong>
 
 ## GORGEOUS BOEING 747 INTERIORS
 Greenpoint Technologies is the firm to call when designing the interior of your flying Boeing palace. The firm has completed, refurbished or otherwise modified over 50 Boeing aircraft for VVIPs and Heads of State. Below is a sampling of interiors they've designed and installed on 747s alone. Their craftsmanship is simply exquisite. If you can write the check, we highly recommend them.
-
-{{< img src="aircraft-9.jpg" caption="Via Greenpoint Technologies" >}}
 
 {{< img src="aircraft-10.jpg" caption="Via Greenpoint Technologies" >}}
 
@@ -55,19 +54,19 @@ Greenpoint Technologies is the firm to call when designing the interior of your 
 
 {{< img src="aircraft-16.jpg" caption="Via Greenpoint Technologies" >}}
 
+{{< img src="aircraft-17.jpg" caption="Via Greenpoint Technologies" >}}
+
 ## EXTREMELY STYLISH AIRBUS A319
 AMAC is a Swiss conglomerate with skilled completion craftsman focused on the VIP and VVIP markets out of France and Switzerland. They are currently marketing an Art Deco styled A319 for sale. New, an A319 costs ~$90 million plus interior completion. This plane entered service in 2013 and features a main lounge, dining area, master bedroom and bath, aft lav, private lounge/additional bedroom, full galley, aft seating area and a crew area near an art-adorned entranceway.
 
-{{< img src="aircraft-17.jpg" caption="Via AMAC Aerospace" >}}
+{{< img src="aircraft-18.jpg" caption="Via AMAC Aerospace" >}}
 <p><strong>Forward Corridor:</strong> Just past the entranceway, this corridor looks down toward the main cabin. Curved storage compartments line the outboard and inboard wall, offering access to the master bedroom and bathrooms.</p>
 
-{{< img src="aircraft-18.jpg" caption="Via AMAC Aerospace" >}}
+{{< img src="aircraft-19.jpg" caption="Via AMAC Aerospace" >}}
 <p><strong>Master Bedroom:</strong> This spacious ~6' x ~5' bedroom features a leather headboard, ornamental art above the nightstand, floor lighting, electric window shades and a private lavatory.</p>
 
-{{< img src="aircraft-19.jpg" caption="Via AMAC Aerospace" >}}
-<p><strong>Master Bathroom:</strong> Art Deco transition styling featuring full height shower with teak floor, lavatory and vanity.</p>
-
 {{< img src="aircraft-20.jpg" caption="Via AMAC Aerospace" >}}
+<p><strong>Master Bathroom:</strong> Art Deco transition styling featuring full height shower with teak floor, lavatory and vanity.</p>
 
 {{< img src="aircraft-21.jpg" caption="Via AMAC Aerospace" >}}
 <p><strong>Main Lounge:</strong> The stylist Art Deco vibe continues in this lounge, using carbon fiber, wood veneer, art-work, metal inlays, and leather-work. This lounge seats up to seven passengers.</p>
