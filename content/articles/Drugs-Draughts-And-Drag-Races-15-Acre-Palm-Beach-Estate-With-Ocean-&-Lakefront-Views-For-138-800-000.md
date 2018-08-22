@@ -2,7 +2,6 @@
 title = "Drugs, Draughts, And Drag Races: 15 Acre Palm Beach Estate With Ocean & Lakefront Views For $138,800,000"
 date = "2018-08-15"
 author = "Jay Crystal"
-tags = ["mansions"]
 categories = ["shelter"]
 image = "img/palm-beach-1.jpg"
 caption = "Via Sotheby's International Realty"

@@ -2,7 +2,6 @@
 title = "There Will Be Bids"
 date = "2018-08-13"
 author = "Jay Crystal"
-tags = ["mansions"]
 categories = ["shelter"]
 image = "img/be-bids-1.jpg"
 caption = "Via Douglas Elliman Real Estate"

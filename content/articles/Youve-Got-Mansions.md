@@ -2,7 +2,6 @@
 title = "You've Got Mansions"
 date = "2018-08-10"
 author = "Jay Crystal"
-tags = ["mansions"]
 categories = ["shelter"]
 image = "img/got-mansions-1.jpg"
 caption = "Via TTR Sotheby's"

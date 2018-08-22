@@ -90,6 +90,9 @@ body {
         }
       }
       figure {
+        @extend %flex;
+        @extend %flex-column;
+        @extend %content-flex-end;
         min-height: 400px;
       }
       section.content {
@@ -106,9 +109,6 @@ body {
           grid-column: bleed;
         }
         figure {
-          @extend %flex;
-          @extend %flex-column;
-          @extend %content-flex-end;
           margin: 10px 0;
           img.loading {
             visibility: hidden;

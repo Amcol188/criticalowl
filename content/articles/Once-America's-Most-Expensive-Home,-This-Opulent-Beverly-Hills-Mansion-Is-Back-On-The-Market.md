@@ -2,7 +2,6 @@
 title = "Once America's Most Expensive Home, This Opulent Beverly Hills Mansion Is Back On The Market"
 date = "2018-07-25"
 author = "Marisa Megan"
-tags = ["mansions"]
 categories = ["shelter"]
 image = "img/americas-most-1.jpg"
 caption = "Via Unlimited Style Real Estate Photography"

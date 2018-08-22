@@ -2,7 +2,6 @@
 title = "Putting The 'Many' In 'Amenities'"
 date = "2018-08-03"
 author = "Jay Crystal"
-tags = ["mansions"]
 categories = ["shelter"]
 image = "img/amenities-1.jpg"
 caption = "Via Sotheby's International"

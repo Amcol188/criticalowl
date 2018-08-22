@@ -2,7 +2,6 @@
 title = "Dialing Up Another Washington, DC Mansion"
 date = "2018-08-08"
 author = "Jay Crystal"
-tags = ["mansions"]
 categories = ["shelter"]
 image = "img/dc-mansion-1.jpg"
 caption = "Via Sotheby's International Realty"
