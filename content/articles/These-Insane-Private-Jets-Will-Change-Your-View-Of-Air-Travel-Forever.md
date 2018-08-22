@@ -68,6 +68,7 @@ AMAC is a Swiss conglomerate with skilled completion craftsman focused on the VI
 <p><strong>Master Bathroom:</strong> Art Deco transition styling featuring full height shower with teak floor, lavatory and vanity.</p>
 
 {{< img src="aircraft-21.jpg" caption="Via AMAC Aerospace" >}}
+
 {{< img src="aircraft-22.jpg" caption="Via AMAC Aerospace" >}}
 <p><strong>Main Lounge:</strong> The stylist Art Deco vibe continues in this lounge, using carbon fiber, wood veneer, art-work, metal inlays, and leather-work. This lounge seats up to seven passengers.</p>
 
@@ -84,6 +85,7 @@ Boeing Business Jets, or BBJs, list new at a shade under $60 million, but that p
 <strong>BBJ Exterior</strong>
 
 {{< img src="aircraft-26.jpg" caption="Via Opus Aerospace" >}}
+
 {{< img src="aircraft-27.jpg" caption="Via Opus Aerospace" >}}
 <strong>Main Cabin</strong>
 
