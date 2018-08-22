@@ -110,7 +110,7 @@ The Airbus A318 may be the smallest member of the A320 family of planes, but thi
 {{< img src="aircraft-33.jpg" caption="Via Global Jet" >}}
 <strong>Stateroom</strong>
 
-{{< img src="lav.jpg" caption="Via Global Jet" >}}
+{{< img src="Lav.jpg" caption="Via Global Jet" >}}
 <strong>Lavatory</strong>
 
 ## SEAT 29E
