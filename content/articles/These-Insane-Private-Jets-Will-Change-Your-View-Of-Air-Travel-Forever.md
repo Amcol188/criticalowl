@@ -114,4 +114,4 @@ The Airbus A318 may be the smallest member of the A320 family of planes, but thi
 ## SEAT 29E
 And now, for a dose of polite commercial and small private airplane bathroom humor to bring you back to reality.
 This creatively-written tail of woe, penned en-flight by an understandably aggrieved passenger pushed beyond his or her limit, was received by United Airlines-predecessor Continental Airlines in April 2005 and has been verified as authentic.
-
+{{< img src="29E img 1.jpg" caption="Via Letters of Note" >}}
