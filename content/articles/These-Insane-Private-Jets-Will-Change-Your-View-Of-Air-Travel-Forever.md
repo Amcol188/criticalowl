@@ -23,9 +23,8 @@ Brought to market by AMAC Aerospace, this 2012 Boeing 747-8I is configured for a
 <p><strong>Stateroom:</strong> Featuring a gargantuan footprint relative to smaller private jets, this stateroom accommodates a 60"x80" bed, nightstand and cabinets, desk, TV and LED lighting, and large adjacent lavatory, shower and vanity (next).</p>
 
 {{< img src="aircraft-4.jpg" caption="Via AMAC Aerospace" >}}
-<p><strong>Master Lavatory:</strong> Features a shower with heated floor, toilet, bidet, sink and vanity.</p>
-
 {{< img src="aircraft-5.jpg" caption="Via AMAC Aerospace" >}}
+<p><strong>Master Lavatory:</strong> Features a shower with heated floor, toilet, bidet, sink and vanity.</p>
 
 {{< img src="aircraft-6.jpg" caption="Via AMAC Aerospace" >}}
 {{< img src="aircraft-7.jpg" caption="Via AMAC Aerospace" >}}
@@ -69,50 +68,50 @@ AMAC is a Swiss conglomerate with skilled completion craftsman focused on the VI
 <p><strong>Master Bathroom:</strong> Art Deco transition styling featuring full height shower with teak floor, lavatory and vanity.</p>
 
 {{< img src="aircraft-21.jpg" caption="Via AMAC Aerospace" >}}
+{{< img src="aircraft-22.jpg" caption="Via AMAC Aerospace" >}}
 <p><strong>Main Lounge:</strong> The stylist Art Deco vibe continues in this lounge, using carbon fiber, wood veneer, art-work, metal inlays, and leather-work. This lounge seats up to seven passengers.</p>
 
-{{< img src="aircraft-22.jpg" caption="Via AMAC Aerospace" >}}
+{{< img src="aircraft-23.jpg" caption="Via AMAC Aerospace" >}}
 <p><strong>Dining Area:</strong> Flowing in from the main cabin and continuing the Art Deco design theme, the dining area comfortably seats six passengers. Artwork and other features can be found on the aft bulkhead.</p>
 
-{{< img src="aircraft-23.jpg" caption="Via AMAC Aerospace" >}}
+{{< img src="aircraft-24.jpg"  caption="Via AMAC Aerospace" >}}
 <p><strong>Private Lounge:</strong> For discrete meetings out of earshot, or an additional sleeping area. The electric center table can descend and enable space for a separate cushion from a divan to form a large bed.</p>
 
 ## 2014 BOEING BBJ
 Boeing Business Jets, or BBJs, list new at a shade under $60 million, but that price excludes any interior design, which typically costs an extra $20 - $25 million. Here is a lovely completed 2014 BBJ that is being brokered by Opus Aeronautics.
 
-{{< img src="aircraft-24.jpg" caption="Via Opus Aerospace" >}}
+{{< img src="aircraft-25.jpg" caption="Via Opus Aerospace" >}}
 <strong>BBJ Exterior</strong>
 
-{{< img src="aircraft-25.jpg" caption="Via Opus Aerospace" >}}
-
 {{< img src="aircraft-26.jpg" caption="Via Opus Aerospace" >}}
+{{< img src="aircraft-27.jpg" caption="Via Opus Aerospace" >}}
 <strong>Main Cabin</strong>
 
-{{< img src="aircraft-27.jpg" caption="Via Opus Aerospace" >}}
+{{< img src="aircraft-28.jpg" caption="Via Opus Aerospace" >}}
 <strong>Private Lounge</strong>
 
-{{< img src="aircraft-28.jpg" caption="Via Opus Aerospace" >}}
+{{< img src="aircraft-29.jpg" caption="Via Opus Aerospace" >}}
 <strong>State Room</strong>
 
-{{< img src="aircraft-29.jpg" caption="Via Opus Aerospace" >}}
+{{< img src="aircraft-30.jpg" caption="Via Opus Aerospace" >}}
 <strong>Stateroom Lavatory</strong>
 
-{{< img src="aircraft-30.jpg" caption="Via Opus Aerospace" >}}
+{{< img src="aircraft-31.jpg" caption="Via Opus Aerospace" >}}
 <strong>BBJ Flightdeck</strong>
 
 ## 2010 AIRBUS AC318 ELITE
 The Airbus A318 may be the smallest member of the A320 family of planes, but this particular luxury liner is partial to creature comfort. A new A318 would cost ~$77 million without the interior work. This AC318 accommodates 19 VIPs plus a full crew. It has two cabins plus a stateroom, three bathrooms and a full galley. It is being brokered by Global Jet Elite in Monaco.
 
-{{< img src="aircraft-31.jpg" caption="Via Global Jet" >}}
+{{< img src="aircraft-32.jpg" caption="Via Global Jet" >}}
 <strong>Main Cabin</strong>
 
-{{< img src="aircraft-32.jpg" caption="Via Global Jet" >}}
+{{< img src="aircraft-33.jpg" caption="Via Global Jet" >}}
 <strong>Stateroom</strong>
 
-{{< img src="aircraft-33.jpg" caption="Via Global Jet" >}}
+{{< img src="lav.jpg" caption="Via Global Jet" >}}
 <strong>Lavatory</strong>
 
 ## SEAT 29E
 And now, for a dose of polite commercial and small private airplane bathroom humor to bring you back to reality.
-
 This creatively-written tail of woe, penned en-flight by an understandably aggrieved passenger pushed beyond his or her limit, was received by United Airlines-predecessor Continental Airlines in April 2005 and has been verified as authentic.
+{{< img src="29E img 1.jpg" caption="Via Letters of Note" >}}
