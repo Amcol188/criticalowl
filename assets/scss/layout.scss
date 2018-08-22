@@ -110,7 +110,16 @@ body {
         @extend %flex;
         @extend %flex-column;
         @extend %content-flex-end;
-        min-height: 400px;
+        min-height: 180px;
+        @media screen and (min-width: 375px) {
+          min-height: 210px;
+        }
+        @media screen and (max-width: 414px) {
+          min-height: 235px;
+        }
+        @media screen and (min-width: $phone) {
+          min-height: 400px;
+        }
       }
       section.content {
         grid-template-columns:
@@ -133,7 +142,9 @@ body {
         }
       }
       &.meta-post section.content > * {
-        grid-column: bleed !important;
+        @media screen and (min-width: $phone) {
+          grid-column: bleed !important;
+        }
       }
     }
   }
