@@ -1,8 +1,8 @@
 {{ if ne .IsHome true }}
-	{{ if in .Params.categories "slideshow" }}
+	{{ if in .Params.categories "glide" }}
 		{{ $lazyScript := resources.Get "js/lazy-loading.js" }}
 		{{ $glide := resources.Get "js/glide.js" }}
-		{{ $js := slice $lazyScript $glide | resources.Concat "js/bundle.js" | minify | fingerprint }}
+		{{ $js := slice $lazyScript $glide | resources.Concat "js/lg-bundle.js" | minify | fingerprint }}
 		<script src="{{ $js.Permalink }}"></script>
 		<script>
 			var myLazyLoad = new LazyLoad({
@@ -12,24 +12,24 @@
 				class_error: "error"
 			});
 		</script>
-		<script>
-			var input = document.querySelector('#slider')
-			var glide = new Glide('#slider', {
-				type: 'carousel',
-				startAt: 0,
-				perView: 1,
-				focusAt: 'center',
-				autoplay: 3000,
-				hoverpause: true,
-				keyboard: true
-			})
-			input.addEventListener('input', function (event) {
-				glide.update({
-					startAt: event.target.value
-				})
-			})
-			glide.mount()
-		</script>
+  <script>
+  	var input = document.querySelector('#slider')
+  	var glide = new Glide('#slider', {
+  		type: 'carousel',
+  		startAt: 0,
+  		perView: 1,
+  		focusAt: 'center',
+  		autoplay: 3000,
+  		hoverpause: true,
+  		keyboard: true
+  	})
+  	input.addEventListener('input', function (event) {
+  		glide.update({
+  			startAt: event.target.value
+  		})
+  	})
+  	glide.mount()
+  </script>
 	{{ else }}
 		{{ $lazyScript := resources.Get "js/lazy-loading.js" | minify | fingerprint }}
 		<script src="{{ $lazyScript.Permalink }}"></script>
@@ -45,7 +45,7 @@
 {{ else }}
   {{ $infiniteScroll := resources.Get "js/infinite-scroll.js" }}
   {{ $lazyScript := resources.Get "js/lazy-loading.js" }}
-  {{ $js := slice $lazyScript $infiniteScroll | resources.Concat "js/bundle.js" | minify | fingerprint }}
+  {{ $js := slice $lazyScript $infiniteScroll | resources.Concat "js/il-bundle.js" | minify | fingerprint }}
   <script src="{{ $js.Permalink }}"></script>
   <script>
     var myLazyLoad = new LazyLoad({
