@@ -32,7 +32,7 @@ Cookies. We collect information about your internet usage by storing cookies on 
 Beacons. Pages of our Websites may contain small image files, known as beacons, that help the Company gather aggregated website statistics.
 
 ## THIRD-PARTY DATA
-The advertisements on our Websites are served by third-party advertising partners. You can find a list of the advertising partners we work with here.  Please note that our third-party advertising partners and the advertisers that run ads on our Websites may also use cookies, beacons or other tracking technologies to collect information about our users. These advertising partners may use this information about you combined with your browsing activity on other sites on the Internet to deliver advertisements and promotions that may be of more interest to you.
+The advertisements on our Websites are served by third-party advertising partners. The advertisements on our Websites are served by third-party advertising partners, including Google. Please note that our third-party advertising partners and the advertisers that run ads on our Websites may also use cookies, beacons or other tracking technologies to collect information about our users. These advertising partners may use this information about you combined with your browsing activity on other sites on the Internet to deliver advertisements and promotions that may be of more interest to you.
 
 We work with these advertising partners to ensure that any use of personal data is done in accordance with local jurisdiction laws, such as the EU General Data Protection Regulation 2016/679 (“GDPR”).  For more detailed information on how we comply with such regulations, please send us an email at [info "@" contentreach.net].
 
@@ -45,21 +45,21 @@ With authorities to comply with any court order or other legal obligation or to 
 With partners focused on the prevention of fraud to protect the rights, property, or safety of ContentReach, our employees, or our users.
 
 ## OPTING OUT
-If you do not wish us to collect cookies, select the appropriate setting in your browser. If you do so, please note that some parts of our sites may no longer function properly.  
+If you do not wish us to collect cookies, select the appropriate setting in your browser. If you do so, please note that some parts of our sites may no longer function properly.
 
 If you wish to opt out of personalized advertising, you may do so by visiting {{< link href="www.aboutads.info" content="www.aboutads.info" >}}.  To learn more about Interest-Based Advertising or to opt-out of this type of advertising by those third parties that are members of self-regulatory programs such as the Network Advertising Initiative, please visit the NAI’s website {{< link href="www.networkadvertising.org" content="www.networkadvertising.org" >}} which will allow you to opt out of Interest-Based Advertising by one, or all, NAI members.  To learn more about Cross-App Advertising, please visit {{< link href="www.networkadvertising.org" content="www.networkadvertising.org" >}}. You can find instructions on how to use consumer choice mechanisms provided by major mobile operating systems here: {{< link href="http://www.networkadvertising.org/mobile-choices" content="http://www.networkadvertising.org/mobile-choices" >}}.
 
 If you have questions or concerns about the Company’s privacy policy or practices, please contact us via email to [info "@" contentreach.net] or by mail to ContentReach LLC, 1765 Greensboro Station Place, Suite 900, McLean, VA 22102, USA.
 
 ADDITIONAL POLICIES AND RIGHTS COVERING THE EUROPEAN UNION OR EUROPEAN ECONOMIC AREA (“EEA”)
- 
-This section applies to individuals within the EEA only. 
- 
+
+This section applies to individuals within the EEA only.
+
 For the purposes of  GDPR, the data controller is ContentReach LLC, a Delaware limited liability company with principal place of business at 1765 Greensboro Station Place, Suite 900, McLean, VA 22102.
 
 In order to fulfill our complicated GDPR obligations as a data controller with respect to delivering online advertising on our Websites, we have implemented certain technologies on our site and processes with our company under the guidance of the Interactive Advertising Bureau IAB Europe Transparency and Consent Framework v1.1, which you can find here.  We are committed to evolving our underlying technologies and processes in accordance with IAB recommendations as they evolve over time, in order to best serve you and your privacy rights.
 
-Under the GDPR, in certain circumstances, you have the right to (a) request access to any personal data we hold about you and related information, (b) obtain without undue delay the rectification of any inaccurate personal data, (c) request that your personal data is deleted provided the personal data is not required by us for compliance with a legal obligation under European or Member State law or for the establishment, exercise or defence of a legal claim, (d) prevent or restrict processing of your personal data, except to the extent processing is required for the establishment, exercise or defence of legal claims; and (e) request transfer of your personal data directly to a third party where this is technically feasible.  
+Under the GDPR, in certain circumstances, you have the right to (a) request access to any personal data we hold about you and related information, (b) obtain without undue delay the rectification of any inaccurate personal data, (c) request that your personal data is deleted provided the personal data is not required by us for compliance with a legal obligation under European or Member State law or for the establishment, exercise or defence of a legal claim, (d) prevent or restrict processing of your personal data, except to the extent processing is required for the establishment, exercise or defence of legal claims; and (e) request transfer of your personal data directly to a third party where this is technically feasible.
 
 In addition, where you believe that we have not complied with our obligation under this privacy policy or European law, you have the right to file a complaint to an EU Data Protection Authority.
 
