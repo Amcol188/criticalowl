@@ -8,18 +8,23 @@ body {
     minmax(15px, 1fr) [full-end];
   &#home {
     @media screen and (min-width: $desktop) {
-      grid-template-rows: 133px repeat(2, auto);
+      grid-template-rows: 133px repeat(3, auto);
     }
   }
   > * {
     grid-column: main;
-    grid-row: 2/3;
   }
-  header {
+  > header {
     grid-row: 1/2;
   }
-  footer {
+  > main {
+    grid-row: 2/3;
+  }
+  > nav {
     grid-row: 3/4;
+  }
+  > footer {
+    grid-row: 4/5;
   }
   header,
   footer {
@@ -83,6 +88,7 @@ body {
           margin: 0;
         }
       }
+      /*Glidejs*/
       div#slider {
         div.glide__arrows {
           button.glide__arrow {
@@ -91,11 +97,19 @@ body {
             padding: 0;
             text-shadow: none;
             svg {
+              filter: drop-shadow(1px 1px 5px rgba($meta, 0.5));
               fill: lighten(#2d51a3, 5%);
-              width: auto;
               &:hover {
                 fill: #2d51a3;
               }
+            }
+          }
+        }
+        div.glide__bullets {
+          button.glide__bullet {
+            background-color: rgba($link, 0.5);
+            &.glide__bullet--active {
+              background-color: $link;
             }
           }
         }
