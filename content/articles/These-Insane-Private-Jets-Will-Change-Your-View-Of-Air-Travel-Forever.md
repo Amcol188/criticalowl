@@ -37,7 +37,21 @@ Brought to market by AMAC Aerospace, this 2012 Boeing 747-8I is configured for a
 ## GORGEOUS BOEING 747 INTERIORS
 Greenpoint Technologies is the firm to call when designing the interior of your flying Boeing palace. The firm has completed, refurbished or otherwise modified over 50 Boeing aircraft for VVIPs and Heads of State. Below is a sampling of interiors they've designed and installed on 747s alone. Their craftsmanship is simply exquisite. If you can write the check, we highly recommend them.
 
-{{< glide "Via Greenpoint Technologies" "private-jets-10.jpg" "private-jets-11.jpg" "private-jets-12.jpg" "private-jets-13.jpg" "private-jets-14.jpg" "private-jets-15.jpg" "private-jets-16.jpg" "private-jets-17.jpg" >}}
+{{< img src="private-jets-10.jpg" caption="Via Greenpoint Technologies" >}}
+
+{{< img src="private-jets-11.jpg" caption="Via Greenpoint Technologies" >}}
+
+{{< img src="private-jets-12.jpg" caption="Via Greenpoint Technologies" >}}
+
+{{< img src="private-jets-13.jpg" caption="Via Greenpoint Technologies" >}}
+
+{{< img src="private-jets-14.jpg" caption="Via Greenpoint Technologies" >}}
+
+{{< img src="private-jets-15.jpg" caption="Via Greenpoint Technologies" >}}
+
+{{< img src="private-jets-16.jpg" caption="Via Greenpoint Technologies" >}}
+
+{{< img src="private-jets-17.jpg" caption="Via Greenpoint Technologies" >}}
 
 ## EXTREMELY STYLISH AIRBUS A319
 AMAC is a Swiss conglomerate with skilled completion craftsman focused on the VIP and VVIP markets out of France and Switzerland. They are currently marketing an Art Deco styled A319 for sale. New, an A319 costs ~$90 million plus interior completion. This plane entered service in 2013 and features a main lounge, dining area, master bedroom and bath, aft lav, private lounge/additional bedroom, full galley, aft seating area and a crew area near an art-adorned entranceway.
