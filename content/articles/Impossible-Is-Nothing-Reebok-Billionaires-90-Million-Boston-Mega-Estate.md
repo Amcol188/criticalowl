@@ -4,6 +4,13 @@ date = "2018-08-01"
 author = "Jay Crystal"
 categories = ["shelter"]
 image = "img/impossible-1.jpg"
+slideshow = [
+  "impossible-1.jpg",
+  "impossible-2.jpg",
+  "impossible-3.jpg",
+  "impossible-4.jpg",
+  "impossible-5.jpg"
+]
 caption = "Via Coldwell Banker"
 showthedate = true
 draft = false

@@ -4,6 +4,17 @@ date = "2018-07-25"
 author = "Marisa Megan"
 categories = ["shelter"]
 image = "img/americas-most-1.jpg"
+slideshow = [
+  "americas-most-1.jpg",
+  "americas-most-2.jpg",
+  "americas-most-3.jpg",
+  "americas-most-4.jpg",
+  "americas-most-5.jpg",
+  "americas-most-6.jpg",
+  "americas-most-7.jpg",
+  "americas-most-8.jpg",
+  "americas-most-9.jpg"
+]
 caption = "Via Unlimited Style Real Estate Photography"
 showthedate = true
 draft = false

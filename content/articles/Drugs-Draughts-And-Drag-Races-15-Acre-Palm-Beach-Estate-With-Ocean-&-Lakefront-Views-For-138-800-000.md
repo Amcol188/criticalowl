@@ -4,6 +4,24 @@ date = "2018-08-15"
 author = "Jay Crystal"
 categories = ["shelter"]
 image = "img/palm-beach-1.jpg"
+slideshow = [
+  "palm-beach-1.jpg",
+  "palm-beach-2.jpg",
+  "palm-beach-3.jpg",
+  "palm-beach-4.jpg",
+  "palm-beach-5.jpg",
+  "palm-beach-6.jpg",
+  "palm-beach-7.jpg",
+  "palm-beach-8.jpg",
+  "palm-beach-9.jpg",
+  "palm-beach-10.jpg",
+  "palm-beach-11.jpg",
+  "palm-beach-12.jpg",
+  "palm-beach-13.jpg",
+  "palm-beach-14.jpg",
+  "palm-beach-15.jpg",
+  "palm-beach-16.jpg"
+]
 caption = "Via Sotheby's International Realty"
 showthedate = true
 draft = false

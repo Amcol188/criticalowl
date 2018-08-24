@@ -4,6 +4,12 @@ date = "2018-08-08"
 author = "Jay Crystal"
 categories = ["shelter"]
 image = "img/dc-mansion-1.jpg"
+slideshow = [
+  "dc-mansion-1.jpg",
+  "dc-mansion-2.jpg",
+  "dc-mansion-3.jpg",
+  "dc-mansion-4.jpg"
+]
 caption = "Via Sotheby's International Realty"
 showthedate = true
 draft = false
@@ -11,7 +17,7 @@ draft = false
 
 AOL co-founder Steve Case is selling Merrywood, his own jaw-dropping estate, for or $49.5 million. Though its asking price rests on the "lower" end of the homes listed here, Merrywood is by no means lacking in grandeur: a childhood home of Jacqueline Kennedy Onassis, this mansion is located just down the road from that of AOL's other co-founder, the late James Kimsey. The home is located in McLean, Virginia across the Potomac River from Washington, DC.
 
-{{< img src="dc-mansion-2.jpg" caption="Via Sotheby's International Realty" >}}
+{{< img src="dc-mansion-5.jpg" caption="Via Sotheby's International Realty" >}}
 
 Since its construction in 1919, the Merrywood estate has served as home to several influential political and business leaders. As the childhood home of Jacqueline Kennedy Onassis, Merrywood came into the spotlight beginning in the mid-1940s, and it has since continued to function as a political gathering point of sorts, becoming a celebrated venue to host presidents, business leaders, artists, and countless Kennedy family celebrations.
 

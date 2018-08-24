@@ -4,6 +4,42 @@ date = "2018-07-27"
 author = "Marisa Megan"
 categories = ["shelter"]
 image = "img/production-1.jpg"
+slideshow = [
+  "production-1.jpg",
+  "production-2.jpg",
+  "production-3.jpg",
+  "production-4.jpg",
+  "production-5.jpg",
+  "production-6.jpg",
+  "production-7.jpg",
+  "production-8.jpg",
+  "production-9.jpg",
+  "production-10.jpg",
+  "production-11.jpg",
+  "production-12.jpg",
+  "production-13.jpg",
+  "production-14.jpg",
+  "production-15.jpg",
+  "production-16.jpg",
+  "production-17.jpg",
+  "production-18.jpg",
+  "production-19.jpg",
+  "production-20.jpg",
+  "production-21.jpg",
+  "production-22.jpg",
+  "production-23.jpg",
+  "production-24.jpg",
+  "production-25.jpg",
+  "production-26.jpg",
+  "production-27.jpg",
+  "production-28.jpg",
+  "production-29.jpg",
+  "production-30.jpg",
+  "production-31.jpg",
+  "production-32.jpg",
+  "production-33.jpg",
+  "production-34.jpg"
+]
 caption = "Via RE/MAX Olson & Associate"
 showthedate = true
 draft = false

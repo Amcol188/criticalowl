@@ -4,6 +4,16 @@ date = "2018-07-18"
 author = "Marisa Megan"
 categories = ["shelter"]
 image = "img/fifth-ave-1.jpg"
+slideshow = [
+  "fifth-ave-1.jpg",
+  "fifth-ave-2.jpg",
+  "fifth-ave-3.jpg",
+  "fifth-ave-4.jpg",
+  "fifth-ave-5.jpg",
+  "fifth-ave-6.jpg",
+  "fifth-ave-7.jpg",
+  "fifth-ave-8.jpg"
+]
 caption = "Via Brown Harris Stevens"
 showthedate = true
 draft = false

@@ -4,6 +4,15 @@ date = "2018-08-13"
 author = "Jay Crystal"
 categories = ["shelter"]
 image = "img/be-bids-1.jpg"
+slideshow = [
+  "be-bids-1.jpg",
+  "be-bids-2.jpg",
+  "be-bids-3.jpg",
+  "be-bids-4.jpg",
+  "be-bids-5.jpg",
+  "be-bids-7.jpg",
+  "be-bids-8.jpg"
+]
 caption = "Via Douglas Elliman Real Estate"
 showthedate = true
 draft = false
@@ -11,7 +20,7 @@ draft = false
 
 The 1,800 acre Las Varas Ranch, which features nearly 2 miles of pristine Santa Barbara beachfront and was built by Edward Doheny, is somewhat surrounded by artistic appeal. The expansive property inspired Upton Sinclair's Oil! and, consequently, the 2007 Oscar-nominated film "There Will Be Blood" starring Daniel Day-Lewis. Despite the film and novel's use of the lavish estate to further their condemnation of exploitative greed, the publicity surrounding these acclaimed works of art probably didn't hurt the ranch's asking price of $80 million.
 
-{{< img src="be-bids-2.jpg" caption="Via Douglas Elliman Real Estate" >}}
+{{< img src="be-bids-6.jpg" caption="Via Douglas Elliman Real Estate" >}}
 
 In 1892, Edward Doheny drilled the first successful oil well in the Los Angeles City Oil Field. His success set off a huge petroleum boom in Southern California. It also made him a massive fortune. His company eventually became the Pan American Petroleum & Transport Company, one of the largest oil companies in the world in the 1920s. In 1954, what began as Doheny's empire became a merger with Standard of Indiana to form the American Oil Company, or Amoco, which was in turn acquired by British Petroleum in 1998.
 

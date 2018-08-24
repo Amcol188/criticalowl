@@ -4,6 +4,21 @@ date = "2018-07-20"
 author = "Marisa Megan"
 categories = ["shelter"]
 image = "img/leather-1.jpg"
+slideshow = [
+  "leather-1.jpg",
+  "leather-2.jpg",
+  "leather-3.jpg",
+  "leather-4.jpg",
+  "leather-5.jpg",
+  "leather-6.jpg",
+  "leather-7.jpg",
+  "leather-8.jpg",
+  "leather-9.jpg",
+  "leather-10.jpg",
+  "leather-11.jpg",
+  "leather-12.jpg",
+  "leather-13.jpg"
+]
 caption = "Via Douglas Elliman"
 showthedate = true
 draft = false

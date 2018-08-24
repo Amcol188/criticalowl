@@ -4,6 +4,21 @@ date = "2018-07-23"
 author = "Marisa Megan"
 categories = ["shelter"]
 image = "img/staircases-1.jpg"
+slideshow = [
+  "staircases-1.jpg",
+  "staircases-2.jpg",
+  "staircases-3.jpg",
+  "staircases-4.jpg",
+  "staircases-5.jpg",
+  "staircases-6.jpg",
+  "staircases-7.jpg",
+  "staircases-8.jpg",
+  "staircases-9.jpg",
+  "staircases-10.jpg",
+  "staircases-11.jpg",
+  "staircases-12.jpg",
+  "staircases-13.jpg"
+]
 caption = "Via Sotheby's International Realty"
 showthedate = true
 draft = false

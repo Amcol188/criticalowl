@@ -4,6 +4,24 @@ date = "2018-08-03"
 author = "Jay Crystal"
 categories = ["shelter"]
 image = "img/amenities-1.jpg"
+slideshow = [
+  "amenities-1.jpg",
+  "amenities-2.jpg",
+  "amenities-3.jpg",
+  "amenities-4.jpg",
+  "amenities-5.jpg",
+  "amenities-6.jpg",
+  "amenities-7.jpg",
+  "amenities-8.jpg",
+  "amenities-9.jpg",
+  "amenities-10.jpg",
+  "amenities-11.jpg",
+  "amenities-12.jpg",
+  "amenities-13.jpg",
+  "amenities-14.jpg",
+  "amenities-15.jpg",
+  "amenities-16.jpg"
+]
 caption = "Via Sotheby's International"
 showthedate = true
 draft = false

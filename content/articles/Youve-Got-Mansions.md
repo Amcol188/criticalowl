@@ -4,15 +4,24 @@ date = "2018-08-10"
 author = "Jay Crystal"
 categories = ["shelter"]
 image = "img/got-mansions-1.jpg"
+slideshow = [
+  "got-mansions-1.jpg",
+  "got-mansions-2.jpg",
+  "got-mansions-3.jpg",
+  "got-mansions-4.jpg",
+  "got-mansions-5.jpg",
+  "got-mansions-6.jpg",
+  "got-mansions-7.jpg",
+  "got-mansions-8.jpg",
+  "got-mansions-9.jpg",
+  "got-mansions-10.jpg"
+]
 caption = "Via TTR Sotheby's"
 showthedate = true
 draft = false
 +++
 
 The most expensive listing in Washington DC is a $62.95 million riverfront estate constructed by late AOL co-founder James Kimsey. This property is comprised of not only a massive mansion built by Kimsey on the banks of the Potomac River but also an adjacent Frank Lloyd Wright-designed house, which the late Mr. Kimsey is said to have specifically asked to be preserved.
-
-{{< img src="got-mansions-2.jpg" caption="Via TTR Sotheby's" >}}
-<p>Broker site: {{< link href="https://www.ttrsir.com/eng/sales/detail/279-l-905-252w35/the-falls-mclean-va-22101" content="https://www.ttrsir.com/eng/sales/detail/279-l-905-252w35/the-falls-mclean-va-22101" >}}</p>
 
 Overlooking DC from the Arlington/McLean, VA side of the Potomac, the Falls House is comprised of 24,500-square feet spread over six bedrooms, living and entertaining spaces, and more. The home includes four kitchens, one of which has a loading dock for catering trucks to aid in entertaining. There are two garages: the owner's garage, which connects directly to the house, and a guest garage able to hold up to 30 cars. A wine and wet bar with a humidor, featuring a walk-in wine refrigerator, a gym just off the master suite, a massage room, and an indoor hot tub with river views round out the rest of this home's enviable amenities.
 

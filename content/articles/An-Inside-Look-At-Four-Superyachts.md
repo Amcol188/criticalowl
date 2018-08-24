@@ -4,7 +4,18 @@ date = "2018-08-20"
 author = "Marisa Megan"
 categories = ["vehicles", "glide"]
 image = "img/superyachts-main-1.jpg"
-slideshow = ["superyachts-main-1.jpg", "superyachts-main-2.jpg", "superyachts-main-3.jpg", "superyachts-main-4.jpg", "superyachts-main-5.jpg", "superyachts-main-6.jpg", "superyachts-main-7.jpg", "superyachts-main-8.jpg", "superyachts-main-9.jpg", "superyachts-main-10.jpg"]
+slideshow = [
+  "superyachts-main-1.jpg",
+  "superyachts-main-2.jpg",
+  "superyachts-main-3.jpg",
+  "superyachts-main-4.jpg",
+  "superyachts-main-5.jpg",
+  "superyachts-main-6.jpg",
+  "superyachts-main-7.jpg",
+  "superyachts-main-8.jpg",
+  "superyachts-main-9.jpg",
+  "superyachts-main-10.jpg"
+]
 caption = "Via Burgess"
 showthedate = true
 draft = false
