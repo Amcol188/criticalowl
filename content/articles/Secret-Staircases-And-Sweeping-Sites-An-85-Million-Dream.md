@@ -9,7 +9,6 @@ slideshow = [
   "staircases-2.jpg",
   "staircases-3.jpg",
   "staircases-4.jpg",
-  "staircases-5.jpg",
   "staircases-6.jpg",
   "staircases-7.jpg",
   "staircases-8.jpg",

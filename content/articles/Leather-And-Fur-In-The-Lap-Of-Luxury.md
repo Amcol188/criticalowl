@@ -16,7 +16,6 @@ slideshow = [
   "leather-9.jpg",
   "leather-10.jpg",
   "leather-11.jpg",
-  "leather-12.jpg",
   "leather-13.jpg"
 ]
 caption = "Via Douglas Elliman"

@@ -11,8 +11,7 @@ slideshow = [
   "fifth-ave-4.jpg",
   "fifth-ave-5.jpg",
   "fifth-ave-6.jpg",
-  "fifth-ave-7.jpg",
-  "fifth-ave-8.jpg"
+  "fifth-ave-7.jpg"
 ]
 caption = "Via Brown Harris Stevens"
 showthedate = true
