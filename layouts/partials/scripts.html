@@ -11,23 +11,20 @@
 			class_error: "error"
 		});
 	</script>
-  <script>
-  	var input = document.querySelector('#slider')
-  	var glide = new Glide('#slider', {
-  		type: 'carousel',
-  		startAt: 0,
-  		perView: 1,
-  		focusAt: 'center',
-  		autoplay: 3000,
-  		keyboard: true
-  	})
-  	input.addEventListener('input', function (event) {
-  		glide.update({
-  			startAt: event.target.value
-  		})
-  	})
-  	glide.mount()
-  </script>
+<script>
+  var sliders = document.querySelectorAll('#slider');
+  for (var i = 0; i < sliders.length; i++) {
+    var glide = new Glide(sliders[i], {
+    		type: 'carousel',
+    		startAt: 0,
+    		perView: 1,
+    		focusAt: 'center',
+    		autoplay: 3000,
+    		keyboard: true
+    });
+    glide.mount();
+  }
+</script>
 {{ else }}
   {{ $infiniteScroll := resources.Get "js/infinite-scroll.js" }}
   {{ $lazyScript := resources.Get "js/lazy-loading.js" }}

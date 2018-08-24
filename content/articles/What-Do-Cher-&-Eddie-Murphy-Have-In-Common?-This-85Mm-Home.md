@@ -4,7 +4,16 @@ date = "2018-07-30"
 author = "Marisa Megan"
 categories = ["shelter"]
 image = "img/cher-eddie-1.jpg"
-slideshow = ["cher-eddie-1.jpg", "cher-eddie-2.jpg", "cher-eddie-3.jpg", "cher-eddie-4.jpg", "cher-eddie-5.jpg", "cher-eddie-6.jpg", "cher-eddie-7.jpg", "cher-eddie-8.jpg"]
+slideshow = [
+  "cher-eddie-1.jpg",
+  "cher-eddie-2.jpg",
+  "cher-eddie-3.jpg",
+  "cher-eddie-4.jpg",
+  "cher-eddie-5.jpg",
+  "cher-eddie-6.jpg",
+  "cher-eddie-7.jpg",
+  "cher-eddie-8.jpg"
+]
 caption = "Via Douglas Elliman Real Estate"
 showthedate = true
 draft = false

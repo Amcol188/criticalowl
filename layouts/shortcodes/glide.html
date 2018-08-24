@@ -1,12 +1,13 @@
 <div id="slider" class="glide">
   <div class="glide__track" data-glide-el="track">
     <ul class="glide__slides">
-      {{- range (seq 0 (sub (len .Params) 1) ) }}
+      {{ $caption := ($.Get 0) }}
+      {{- range (seq 1 (sub (len .Params) 1) ) }}
         {{ $slideItem := resources.Get (print "img/" ($.Get .)) | fingerprint }}
         <li class="glide__slide">
 	  <figure>
   	    <img data-src="{{ printf `%s` $slideItem.Permalink }}" class="lazy">
-	    <figcaption>Credit to Juan V</figcaption>
+	    <figcaption>{{ $caption }}</figcaption>
 	  </figure>
         </li>
       {{- end }}
