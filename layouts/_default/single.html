@@ -10,7 +10,7 @@
 			{{ end }}
     	{{ if .Params.slideshow }}
       	{{ partial "glide.html" . }}
-    	{{ else }}
+    	{{ else if .Params.image }}
         <figure class="hero-image">
           {{ $imgPath := .Params.image }}
           {{ $imgThumb := resources.Get $imgPath | fingerprint }}
