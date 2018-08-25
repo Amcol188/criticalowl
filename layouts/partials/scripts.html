@@ -6,20 +6,22 @@
 	<script>
 		var myLazyLoad = new LazyLoad({
 			elements_selector: ".lazy",
-			threshold: 200,
+			threshold: 100,
 			class_loading: "loading",
 			class_error: "error"
 		});
+		myLazyLoad.update();
 	</script>
 <script>
   var sliders = document.querySelectorAll('#slider');
   for (var i = 0; i < sliders.length; i++) {
     var glide = new Glide(sliders[i], {
-    		type: 'carousel',
+    		type: 'slider',
     		startAt: 0,
     		perView: 1,
     		focusAt: 'center',
     		autoplay: 3000,
+    		rewind: true,
     		keyboard: true
     });
     glide.mount();
@@ -33,9 +35,10 @@
   <script>
     var myLazyLoad = new LazyLoad({
       elements_selector: ".lazy",
-      threshold: 200,
+      threshold: 100,
 			class_loading: "loading",
 			class_error: "error"
     });
+    myLazyLoad.update();
   </script>
 {{ end }}
