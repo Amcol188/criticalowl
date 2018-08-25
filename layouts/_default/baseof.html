@@ -56,7 +56,7 @@
 	</script>
 
   <!-- Stylesheets -->
-  {{ $styles := resources.Get "scss/main.scss" | toCSS | postCSS | minify | fingerprint }}
+  {{ $styles := resources.Get "css/main.scss" | toCSS | postCSS | minify | fingerprint }}
   <link rel="preload" href="{{ $styles.Permalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
 		<link rel="stylesheet" href="{{ $styles.Permalink }}">

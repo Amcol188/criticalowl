@@ -10,8 +10,7 @@ slideshow = [
   "be-bids-3.jpg",
   "be-bids-4.jpg",
   "be-bids-5.jpg",
-  "be-bids-7.jpg",
-  "be-bids-8.jpg"
+  "be-bids-7.jpg"
 ]
 caption = "Via Douglas Elliman Real Estate"
 showthedate = true
