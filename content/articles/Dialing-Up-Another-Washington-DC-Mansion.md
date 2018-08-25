@@ -28,3 +28,5 @@ Outside, Merrywood's formal gardens are reminiscent of the timeless work of cele
 The combination of Merrywood's lavish features and sweeping history render security a top priority that was ingrained into the construction of the estate. A standalone carriage house provides indoor parking for four automobiles, an estate office, security office, and accommodations for staff. The entire property is gated, fenced, and protected by a state-of-the-art security system. Throughout, the estate has been impeccably maintained, and the security systems and technology guarding it are the most state-of-the-art available.
 
 Unquestionably, Merrywood is the finest private estate, both in amenities and historical significance, in the Washington, DC region.
+
+{{< next link="youve-got-mansions" title="You've Got Mansions" >}}
