@@ -20,8 +20,12 @@
       		{{ end }}
         </figure>
       {{ end }}
-      <section class="content">{{ .Content }}</section>
-			{{ partial "post-foot.html" . }}
+      <section class="content">
+				{{ .Content }}
+				{{ if eq .Section "articles" }}
+					{{ partial "share-button.html" . }}
+				{{ end }}
+			</section>
     </article>
   </main>
   {{ partial "footer.html" . }}
