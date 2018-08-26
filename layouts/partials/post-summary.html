@@ -8,7 +8,7 @@
 	<figure class="hero-image">
 		{{ $imgPath := .Params.image }}
 		{{ $imgThumb := resources.Get $imgPath | fingerprint }}
-		<img src="{{ $imgThumb.Permalink }}" class="image">
+		<img data-src="{{ $imgThumb.Permalink }}" class="lazy">
 		{{ if .Params.caption }}
 			<figcaption>{{ .Params.caption }}</figcaption>
 		{{ end }}
