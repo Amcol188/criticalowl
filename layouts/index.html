@@ -3,9 +3,9 @@
   <main class="list" data-infinite-scroll='{ "path": ".pagination__next", "append": ".post", "hideNav": ".pagination", "history": "replace" }'>
     {{ $paginator  := .Paginate (where .Data.Pages "Type" "articles") 10 }}
     {{ range $paginator.Pages }}
-			{{ if in .Params.categories "home" }}
-				{{ .Render "summary" }}
-			{{ end }}
+      {{ if in .Params.categories "home" }}
+        {{ .Render "summary" }}
+      {{ end }}
     {{ end }}
   </main>
   {{ partial "paginator.html" . }}

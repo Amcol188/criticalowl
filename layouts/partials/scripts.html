@@ -1,32 +1,38 @@
 {{ if ne .IsHome true }}
-	{{ $lazyScript := resources.Get "js/lazy-loading.js" }}
-	{{ $glide := resources.Get "js/glide.js" }}
-	{{ $js := slice $lazyScript $glide | resources.Concat "js/lg-bundle.js" | minify | fingerprint }}
-	<script src="{{ $js.Permalink }}"></script>
-	<script>
-		var myLazyLoad = new LazyLoad({
-			elements_selector: ".lazy",
-			threshold: 100,
-			class_loading: "loading",
-			class_error: "error"
-		});
-		myLazyLoad.update();
-	</script>
-<script>
-  var sliders = document.querySelectorAll('#slider');
-  for (var i = 0; i < sliders.length; i++) {
-    var glide = new Glide(sliders[i], {
-    		type: 'slider',
-    		startAt: 0,
-    		perView: 1,
-    		focusAt: 'center',
-    		autoplay: 3000,
-    		rewind: true,
-    		keyboard: true
+  {{ $lazyScript := resources.Get "js/lazy-loading.js" }}
+  {{ $swiper := resources.Get "js/swiper.js" }}
+  {{ $js := slice $lazyScript $swiper | resources.Concat "js/lg-bundle.js" | minify | fingerprint }}
+  <script src="{{ $js.Permalink }}"></script>
+  <script>
+    var myLazyLoad = new LazyLoad({
+      elements_selector: ".lazy",
+      threshold: 100,
+      class_loading: "loading",
+      class_error: "error"
     });
-    glide.mount();
-  }
-</script>
+    myLazyLoad.update();
+  </script>
+  <script>
+    var mySwiper = new Swiper ('.swiper-container', {
+      slidesPerView: 1,
+      loop: true,
+      lazy: true,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }
+    });
+  </script>
 {{ else }}
   {{ $infiniteScroll := resources.Get "js/infinite-scroll.js" }}
   {{ $lazyScript := resources.Get "js/lazy-loading.js" }}
@@ -36,8 +42,8 @@
     var myLazyLoad = new LazyLoad({
       elements_selector: ".lazy",
       threshold: 100,
-			class_loading: "loading",
-			class_error: "error"
+      class_loading: "loading",
+      class_error: "error"
     });
     myLazyLoad.update();
   </script>

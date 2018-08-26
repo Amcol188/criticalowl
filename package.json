@@ -20,9 +20,7 @@
   },
   "homepage": "https://github.com/sethde/deluxely#readme",
   "devDependencies": {
-    "@glidejs/glide": "^3.2.2",
     "autoprefixer": "^9.0.1",
-    "concurrently": "^3.6.0",
     "cssnano": "^4.0.4",
     "gulp": "^3.9.1",
     "gulp-concat-util": "^0.5.5",

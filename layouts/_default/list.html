@@ -3,7 +3,9 @@
   <main class="list">
     {{ $listFeed := .Paginate (where .Data.Pages "Type" "articles") 10 }}
     {{ range $listFeed.Pages }}
-      {{ .Render "li"}}
+      {{ if in .Params.categories "home" }}
+        {{ .Render "li"}}
+      {{ end }}
     {{ end }}
   </main>
   {{ if or .Paginator.HasPrev .Paginator.HasNext }}
