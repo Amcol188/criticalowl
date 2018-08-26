@@ -2,7 +2,7 @@
 title = "Impossible Is Nothing: Reebok Billionaire's $90 Million Boston Mega Estate"
 date = "2018-08-01"
 author = "Jay Crystal"
-categories = ["shelter"]
+categories = ["shelter", "home"]
 image = "img/impossible-1.jpg"
 slideshow = [
   "impossible-1.jpg",

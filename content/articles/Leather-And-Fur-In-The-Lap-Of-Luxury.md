@@ -2,7 +2,7 @@
 title = "Leather And Fur In The Lap Of Luxury"
 date = "2018-07-20"
 author = "Marisa Megan"
-categories = ["shelter"]
+categories = ["shelter", "home"]
 image = "img/leather-1.jpg"
 slideshow = [
   "leather-1.jpg",

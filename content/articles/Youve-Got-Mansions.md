@@ -2,7 +2,7 @@
 title = "You've Got Mansions"
 date = "2018-08-10"
 author = "Jay Crystal"
-categories = ["shelter"]
+categories = ["shelter", "home"]
 image = "img/got-mansions-1.jpg"
 slideshow = [
   "got-mansions-1.jpg",

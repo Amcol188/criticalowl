@@ -2,7 +2,7 @@
 title = "Secret Staircases And Sweeping Sites: An $85 Million Dream"
 date = "2018-07-23"
 author = "Marisa Megan"
-categories = ["shelter"]
+categories = ["shelter", "home"]
 image = "img/staircases-1.jpg"
 slideshow = [
   "staircases-1.jpg",

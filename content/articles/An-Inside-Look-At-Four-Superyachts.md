@@ -2,7 +2,7 @@
 title = "An Inside Look At Four Superyachts"
 date = "2018-08-20"
 author = "Marisa Megan"
-categories = ["vehicles", "glide"]
+categories = ["vehicles", "home"]
 image = "img/superyachts-main-1.jpg"
 slideshow = [
   "superyachts-main-1.jpg",

@@ -2,7 +2,7 @@
 title = "There Will Be Bids"
 date = "2018-08-13"
 author = "Jay Crystal"
-categories = ["shelter"]
+categories = ["shelter", "home"]
 image = "img/be-bids-1.jpg"
 slideshow = [
   "be-bids-1.jpg",

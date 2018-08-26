@@ -2,7 +2,7 @@
 title = "What Do Cher & Eddie Murphy Have In Common? This $85MM Home"
 date = "2018-07-30"
 author = "Marisa Megan"
-categories = ["shelter"]
+categories = ["shelter", "home"]
 image = "img/cher-eddie-1.jpg"
 slideshow = [
   "cher-eddie-1.jpg",
