@@ -46,4 +46,4 @@ Built in 2014 by ISA, OKTO offers an iconic exterior and interior design backed 
 
 Built by Perini Navi, GRACE E took home top honors at the 2015 World Superyacht Awards by winning Motor Yacht of the Year. A 240-foot power yacht capable of covering some 7000 nautical miles, she can accommodate 16 guests in seven luxury guest cabins, including two VIP staterooms and a master suite. And for those looking to stay fit while cruising the high seas, GRACE E also offers a Wellness Deck with a gym, massage, steam, sauna, hydrotherapy, pool and more. This award-winning yacht checks in at a cool $92 million.
 
-{{< next link="youve-got-mansions" title="You've Got Mansions" >}}
+{{< next link="youve-got-mansions" >}}
