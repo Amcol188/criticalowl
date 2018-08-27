@@ -21,11 +21,12 @@ main.list {
       box-shadow: $box-shadow;
       color: $white;
       font-size: 20px;
-      margin: 15px 0;
+      margin: 15px 0 15px auto;
       padding: 5px 10px;
       text-align: center;
       text-decoration: none;
       transition: all 0.15s ease-in-out;
+      width: 200px;
       &:hover {
         box-shadow: none;
       }
