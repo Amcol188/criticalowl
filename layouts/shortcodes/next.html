@@ -1,10 +1,12 @@
-<hr>
+{{ if .Get "title" }}
+  <hr>
+{{ end }}
 {{ if .Get "link" }}
-<a href="/articles/{{ .Get "link" }}/" class="pagination__next">{{ .Get "title" }}</a>
+  <a href="/articles/{{ .Get "link" }}/" class="pagination__next" id="{{ if .Get "title" }}next{{ else }}next-button{{ end }}">{{ if .Get "title" }}{{ .Get "title" }}{{ else }}Next{{ end }}</a>
 {{ else }}
-	<nav class="pagination">
-		{{ if .Page.PrevInSection }}
-		<a href="{{ .Page.PrevInSection.Permalink }}" class="pagination__next">{{ .Page.PrevInSection.Title }}</a>
-		{{ end }}
-	</nav>
+  <nav class="pagination">
+    {{ if .Page.PrevInSection }}
+      <a href="{{ .Page.PrevInSection.Permalink }}" class="pagination__next">{{ .Page.PrevInSection.Title }}</a>
+    {{ end }}
+  </nav>
 {{ end }}

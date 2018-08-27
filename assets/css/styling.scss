@@ -11,6 +11,25 @@ main.list {
         text-align: end;
       }
     }
+    a#next {
+      font-size: 20px;
+      margin: 0 0 15px;
+    }
+    a#next-button {
+      background-color: $link;
+      border-radius: 4px;
+      box-shadow: $box-shadow;
+      color: $white;
+      font-size: 20px;
+      margin: 15px 0;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.15s ease-in-out;
+      &:hover {
+        box-shadow: none;
+      }
+    }
     a.fb-button {
       @extend %flex;
       @extend %items-center;
@@ -19,7 +38,7 @@ main.list {
       border-radius: 4px;
       font-size: 13px;
       height: 28px;
-      margin-top: 20px;
+      margin-top: 0px;
       padding: 6px;
       text-decoration: none;
       width: 66px;
