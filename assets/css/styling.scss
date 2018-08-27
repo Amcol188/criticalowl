@@ -12,8 +12,8 @@ main.list {
       }
     }
     a#next {
-      font-size: 20px;
-      margin: 0 0 15px;
+      font-size: 22px;
+      margin: 5px 0 20px auto;
     }
     a#next-button {
       background-color: $link;
@@ -22,7 +22,7 @@ main.list {
       color: $white;
       font-size: 20px;
       margin: 15px 0 15px auto;
-      padding: 5px 10px;
+      padding: 10px 10px;
       text-align: center;
       text-decoration: none;
       transition: all 0.15s ease-in-out;
