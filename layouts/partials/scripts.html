@@ -1,7 +1,8 @@
 {{ if ne .IsHome true }}
+  {{ $infiniteScroll := resources.Get "js/infinite-scroll.js" }}
   {{ $lazyScript := resources.Get "js/lazy-loading.js" }}
   {{ $swiper := resources.Get "js/swiper.js" }}
-  {{ $js := slice $lazyScript $swiper | resources.Concat "js/lg-bundle.js" | minify | fingerprint }}
+  {{ $js := slice $infiniteScroll $lazyScript $swiper | resources.Concat "js/ils-bundle.js" | minify | fingerprint }}
   <script src="{{ $js.Permalink }}"></script>
   <script>
     var myLazyLoad = new LazyLoad({
@@ -31,6 +32,28 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
       }
+    });
+  </script>
+  <script>
+    var elem = document.querySelector('.single-list');
+    var infScroll = new InfiniteScroll(elem, {
+      path: '.article__next',
+      append: '.post',
+      history: 'push',
+      hideNav: '.pagination'
+    });
+    var nextURL;
+    function updateNextURL( doc ) {
+      nextURL = document.querySelector('.article__next').href;
+    }
+    updateNextURL( document );
+    var updateURL = new InfiniteScroll(elem, {
+       path: function() {
+        return nextURL
+      },
+    });
+    updateURL.on( 'load.infiniteScroll', function( event, response ) {
+      updateNextURL( response );
     });
   </script>
 {{ else }}

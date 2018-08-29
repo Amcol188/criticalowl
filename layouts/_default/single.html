@@ -1,6 +1,6 @@
 {{ define "main" }}
   {{ partial "header.html" . }}
-  <main class="list">
+  <main class="list single-list">
     <article class="post{{ if ne .Section "articles" }} meta-post{{ end }}">
       <h1 class="title">{{ .Title }}</h1>
       {{ if .Params.showthedate }}
@@ -28,5 +28,6 @@
       </section>
     </article>
   </main>
+   {{ partial "single-pagination.html" . }}
   {{ partial "footer.html" . }}
 {{ end }}
