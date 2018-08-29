@@ -6,11 +6,21 @@
   <script>
     var myLazyLoad = new LazyLoad({
       elements_selector: ".lazy",
-      threshold: 100,
+      threshold: 200,
       class_loading: "loading",
       class_error: "error"
     });
-    myLazyLoad.update();
+
+    var mutationObserver = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        myLazyLoad.update();
+      });
+    });
+
+      var b      = document.getElementsByClassName("list")[0];
+      var config = { childList: true, subtree: true };
+
+      mutationObserver.observe(b, config);
   </script>
   <script>
     var mySwiper = new Swiper ('.swiper-container', {
@@ -33,40 +43,28 @@
       }
     });
   </script>
-  <!-- <script>
-    var elem = document.querySelector('.single-list');
-    var infScroll = new InfiniteScroll(elem, {
-      path: '.article__next',
-      append: '.post',
-      history: 'push',
-      hideNav: '.pagination'
-    });
-    var nextURL;
-    function updateNextURL( doc ) {
-      nextURL = document.querySelector('.article__next').href;
-    }
-    updateNextURL( document );
-    var updateURL = new InfiniteScroll(elem, {
-       path: function() {
-        return nextURL
-      },
-    });
-    updateURL.on( 'load.infiniteScroll', function( event, response ) {
-      updateNextURL( response );
-    });
-  </script> -->
 {{ else }}
   {{ $infiniteScroll := resources.Get "js/infinite-scroll.js" }}
   {{ $lazyScript := resources.Get "js/lazy-loading.js" }}
   {{ $js := slice $lazyScript $infiniteScroll | resources.Concat "js/il-bundle.js" | minify | fingerprint }}
-  <script src="{{ $js.Permalink }}"></script>
-  <script>
-    var myLazyLoad = new LazyLoad({
+    <script src="{{ $js.Permalink }}"></script>
+    <script>
+     var myLazyLoad = new LazyLoad({
       elements_selector: ".lazy",
-      threshold: 100,
+      threshold: 200,
       class_loading: "loading",
       class_error: "error"
     });
-    myLazyLoad.update();
+    
+    var mutationObserver = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        myLazyLoad.update();
+      });
+    });
+
+      var b      = document.getElementsByClassName("list")[0];
+      var config = { childList: true, subtree: true };
+
+      mutationObserver.observe(b, config);
   </script>
 {{ end }}
