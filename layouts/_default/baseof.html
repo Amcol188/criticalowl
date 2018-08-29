@@ -104,6 +104,8 @@
   <link rel="android-chrome" sizes="512x512" href="{{ $ac512.Permalink }}" integrity="{{ $ac512.Data.Integrity }}">
 
   {{ partial "analytics.html" . }}
+
+   {{ partial "adsense.html" . }}
 </head>
 <body {{ if .IsHome }}id="home"{{ end }}>
 
