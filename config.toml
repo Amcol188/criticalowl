@@ -15,7 +15,6 @@ SectionPagesMenu = "main"
 [params]
   OpenLinksInNewWindow = true
   social = "deluxely"
-  
 
 [params.google.analytics]
   trackerID = "UA-123142454-1"
@@ -26,6 +25,6 @@ SectionPagesMenu = "main"
 
 [permalinks]
   blog = "/:title/"
-  
+
 [outputs]
   home = ["html", "rss"]

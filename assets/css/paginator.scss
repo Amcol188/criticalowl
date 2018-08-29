@@ -1,0 +1,7 @@
+nav.pagination {
+  @extend %flex;
+  @extend %content-space-between;
+  a svg {
+    height: 30px;
+  }
+}

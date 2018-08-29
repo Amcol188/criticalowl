@@ -9,12 +9,18 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1.0,maximum-scale=1.0,viewport-fit=cover">
   {{ .Hugo.Generator }}
 
+  <!-- Prevent search index crawlers -->
+  <meta name="robots" content="noindex,nofollow">
+
+	<!-- Manifest -->
+	<link rel="manifest" href={{ "/manifest.json" | relURL }}>
+
   <!-- Fonts -->
   <link rel="preload" href={{ "font-lato/lato-optimized.woff2" | relURL }} as="font" type="font/woff2" crossorigin>
-  
+
   <!-- Critical -->
   {{ partial "critical.html" . }}
-  
+
   <!-- Critical Font Loading -->
   <script>
   	(function() {
@@ -48,55 +54,62 @@
   		}
   	})();
 	</script>
-  
+
+  <!-- Stylesheets -->
+  {{ $styles := resources.Get "css/main.scss" | toCSS | postCSS | minify | fingerprint }}
+  <link rel="preload" href="{{ $styles.Permalink }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+		<link rel="stylesheet" href="{{ $styles.Permalink }}">
+  </noscript>
+  {{ partial "loadCSS.html" . }}
+
+  <!-- RSS -->
+  {{ with .OutputFormats.Get "rss" -}}
+      {{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+
   <!-- Open Graph -->
   <link rel="canonical" href="{{ .Permalink }}">
   <base href="{{ .Site.BaseURL }}"/>
   {{ template "_internal/twitter_cards.html" . }}
-  {{ $avatar := resources.Get "img/logo.png" | fingerprint }}
-  <meta name="twitter:image" content="{{ .Site.BaseURL }}/img/{{ $avatar.Permalink }}">
+  {{ $avatar := resources.Get "icons/logo.png" | fingerprint }}
+  <meta name="twitter:image" content="{{ .Site.BaseURL }}/icons/{{ $avatar.Permalink }}">
   {{ template "_internal/opengraph.html" . }}
-  <meta property="og:image" content="{{ .Site.BaseURL }}/img/{{ $avatar.Permalink }}">
+  <meta property="og:image" content="{{ .Site.BaseURL }}/icons/{{ $avatar.Permalink }}">
   {{ template "_internal/schema.html" . }}
-  
+
   <!-- Favicon -->
-  {{ $favicon := resources.Get "img/favicon.png" | fingerprint }}
+  {{ $favicon := resources.Get "icons/favicon.png" | fingerprint }}
   <link rel="shortcut icon" href="{{ $favicon.Permalink }}" integrity="{{ $favicon.Data.Integrity }}">
 
   <!-- Webclip and Apple Touch Icon -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}">
-  {{ $ati152 := resources.Get "img/apple-touch-icon-152x152.png" | fingerprint }}
+  {{ $ati152 := resources.Get "icons/apple-touch-icon-152x152.png" | fingerprint }}
   <link rel="apple-touch-icon" sizes="152x152" href="{{ $ati152.Permalink }}" integrity="{{ $ati152.Data.Integrity }}">
-  {{ $ati167 := resources.Get "img/apple-touch-icon-167x167.png" | fingerprint }}
+  {{ $ati167 := resources.Get "icons/apple-touch-icon-167x167.png" | fingerprint }}
   <link rel="apple-touch-icon" sizes="167x167" href="{{ $ati167.Permalink }}" integrity="{{ $ati167.Data.Integrity }}">
-  {{ $ati180 := resources.Get "img/apple-touch-icon-180x180.png" | fingerprint }}
+  {{ $ati180 := resources.Get "icons/apple-touch-icon-180x180.png" | fingerprint }}
   <link rel="apple-touch-icon" sizes="180x180" href="{{ $ati180.Permalink }}" integrity="{{ $ati180.Data.Integrity }}">
-  {{ $spt := resources.Get "img/safari-pinned-tab.svg" | minify | fingerprint }}
+  {{ $spt := resources.Get "icons/safari-pinned-tab.svg" | minify | fingerprint }}
   <link rel="mask-icon" color="#2E52A4" href="{{ $spt.Permalink }}" integrity="{{ $spt.Data.Integrity }}">
-  
-  <!-- Android Chrome Icon -->
-  {{ $ac128 := resources.Get "img/android-chrome-128x128.png" | fingerprint }}
-  <link rel="android-chrome" sizes="128x128" href="{{ $ac128.Permalink }}" integrity="{{ $ac128.Data.Integrity }}">
-  {{ $ac192 := resources.Get "img/android-chrome-192x192.png" | fingerprint }}
-  <link rel="android-chrome" sizes="192x192" href="{{ $ac192.Permalink }}" integrity="{{ $ac192.Data.Integrity }}">
-  {{ $ac512 := resources.Get "img/android-chrome-512x512.png" | fingerprint }}
-  <link rel="android-chrome" sizes="512x512" href="{{ $ac512.Permalink }}" integrity="{{ $ac512.Data.Integrity }}">
-  
-  <!-- Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.google.analytics.trackerID }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', '{{ .Site.Params.google.analytics.trackerID }}');
-  </script>
+  <!-- Android Chrome Icon -->
+  {{ $ac128 := resources.Get "icons/android-chrome-128x128.png" | fingerprint }}
+  <link rel="android-chrome" sizes="128x128" href="{{ $ac128.Permalink }}" integrity="{{ $ac128.Data.Integrity }}">
+  {{ $ac192 := resources.Get "icons/android-chrome-192x192.png" | fingerprint }}
+  <link rel="android-chrome" sizes="192x192" href="{{ $ac192.Permalink }}" integrity="{{ $ac192.Data.Integrity }}">
+  {{ $ac512 := resources.Get "icons/android-chrome-512x512.png" | fingerprint }}
+  <link rel="android-chrome" sizes="512x512" href="{{ $ac512.Permalink }}" integrity="{{ $ac512.Data.Integrity }}">
+
+  {{ partial "analytics.html" . }}
 </head>
-<body>
-    <!-- Main content -->
+<body {{ if .IsHome }}id="home"{{ end }}>
+
   {{ block "main" . }}
   {{ end }}
+
+  {{ partial "scripts.html" . }}
 </body>
 </html>

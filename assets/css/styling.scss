@@ -1,0 +1,56 @@
+main.list {
+  article.post {
+    figure {
+      background-color: lighten($meta, 35%);
+      border-radius: 0 0 5px 5px;
+      figcaption {
+        color: lighten($text, 30%);
+        font-size: 14px;
+        margin-top: auto;
+        padding: 5px 10px;
+        text-align: end;
+      }
+    }
+    a#next {
+      font-size: 22px;
+      margin: 5px 0 20px auto;
+    }
+    a#next-button {
+      background-color: $link;
+      border-radius: 4px;
+      box-shadow: $box-shadow;
+      color: $white;
+      font-size: 20px;
+      margin: 15px 0 15px auto;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.15s ease-in-out;
+      width: 200px;
+      &:hover {
+        box-shadow: none;
+      }
+    }
+    a.fb-button {
+      @extend %flex;
+      @extend %items-center;
+      @extend %content-space-between;
+      background-color: #4267b2;
+      border-radius: 4px;
+      font-size: 13px;
+      height: 28px;
+      margin-top: 0px;
+      padding: 6px;
+      text-decoration: none;
+      width: 66px;
+      svg {
+        height: 16px;
+        width: 16px;
+      }
+      p {
+        color: #fff;
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<article class="post">
+  <h2 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+	{{ if .Params.showthedate }}
+	<section class="author meta">
+		<p class="meta">by {{ .Params.author }}</p>
+	</section>
+	{{ end }}
+	<figure class="hero-image">
+		{{ $imgPath := .Params.image }}
+		{{ $imgThumb := resources.Get $imgPath | fingerprint }}
+		<img data-src="{{ $imgThumb.Permalink }}" class="lazy">
+		{{ if .Params.caption }}
+			<figcaption>{{ .Params.caption }}</figcaption>
+		{{ end }}
+	</figure>
+</article>

@@ -1,0 +1,104 @@
+/* Desktop Grid
++--------+--------+---------+
+|.copy   |#menu   |  .social|
++--------+--------+---------+
+*/
+
+/* Tablet Grid
++------------+--------------+
+|            |       .social|
++------------+--------------+
+|.copy       |         #menu|
++------------+--------------+
+*/
+
+/* Mobile Grid
++------+-------+------+
+|      |.social|      |
++------+-------+------+
+|      |#menu  |      |
++------+-------+------+
+|      |.copy  |      |
++------+-------+------+
+*/
+
+footer {
+  background-color: $text;
+  color: $background;
+  grid-gap: 0 50px;
+  grid-template-columns: auto 350px 120px;
+  grid-template-rows: auto;
+  @media screen and (max-width: $tablet) {
+    grid-gap: 20px 0;
+    grid-template-columns: auto 350px;
+    grid-template-rows: repeat(2, min-content);
+  }
+  @media screen and (max-width: 560px) {
+    grid-gap: 15px 0;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, min-content);
+  }
+  section.copy,
+  nav#menu,
+  nav.social {
+    grid-row: 1/2;
+    @media screen and (max-width: 560px) {
+      grid-column: 2/3;
+      justify-self: center;
+    }
+  }
+  section.copy {
+    grid-column: 1/2;
+    @media screen and (max-width: $tablet) {
+      grid-row: 2/3;
+    }
+    @media screen and (max-width: 560px) {
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+    p {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+  nav#menu {
+    grid-column: 2/3;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    @media screen and (max-width: $tablet) {
+      grid-row: 2/3;
+    }
+    div.info {
+      grid-gap: 0 10px;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: auto;
+      @media screen and (max-width: 346px) {
+        grid-gap: 10px 0;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+        text-align: center;
+      }
+    }
+    div.categories,
+    nav.social {
+      display: none;
+    }
+    a {
+      @extend %no-decoration;
+      color: $background;
+      font-size: 14px;
+    }
+  }
+  nav.social {
+    grid-column: 3/4;
+    @media screen and (max-width: $tablet) {
+      grid-column: 2/3;
+    }
+    @media screen and (max-width: 560px) {
+      grid-row: 1/2;
+    }
+    a svg {
+      width: 15px;
+    }
+  }
+}

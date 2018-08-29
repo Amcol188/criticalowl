@@ -1,0 +1,13 @@
+article.post {
+  section.content {
+    figure {
+      min-height: 300px;
+      @media screen and (max-width: $tablet) {
+        min-height: 250px;
+      }
+      @media screen and (max-width: $phone) {
+        min-height: 200px;
+      }
+    }
+  }
+}
