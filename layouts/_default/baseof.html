@@ -103,6 +103,8 @@
   {{ $ac512 := resources.Get "icons/android-chrome-512x512.png" | fingerprint }}
   <link rel="android-chrome" sizes="512x512" href="{{ $ac512.Permalink }}" integrity="{{ $ac512.Data.Integrity }}">
 
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
   {{ partial "analytics.html" . }}
 
    {{ partial "adsense.html" . }}
