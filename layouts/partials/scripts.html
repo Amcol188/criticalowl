@@ -1,8 +1,27 @@
 {{ if ne .IsHome true }}
+  {{ $infiniteScroll := resources.Get "js/infinite-scroll.js" }}
   {{ $lazyScript := resources.Get "js/lazy-loading.js" }}
   {{ $swiper := resources.Get "js/swiper.js" }}
-  {{ $js := slice $lazyScript $swiper | resources.Concat "js/ils-bundle.js" | minify | fingerprint }}
+  {{ $js := slice $infiniteScroll $lazyScript $swiper | resources.Concat "js/ils-bundle.js" | minify | fingerprint }}
   <script src="{{ $js.Permalink }}"></script>
+  <script>
+    var nextURL;
+    function updateNextURL(doc) {
+      nextURL = doc.getElementsByClassName('article__next').href;
+    }
+    updateNextURL(document);
+    var infScroll = new InfiniteScroll('.single-list', {
+      path: function () {
+        return nextURL
+      },
+      append: '.post',
+      hideNav: '.pagination',
+      history: 'replace',
+    });
+    infScroll.on('load.infiniteScroll', function (event, response) {
+      updateNextURL(response);
+    });
+  </script>
   <script>
     var myLazyLoad = new LazyLoad({
       elements_selector: ".lazy",
@@ -10,16 +29,13 @@
       class_loading: "loading",
       class_error: "error"
     });
-
     var mutationObserver = new MutationObserver(function(mutations) {
       mutations.forEach(function(mutation) {
         myLazyLoad.update();
       });
     });
-
       var b      = document.getElementsByClassName("list")[0];
       var config = { childList: true, subtree: true };
-
       mutationObserver.observe(b, config);
   </script>
   <script>
@@ -55,16 +71,13 @@
       class_loading: "loading",
       class_error: "error"
     });
-    
     var mutationObserver = new MutationObserver(function(mutations) {
       mutations.forEach(function(mutation) {
         myLazyLoad.update();
       });
     });
-
       var b      = document.getElementsByClassName("list")[0];
       var config = { childList: true, subtree: true };
-
       mutationObserver.observe(b, config);
   </script>
 {{ end }}
