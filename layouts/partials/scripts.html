@@ -5,26 +5,6 @@
   {{ $js := slice $infiniteScroll $lazyScript $swiper | resources.Concat "js/ils-bundle.js" | minify | fingerprint }}
   <script src="{{ $js.Permalink }}"></script>
   <script>
-    function updateNextURL(doc) {
-      nextURL = doc.getElementsByClassName('article__next').href;
-    }
-
-    updateNextURL(document);
-
-    var infScroll = new InfiniteScroll('.single-list', {
-      path: function () {
-        return nextURL
-      },
-      append: '.post',
-      hideNav: '.pagination',
-      history: 'replace',
-    });
-
-    infScroll.on('load.infiniteScroll', function (event, response) {
-      updateNextURL(response);
-    });
-  </script>
-  <script>
     var myLazyLoad = new LazyLoad({
       elements_selector: ".lazy",
       threshold: 200,
@@ -59,6 +39,26 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
       }
+    });
+  </script>
+  <script>
+    function updateNextURL(doc) {
+      nextURL = doc.querySelector('.articleNext').href;
+    }
+
+    updateNextURL(document);
+
+    var infScroll = new InfiniteScroll('.single-list', {
+      path: function () {
+        return nextURL
+      },
+      append: '.post',
+      hideNav: '.pagination',
+      history: 'replace',
+    });
+
+    infScroll.on('load.infiniteScroll', function (event, response) {
+      updateNextURL(response);
     });
   </script>
 {{ else }}
