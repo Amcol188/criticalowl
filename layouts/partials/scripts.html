@@ -5,11 +5,12 @@
   {{ $js := slice $infiniteScroll $lazyScript $swiper | resources.Concat "js/ils-bundle.js" | minify | fingerprint }}
   <script src="{{ $js.Permalink }}"></script>
   <script>
-    var nextURL;
     function updateNextURL(doc) {
       nextURL = doc.getElementsByClassName('article__next').href;
     }
+
     updateNextURL(document);
+
     var infScroll = new InfiniteScroll('.single-list', {
       path: function () {
         return nextURL
@@ -18,6 +19,7 @@
       hideNav: '.pagination',
       history: 'replace',
     });
+
     infScroll.on('load.infiniteScroll', function (event, response) {
       updateNextURL(response);
     });
