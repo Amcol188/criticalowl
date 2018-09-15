@@ -7,6 +7,7 @@
         {{ .Render "summary" }}
       {{ end }}
     {{ end }}
+    {{ partial "recommended.html" . }}
   </main>
   {{ partial "paginator.html" . }}
 {{ partial "footer.html" . }}

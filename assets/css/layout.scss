@@ -6,6 +6,12 @@ body {
     [full-start] minmax(15px, 1fr)
     [main-start] minmax(0, 700px) [main-end]
     minmax(15px, 1fr) [full-end];
+  @media screen and (min-width: 1000px) {
+    grid-template-columns:
+      [full-start] minmax(15px, 1fr)
+      [main-start] minmax(0, 1020px) [main-end]
+      minmax(15px, 1fr) [full-end];
+  }
   &#home {
     @media screen and (min-width: $desktop) {
       grid-template-rows: 133px repeat(3, auto);
@@ -43,9 +49,10 @@ body {
   }
   // Main takes up remaining viewport
   main.list {
-    grid-gap: 30px 0;
-    grid-template-columns: auto;
+    grid-auto-columns: auto;
     grid-auto-rows: auto;
+    grid-gap: 30px;
+    max-width: 1020px;
     min-height: calc(100vh - 168px);
     @media screen and (max-width: $desktop) {
       min-height: calc(100vh - 153px);
@@ -64,12 +71,14 @@ body {
     }
     // Feed item layout
     article.post {
+      grid-column: 1/2;
       grid-gap: 15px 0;
       grid-template-columns:
         [fill-start] minmax(1em, 1fr)
         [half-start] minmax(0, $phone) [half-end]
         minmax(1em, 1fr) [fill-end];
       grid-auto-rows: min-content;
+      max-width: 700px;
       > * {
         grid-column: fill;
         @media screen and (max-width: $phone) {

@@ -11,14 +11,14 @@
       class_loading: "loading",
       class_error: "error"
     });
-    var mutationObserver = new MutationObserver(function(mutations) {
-      mutations.forEach(function(mutation) {
+    var mutationObserver = new MutationObserver(function (mutations) {
+      mutations.forEach(function (mutation) {
         myLazyLoad.update();
       });
     });
-      var b      = document.getElementsByClassName("list")[0];
-      var config = { childList: true, subtree: true };
-      mutationObserver.observe(b, config);
+    var b = document.getElementsByClassName("list")[0];
+    var config = { childList: true, subtree: true };
+    mutationObserver.observe(b, config);
   </script>
   <script>
     var mySwiper = new Swiper ('.swiper-container', {
@@ -65,21 +65,21 @@
   {{ $infiniteScroll := resources.Get "js/infinite-scroll.js" }}
   {{ $lazyScript := resources.Get "js/lazy-loading.js" }}
   {{ $js := slice $lazyScript $infiniteScroll | resources.Concat "js/il-bundle.js" | minify | fingerprint }}
-    <script src="{{ $js.Permalink }}"></script>
-    <script>
-     var myLazyLoad = new LazyLoad({
-      elements_selector: ".lazy",
-      threshold: 200,
-      class_loading: "loading",
-      class_error: "error"
+  <script src="{{ $js.Permalink }}"></script>
+  <script>
+    var myLazyLoad = new LazyLoad({
+    elements_selector: ".lazy",
+    threshold: 200,
+    class_loading: "loading",
+    class_error: "error"
+  });
+  var mutationObserver = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      myLazyLoad.update();
     });
-    var mutationObserver = new MutationObserver(function(mutations) {
-      mutations.forEach(function(mutation) {
-        myLazyLoad.update();
-      });
-    });
-      var b      = document.getElementsByClassName("list")[0];
-      var config = { childList: true, subtree: true };
-      mutationObserver.observe(b, config);
+  });
+    var b      = document.getElementsByClassName("list")[0];
+    var config = { childList: true, subtree: true };
+    mutationObserver.observe(b, config);
   </script>
 {{ end }}
