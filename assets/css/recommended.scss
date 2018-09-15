@@ -14,12 +14,13 @@ ul.rec-list {
   li.rec-list__item {
     list-style: none;
     margin: 0;
-    article.post {
+    article {
       @extend %items-start;
+      grid-column: 1/2;
       grid-column-gap: 20px;
       grid-template-columns: 80px 200px;
       grid-template-rows: auto;
-      figure.hero-image {
+      figure {
         background: none;
         grid-column: 1/2;
         min-height: 40px;
@@ -29,14 +30,18 @@ ul.rec-list {
           width: 80px;
         }
       }
-      h2.title {
+      h2 {
         display: -webkit-box;
         font-size: 20px;
         grid-column: 2/3;
         height: 45px;
+        margin: 0;
         overflow: hidden;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
+        a {
+          @extend %no-decoration;
+        }
       }
     }
   }

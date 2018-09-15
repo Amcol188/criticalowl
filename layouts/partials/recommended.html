@@ -3,13 +3,13 @@
   {{ $randomPosts := shuffle $section | first 4 }}
   {{ range $randomPosts }}
   <li class="rec-list__item">
-    <article class="post">
-      <figure class="hero-image">
+    <article>
+      <figure>
         {{ $imgPath := .Params.image }}
         {{ $imgThumb := resources.Get $imgPath | fingerprint }}
         <img data-src="{{ $imgThumb.Permalink }}" class="lazy">
       </figure>
-      <h2 class="title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
     </article>
   </li>
   {{ end }}
