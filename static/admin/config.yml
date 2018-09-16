@@ -9,7 +9,7 @@ public_folder: "img"
 
 collections:
   - name: "articles"
-    label: "Articles"
+    label: "Article"
     folder: "content/articles"
     create: true
     fields:
@@ -18,6 +18,11 @@ collections:
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Caption", name: "caption", widget: "string"}
+      - label: "Slideshow"
+        name: "slideshow"
+        widget: "list"
+        field:
+          - {label: "Image", name: "image", widget: "image"}
       - {label: "Show Date", name: "showthedate", widget: "boolean", default: true}
       - {label: "Draft", name: "draft", widget: "boolean", default: false}
       - {label: "Body", name: "body", widget: "markdown"}
