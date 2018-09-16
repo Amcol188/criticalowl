@@ -5,6 +5,12 @@ author = "Jay Crystal"
 categories = ["vehicles", "home"]
 image = "img/Stateroom.jpg"
 caption = "Via AMAC Aerospace"
+recommended = [
+  "There-Will-Be-Bids",
+  "Youve-Got-Mansions",
+  "Secret-Staircases-And-Sweeping-Sites-An-85-Million-Dream",
+  "New-York's-Largest-Original-Apartment-On-Fifth-Avenue-Hits-The-Market"
+]
 showthedate = true
 draft = false
 +++

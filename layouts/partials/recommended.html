@@ -1,19 +1,31 @@
 <ul class="rec-list">
-  {{ $section := ($.Site.GetPage "section" "articles").Pages }}
-  {{ $randomPosts := shuffle $section | first 4 }}
-  {{ range $randomPosts }}
-  <li class="rec-list__item">
-    <article>
-      <figure>
-        {{ $imgPath := .Params.image }}
-        {{ $imgThumb := resources.Get $imgPath | fingerprint }}
-        <img data-src="{{ $imgThumb.Permalink }}" class="lazy">
-      </figure>
-      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-    </article>
-  </li>
+  {{ if .Params.recommended }}
+    {{ range .Params.recommended }}
+      {{ $recItem := (.) }}
+      {{ $recPath := (printf "%s.md" $recItem) }}
+      <li class="rec-list__item">
+        {{ with .Site.GetPage "page" $recItem }}
+          <a href="{{ .URL }}">{{ .Title }}</a>
+        {{ end }}
+      </li>
+    {{ end }}
+  {{ else }}
+    {{ $section := ($.Site.GetPage "section" "articles").Pages }}
+    {{ $randomPosts := shuffle $section | first 4 }}
+    {{ range $randomPosts }}
+    <li class="rec-list__item">
+      <article>
+        <figure>
+          {{ $imgPath := .Params.image }}
+          {{ $imgThumb := resources.Get $imgPath | fingerprint }}
+          <img data-src="{{ $imgThumb.Permalink }}" class="lazy">
+        </figure>
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      </article>
+    </li>
+    {{ end }}
+    <li class="rec-list__item">
+      {{ partial "article-ad.html" . }}
+    </li>
   {{ end }}
-  <li class="rec-list__item">
-    {{ partial "article-ad.html" . }}
-  </li>
 </ul>
