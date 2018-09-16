@@ -8,8 +8,8 @@ media_folder: "assets/img/"
 public_folder: "img"
 
 collections:
-  - name: "post"
-    label: "Post"
+  - name: "articles"
+    label: "Articles"
     folder: "content/articles"
     create: true
     fields:
