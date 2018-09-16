@@ -1,0 +1,22 @@
+<ul class="rec-list">
+  {{ $section := ($.Site.GetPage "section" "articles").Pages }}
+  {{ $randomPosts := shuffle $section | first 4 }}
+  {{ range $randomPosts }}
+  <li class="rec-list__item">
+    <article>
+      <figure>
+        {{ $imgPath := .Params.image }}
+        {{ $imgThumb := resources.Get $imgPath | fingerprint }}
+        <img data-src="{{ $imgThumb.Permalink }}" class="lazy">
+      </figure>
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    </article>
+  </li>
+  {{ end }}
+  <li class="rec-list__item">
+    {{ partial "article-ad.html" . }}
+  </li>
+  <li class="rec-list__item">
+    {{ partial "article-ad.html" . }}
+  </li>
+</ul>

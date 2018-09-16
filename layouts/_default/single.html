@@ -27,7 +27,11 @@
         {{ end }}
       </section>
     </article>
-    {{ partial "recommended.html" . }}
+    {{ if in .Params.categories "rec-alt" }}
+      {{ partial "recommended-alt.html" . }}
+    {{ else }}
+      {{ partial "recommended.html" . }}
+    {{ end }}
   </main>
    {{ partial "single-pagination.html" . }}
   {{ partial "footer.html" . }}
