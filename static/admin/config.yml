@@ -19,4 +19,5 @@ collections:
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Caption", name: "caption", widget: "string"}
       - {label: "Show Date", name: "showthedate", widget: "boolean", default: true}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
       - {label: "Body", name: "body", widget: "markdown"}
