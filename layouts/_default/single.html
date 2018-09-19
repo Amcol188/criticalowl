@@ -21,7 +21,16 @@
         </figure>
       {{ end }}
       <section class="content">
-        {{ .Content }}
+        {{ if in .Params.categories "split" }}
+          {{ $cols := split .RawContent "<split>" }}
+          {{ range $cols }}
+            <div class="content-column">
+            {{ . | markdownify }}
+            </div>
+          {{ end }}
+        {{ else }}
+          {{ .Content }}
+        {{ end }}
         {{ if eq .Section "articles" }}
           {{ partial "share-button.html" . }}
         {{ end }}
