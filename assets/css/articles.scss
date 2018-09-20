@@ -9,5 +9,8 @@ article.post {
         min-height: 200px;
       }
     }
+    p:empty {
+      @extend %none;
+    }
   }
 }

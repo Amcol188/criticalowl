@@ -22,9 +22,11 @@
       {{ end }}
       <section class="content">
         {{ if in .Params.categories "split" }}
-          {{ $cols := split .RawContent "<split>" }}
+          {{ $cols := split .Content "<split>" }}
+          {{ $.Scratch.Set "counter" 0 }}
           {{ range $cols }}
-            <div class="content-column">
+            {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+            <div class="content-column" data-url="page{{$.Scratch.Get "counter"}}">
             {{ . | markdownify }}
             </div>
           {{ end }}
