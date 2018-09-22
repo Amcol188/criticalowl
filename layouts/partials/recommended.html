@@ -1,8 +1,19 @@
-<ul class="rec-list">
+<ul class="rec-list {{ if .IsHome }}home{{ end }}">
+  <li class="rec-list__item">
+    {{ partial "article-ad.html" . }}
+  </li>
+  <li class="rec-list__item">
+    {{ partial "article-ad.html" . }}
+  </li>
+  <li class="rec-list__item sticky">
+    {{ partial "article-ad.html" . }}
+  </li>
   {{ $section := ($.Site.GetPage "section" "articles").Pages }}
   {{ $randomPosts := shuffle $section | first 4 }}
+  {{ $.Scratch.Set "artCount" 0 }}
   {{ range $randomPosts }}
-  <li class="rec-list__item">
+  {{ $.Scratch.Set "artCount" (add ($.Scratch.Get "artCount") 1) }}
+  <li class="rec-list__item article article-{{$.Scratch.Get "artCount"}}">
     <article>
       <figure>
         {{ $imgPath := .Params.image }}
@@ -13,7 +24,4 @@
     </article>
   </li>
   {{ end }}
-  <li class="rec-list__item">
-    {{ partial "article-ad.html" . }}
-  </li>
 </ul>

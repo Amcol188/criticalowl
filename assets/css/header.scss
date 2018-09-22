@@ -32,7 +32,7 @@ header {
   }
   div.header-bg {
     box-shadow: $box-shadow;
-    height: 67px;
+    height: 70px;
     position: absolute;
     left: 0;
     right: 0;
@@ -143,6 +143,7 @@ header {
     font-size: 30px;
     grid-column: 2/3;
     justify-self: center;
+    margin-top: 5px;
     svg#logo {
       height: 50px;
       width: auto;

@@ -9,12 +9,18 @@ body {
   @media screen and (min-width: 1000px) {
     grid-template-columns:
       [full-start] minmax(15px, 1fr)
-      [main-start] minmax(0, 1020px) [main-end]
+      [main-start] minmax(0, 1260px) [main-end]
       minmax(15px, 1fr) [full-end];
   }
   &#home {
     @media screen and (min-width: $desktop) {
       grid-template-rows: 133px repeat(3, auto);
+    }
+    @media screen and (min-width: 1000px) {
+      grid-template-columns:
+        [full-start] minmax(15px, 1fr)
+        [main-start] minmax(0, 1055px) [main-end]
+        minmax(15px, 1fr) [full-end];
     }
   }
   > * {
@@ -49,11 +55,16 @@ body {
   }
   // Main takes up remaining viewport
   main.list {
-    grid-auto-columns: auto;
+    @extend %content-center;
+    grid-template-columns: 690px auto;
     grid-auto-rows: auto;
     grid-gap: 30px;
-    max-width: 1020px;
+    max-width: 1055px;
     min-height: calc(100vh - 168px);
+    @media screen and (max-width: 1120px) {
+      grid-template-columns: auto;
+      max-width: 690px;
+    }
     @media screen and (max-width: $desktop) {
       min-height: calc(100vh - 153px);
     }
@@ -69,84 +80,101 @@ body {
     @media screen and (max-width: $phone) {
       grid-column: full;
     }
-    // Feed item layout
-    article.post {
+    section.articles {
       grid-column: 1/2;
       grid-gap: 15px 0;
-      grid-template-columns:
-        [fill-start] minmax(1em, 1fr)
-        [half-start] minmax(0, $phone) [half-end]
-        minmax(1em, 1fr) [fill-end];
-      grid-auto-rows: min-content;
-      max-width: 700px;
-      > * {
-        grid-column: fill;
-        @media screen and (max-width: $phone) {
-          grid-column: half;
-        }
-      }
-      .title {
-        font-size: 32px;
-        margin: 0;
-        a {
-          @extend %no-decoration;
-        }
-      }
-      section.author {
-        p {
-          margin: 0;
-        }
-      }
-      /* Swiper */
-      .swiper-container {
-        grid-column: fill;
-        width: 100%;
-        height: 100%;
-      }
-      figure.hero-image,
-      section.content {
-        @media screen and (max-width: $phone) {
-          grid-column: fill;
-        }
-      }
-      figure {
-        @extend %flex;
-        @extend %flex-column;
-        @extend %content-flex-end;
-        min-height: 180px;
-        @media screen and (min-width: 375px) {
-          min-height: 210px;
-        }
-        @media screen and (min-width: 414px) {
-          min-height: 230px;
-        }
-        @media screen and (min-width: $phone) {
-          min-height: 394px;
-        }
-      }
-      section.content {
+      // Feed item layout
+      article.post {
         grid-template-columns:
-          [bleed-start] minmax(1em, 1fr)
-          [cent-start] minmax(0, 700px) [cent-end]
-          minmax(1em, 1fr) [bleed-end];
-        grid-auto-rows: auto;
+          [fill-start] minmax(1em, 1fr)
+          [half-start] minmax(0, $phone) [half-end]
+          minmax(1em, 1fr) [fill-end];
+        grid-auto-rows: min-content;
+        max-width: 700px;
         > * {
-          grid-column: cent;
+          grid-column: fill;
+          @media screen and (max-width: $phone) {
+            grid-column: half;
+          }
         }
+        .title {
+          font-size: 32px;
+          margin: 0;
+          a {
+            @extend %no-decoration;
+          }
+        }
+        section.author {
+          p {
+            margin: 0;
+          }
+        }
+        /* Swiper */
         .swiper-container {
-          grid-column: bleed;
+          grid-column: fill;
+          width: 100%;
+          height: 100%;
+        }
+        figure.hero-image,
+        section.content {
+          @media screen and (max-width: $phone) {
+            grid-column: fill;
+          }
         }
         figure {
-          grid-column: bleed;
-          margin: 10px 0;
-          img.loading {
-            visibility: hidden;
+          @extend %flex;
+          @extend %flex-column;
+          @extend %content-flex-end;
+          min-height: 180px;
+          @media screen and (min-width: 375px) {
+            min-height: 210px;
+          }
+          @media screen and (min-width: 414px) {
+            min-height: 230px;
+          }
+        }
+        section.content {
+          grid-template-columns:
+            [bleed-start] minmax(1em, 1fr)
+            [cent-start] minmax(0, 700px) [cent-end]
+            minmax(1em, 1fr) [bleed-end];
+          grid-auto-rows: auto;
+          > * {
+            grid-column: cent;
+          }
+          .swiper-container {
+            grid-column: bleed;
+          }
+          figure {
+            grid-column: bleed;
+            margin: 10px 0;
+            img.loading {
+              visibility: hidden;
+            }
+          }
+        }
+        &.meta-post section.content > * {
+          @media screen and (min-width: $phone) {
+            grid-column: bleed !important;
           }
         }
       }
-      &.meta-post section.content > * {
-        @media screen and (min-width: $phone) {
-          grid-column: bleed !important;
+    }
+    &.single-list {
+      grid-template-columns: auto 690px auto;
+      max-width: 1260px;
+      @media screen and (max-width: 1260px) {
+        grid-template-columns: 690px 335px;
+        max-width: 1055px;
+      }
+      @media screen and (max-width: 1120px) {
+        grid-template-columns: auto;
+        max-width: 690px;
+      }
+      section.articles {
+        grid-column: 2/3;
+        @media screen and (max-width: 1260px) {
+          grid-column: 1/2;
         }
       }
     }

@@ -41,26 +41,28 @@
       }
     });
   </script>
-  <script>
-    function updateNextURL(doc) {
-      nextURL = doc.querySelector('.articleNext').href;
-    }
+  {{ if in .Params.categories "scoller" }}
+    <script>
+      function updateNextURL(doc) {
+        nextURL = doc.querySelector('.articleNext').href;
+      }
 
-    updateNextURL(document);
+      updateNextURL(document);
 
-    var infScroll = new InfiniteScroll('.single-list', {
-      path: function () {
-        return nextURL
-      },
-      append: '.post',
-      hideNav: '.pagination',
-      history: 'replace',
-    });
+      var infScroll = new InfiniteScroll('.single-list', {
+        path: function () {
+          return nextURL
+        },
+        append: '.post',
+        hideNav: '.pagination',
+        history: 'replace',
+      });
 
-    infScroll.on('load.infiniteScroll', function (event, response) {
-      updateNextURL(response);
-    });
-  </script>
+      infScroll.on('load.infiniteScroll', function (event, response) {
+        updateNextURL(response);
+      });
+    </script>
+  {{ end }}
 {{ else }}
   {{ $infiniteScroll := resources.Get "js/infinite-scroll.js" }}
   {{ $lazyScript := resources.Get "js/lazy-loading.js" }}

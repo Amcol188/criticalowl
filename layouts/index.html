@@ -1,12 +1,14 @@
 {{ define "main" }}
 {{ partial "header.html" . }}
-  <main class="list" data-infinite-scroll='{ "path": ".pagination__next", "append": ".post", "hideNav": ".pagination", "history": "replace" }'>
-    {{ $paginator  := .Paginate (where .Data.Pages "Type" "articles") 5 }}
-    {{ range $paginator.Pages }}
-      {{ if in .Params.categories "home" }}
-        {{ .Render "summary" }}
+  <main class="list">
+    <section class="articles" data-infinite-scroll='{ "path": ".pagination__next", "append": ".post", "hideNav": ".pagination", "history": "replace" }'>
+      {{ $paginator  := .Paginate (where .Data.Pages "Type" "articles") 5 }}
+      {{ range $paginator.Pages }}
+        {{ if in .Params.categories "home" }}
+          {{ .Render "summary" }}
+        {{ end }}
       {{ end }}
-    {{ end }}
+    </section>
     {{ partial "recommended.html" . }}
   </main>
   {{ partial "paginator.html" . }}
