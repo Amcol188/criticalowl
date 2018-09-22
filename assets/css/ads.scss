@@ -1,7 +1,8 @@
 section.post-sidebar-left {
+  @extend %content-center;
   grid-column: 1/2;
   grid-row: 1/3;
-  height: 635px;
+  height: auto;
   margin: 0;
   padding: 0;
   position: sticky;
@@ -20,6 +21,7 @@ section.post-sidebar-left {
 }
 ul.rec-list {
   @extend %grid;
+  @extend %content-center;
   grid-auto-rows: min-content;
   grid-column: 3/4;
   grid-row: 1/4;

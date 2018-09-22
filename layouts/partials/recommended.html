@@ -1,12 +1,18 @@
 <ul class="rec-list {{ if .IsHome }}home{{ end }}">
   <li class="rec-list__item">
-    {{ partial "article-ad.html" . }}
+    <div class="proper-ad-unit">
+      <div id="proper-ad-deluxely_side_1"> <script> propertag.cmd.push(function() { proper_display('deluxely_side_1'); }); </script> </div>
+    </div>
   </li>
   <li class="rec-list__item">
-    {{ partial "article-ad.html" . }}
+    <div class="proper-ad-unit">
+      <div id="proper-ad-deluxely_side_2"> <script> propertag.cmd.push(function() { proper_display('deluxely_side_2'); }); </script> </div>
+    </div>
   </li>
   <li class="rec-list__item sticky">
-    {{ partial "article-ad.html" . }}
+    <div class="proper-ad-unit">
+      <div id="proper-ad-deluxely_side_3"> <script> propertag.cmd.push(function() { proper_display('deluxely_side_3'); }); </script> </div>
+    </div>
   </li>
   {{ $section := ($.Site.GetPage "section" "articles").Pages }}
   {{ $randomPosts := shuffle $section | first 4 }}
