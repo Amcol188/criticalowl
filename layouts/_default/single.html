@@ -31,6 +31,7 @@
               <div class="content-column" data-url="page{{$.Scratch.Get "counter"}}">
               {{ . | markdownify }}
               </div>
+              <a href="/page{{$.Scratch.Get "counter"}}" class="next-column" id="next-button">Next</a>
             {{ end }}
           {{ else }}
             {{ .Content }}

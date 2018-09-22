@@ -93,6 +93,9 @@ section.footbar {
     display: none;
   }
 }
+div.proper-ad-unit {
+  grid-column: 1;
+}
 
 div#ad {
   @extend %flex;

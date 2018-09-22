@@ -152,6 +152,13 @@ body {
               visibility: hidden;
             }
           }
+          div.content-column {
+            grid-column: bleed;
+            h2,h3,h4,p {
+              margin-left: 10px;
+              margin-right: 10px;
+            }
+          }
         }
         &.meta-post section.content > * {
           @media screen and (min-width: $phone) {
