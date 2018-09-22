@@ -159,6 +159,11 @@ body {
               margin-right: 10px;
             }
           }
+          a.next-column {
+            margin: 15px auto !important;
+            padding: 15px !important;
+            width: 500px !important;
+          }
         }
         &.meta-post section.content > * {
           @media screen and (min-width: $phone) {
