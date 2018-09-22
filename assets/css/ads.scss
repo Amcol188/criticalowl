@@ -40,17 +40,10 @@ ul.rec-list {
     margin: 0;
     &.article {
       padding: 10px 0;
-      position: sticky;
     }
     &.sticky {
       position: sticky;
       top: 0;
-    }
-    @for $i from 1 through 4 {
-      $c : 355 + ($i - 1) * 68;
-      &.article-#{$i} {
-        top: #{$c}px;
-      }
     }
     article {
       @extend %items-start;
