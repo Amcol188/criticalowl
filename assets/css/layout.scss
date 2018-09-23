@@ -162,7 +162,8 @@ body {
           a.next-column {
             margin: 15px auto !important;
             padding: 15px !important;
-            width: 500px !important;
+            max-width: 500px;
+            width: 100% !important;
           }
         }
         &.meta-post section.content > * {

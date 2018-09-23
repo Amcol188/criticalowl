@@ -1,5 +1,5 @@
 +++
-title = "Nine Of The Most Luxurious Superyachts on Earth"
+title = "Nine Of The Most Luxurious Superyachts on Earth (split)"
 date = "2018-09-14"
 author = "Jack Haworth"
 categories = ["vehicles", "home"]

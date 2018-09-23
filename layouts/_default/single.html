@@ -4,11 +4,13 @@
     {{ partial "post-sidebar.html" . }}
     <section class="articles">
       <article class="post{{ if ne .Section "articles" }} meta-post{{ end }}">
-        <h1 class="title">{{ .Title }}</h1>
-        {{ if .Params.showthedate }}
-        <section class="author meta">
-          <p class="meta">by {{ .Params.author }}</p>
-        </section>
+        {{ if in .Params.categories "home" }}
+          <h1 class="title">{{ .Title }}</h1>
+        {{ end }}
+        {{ if .Params.author }}
+          <section class="author meta">
+            <p class="meta">by {{ .Params.author }}</p>
+          </section>
         {{ end }}
         {{ if .Params.slideshow }}
           {{ partial "swiperPar.html" . }}

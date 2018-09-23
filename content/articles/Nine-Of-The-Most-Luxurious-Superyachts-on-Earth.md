@@ -2,11 +2,11 @@
 title = "Nine Of The Most Luxurious Superyachts on Earth"
 date = "2018-09-14"
 author = "Jack Haworth"
-categories = ["vehicles", "split"]
+categories = ["vehicles", "home", "split"]
 image = "img/yachts-1.jpg"
 caption = "Via AMAC Aerospace"
 showthedate = true
-draft = true
+draft = false
 +++
 
 People have been crossing the high seas for thousands of years, but it’s never looked or felt quite like this. Welcome to the ultra-exclusive world of superyachts. 

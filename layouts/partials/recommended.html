@@ -1,20 +1,22 @@
-<ul class="rec-list {{ if .IsHome }}home{{ end }}">
+<ul class="rec-list{{ if .IsHome }} home{{ end }}">
   {{ $section := ($.Site.GetPage "section" "articles").Pages }}
   {{ $randomPosts := shuffle $section | first 4 }}
   {{ $.Scratch.Set "artCount" 0 }}
-  {{ range $randomPosts }}
-  {{ $.Scratch.Set "artCount" (add ($.Scratch.Get "artCount") 1) }}
-  <li class="rec-list__item article article-{{$.Scratch.Get "artCount"}}">
-    <article>
-      <figure>
-        {{ $imgPath := .Params.image }}
-        {{ $imgThumb := resources.Get $imgPath | fingerprint }}
-        <img data-src="{{ $imgThumb.Permalink }}" class="lazy">
-      </figure>
-      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-    </article>
-  </li>
-  {{ end }}
+    {{ range $randomPosts }}
+      {{ $.Scratch.Set "artCount" (add ($.Scratch.Get "artCount") 1) }}
+      {{ if in .Params.categories "home" }}
+      <li class="rec-list__item article article-{{$.Scratch.Get "artCount"}}">
+        <article>
+          <figure>
+            {{ $imgPath := .Params.image }}
+            {{ $imgThumb := resources.Get $imgPath | fingerprint }}
+            <img data-src="{{ $imgThumb.Permalink }}" class="lazy">
+          </figure>
+          <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        </article>
+      </li>
+      {{ end }}
+    {{ end }}
   <li class="rec-list__item">
     <div class="proper-ad-unit">
       <div id="proper-ad-deluxely_side_1"> <script> propertag.cmd.push(function() { proper_display('deluxely_side_1'); }); </script> </div>
