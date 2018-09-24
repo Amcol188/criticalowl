@@ -36,6 +36,7 @@
   "dependencies": {
     "gulp-cache": "^1.0.2",
     "imagemin-mozjpeg": "^7.0.0",
-    "imagemin-pngquant": "^6.0.0"
+    "imagemin-pngquant": "^6.0.0",
+    "npm": "^6.4.1"
   }
 }
