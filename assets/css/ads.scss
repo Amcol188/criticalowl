@@ -11,12 +11,8 @@ section.post-sidebar-left {
   @media screen and (max-width: 1260px) {
     display: none;
   }
-  div#ad {
-    height: 635px;
-    width: 175px;
-    div.placeholder {
-      height: 610px;
-    }
+  div.proper-ad-unit.ad-left {
+    margin: 0 !important;
   }
 }
 ul.rec-list {
@@ -96,7 +92,15 @@ section.footbar {
 div.proper-ad-unit {
   grid-column: 1;
 }
-
+div.proper-ad-unit.ad-sticky {
+  background-color: rgba($white,0.9);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  a.report-ad {
+    background-color: $white;
+  }
+}
 div#ad {
   @extend %flex;
   @extend %flex-column;
