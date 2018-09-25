@@ -2,7 +2,7 @@
 title = "Talk About Production Value: Legendary Producer's Home Listed At $85 Million"
 date = "2018-07-27"
 author = "Marisa Megan"
-categories = ["shelter", "home"]
+categories = ["shelter"]
 image = "img/production-1.jpg"
 slideshow = [
   "production-1.jpg",

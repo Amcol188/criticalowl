@@ -1,5 +1,5 @@
 <ul class="rec-list">
-  {{ $section := ($.Site.GetPage "section" "articles").Pages }}
+  {{ $section := ($.Site.GetPage "section" "home" ).Pages }}
   {{ $randomPosts := shuffle $section | first 4 }}
   {{ range $randomPosts }}
   <li class="rec-list__item">

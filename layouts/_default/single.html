@@ -3,10 +3,8 @@
   <main class="list single-list">
     {{ partial "post-sidebar.html" . }}
     <section class="articles">
-      <article class="post{{ if ne .Section "articles" }} meta-post{{ end }}">
-        {{ if in .Params.categories "home" }}
-          <h1 class="title">{{ .Title }}</h1>
-        {{ end }}
+      <article class="post{{ if ne .Section "home" }} meta-post{{ end }}">
+        <h1 class="title">{{ .Title }}</h1>
         {{ if .Params.author }}
           <section class="author meta">
             <p class="meta">by {{ .Params.author }}</p>
@@ -38,7 +36,7 @@
           {{ else }}
             {{ .Content }}
           {{ end }}
-          {{ if eq .Section "articles" }}
+          {{ if eq .Section "home" }}
             {{ partial "share-button.html" . }}
           {{ end }}
         </section>

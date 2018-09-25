@@ -2,7 +2,7 @@
 title = "Putting The 'Many' In 'Amenities'"
 date = "2018-08-03"
 author = "Jay Crystal"
-categories = ["shelter", "home"]
+categories = ["shelter"]
 image = "img/amenities-1.jpg"
 slideshow = [
   "amenities-1.jpg",

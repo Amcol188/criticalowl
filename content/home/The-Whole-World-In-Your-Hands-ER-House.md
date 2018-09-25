@@ -2,7 +2,7 @@
 title = "The Whole World In Your Hands - ER, House"
 date = "2018-08-06"
 author = "Cecilia Thieberger"
-categories = ["shelter", "home"]
+categories = ["shelter"]
 image = "img/whole-world-1.jpg"
 slideshow = [
   "whole-world-1.jpg",

@@ -2,7 +2,7 @@
 title = "The Most Luxurious $50+ Million Mansions Currently For Sale"
 date = "2018-09-21"
 author = "Jack Haworth"
-categories = ["vehicles", "home", "split"]
+categories = ["vehicles", "split"]
 image = "img/house-1.jpg"
 caption = "Via Sotheby’s"
 showthedate = true

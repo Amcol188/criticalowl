@@ -2,7 +2,7 @@
 title = "These Insane Private Jets Will Change Your View Of Air Travel Forever"
 date = "2018-08-17"
 author = "Jay Crystal"
-categories = ["vehicles", "home"]
+categories = ["vehicles"]
 image = "img/Stateroom.jpg"
 caption = "Via AMAC Aerospace"
 showthedate = true

@@ -1,10 +1,9 @@
 <ul class="rec-list{{ if .IsHome }} home{{ end }}">
-  {{ $section := ($.Site.GetPage "section" "articles").Pages }}
+  {{ $section := ($.Site.GetPage "section" "home").Pages }}
   {{ $randomPosts := shuffle $section | first 4 }}
   {{ $.Scratch.Set "artCount" 0 }}
     {{ range $randomPosts }}
       {{ $.Scratch.Set "artCount" (add ($.Scratch.Get "artCount") 1) }}
-      {{ if in .Params.categories "home" }}
       <li class="rec-list__item article article-{{$.Scratch.Get "artCount"}}">
         <article>
           <figure>
@@ -15,7 +14,6 @@
           <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
         </article>
       </li>
-      {{ end }}
     {{ end }}
   <li class="rec-list__item">
     <div class="proper-ad-unit">

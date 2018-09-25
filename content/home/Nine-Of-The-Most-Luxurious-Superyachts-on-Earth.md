@@ -2,7 +2,7 @@
 title = "Nine Of The Most Luxurious Superyachts on Earth"
 date = "2018-09-14"
 author = "Jack Haworth"
-categories = ["vehicles", "home", "split"]
+categories = ["vehicles", "split"]
 image = "img/yachts-1.jpg"
 caption = "Via AMAC Aerospace"
 showthedate = true

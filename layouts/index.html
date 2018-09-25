@@ -2,11 +2,9 @@
 {{ partial "header.html" . }}
   <main class="list">
     <section class="articles" data-infinite-scroll='{ "path": ".pagination__next", "append": ".post", "hideNav": ".pagination", "history": "replace" }'>
-      {{ $paginator  := .Paginate (where .Data.Pages "Type" "articles") 5 }}
+      {{ $paginator  := .Paginate (where .Data.Pages "Type" "home" ) 5 }}
       {{ range $paginator.Pages }}
-        {{ if in .Params.categories "home" }}
-          {{ .Render "summary" }}
-        {{ end }}
+        {{ .Render "summary" }}
       {{ end }}
     </section>
     {{ partial "recommended.html" . }}

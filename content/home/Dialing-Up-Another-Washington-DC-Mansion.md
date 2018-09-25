@@ -2,7 +2,7 @@
 title = "Dialing Up Another Washington, DC Mansion"
 date = "2018-08-08"
 author = "Jay Crystal"
-categories = ["shelter", "home"]
+categories = ["shelter"]
 image = "img/dc-mansion-1.jpg"
 slideshow = [
   "dc-mansion-1.jpg",

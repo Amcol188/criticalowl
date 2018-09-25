@@ -2,7 +2,7 @@
 title = "New York's Largest Original Apartment On Fifth Avenue Hits The Market"
 date = "2018-07-18"
 author = "Marisa Megan"
-categories = ["shelter", "home"]
+categories = ["shelter"]
 image = "img/fifth-ave-1.jpg"
 slideshow = [
   "fifth-ave-1.jpg",

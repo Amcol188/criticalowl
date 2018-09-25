@@ -1,11 +1,9 @@
 {{ define "main" }}
   {{ partial "header.html" . }}
   <main class="list">
-    {{ $listFeed := .Paginate (where .Data.Pages "Type" "articles") 10 }}
+    {{ $listFeed := .Paginate (where .Data.Pages "Type" "home") 10 }}
     {{ range $listFeed.Pages }}
-      {{ if in .Params.categories "home" }}
-        {{ .Render "li"}}
-      {{ end }}
+      {{ .Render "li"}}
     {{ end }}
   </main>
   {{ if or .Paginator.HasPrev .Paginator.HasNext }}
